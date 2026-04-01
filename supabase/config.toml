@@ -1,0 +1,10 @@
+project_id = "fnujxmowqespahszeluq"
+
+[functions.analyze-results]
+verify_jwt = false
+
+[functions.score-careers]
+verify_jwt = false
+
+[functions.get-geolocation]
+verify_jwt = false

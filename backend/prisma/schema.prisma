@@ -1,0 +1,120 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String?  // Optional for Google Auth
+  googleId  String?  @unique
+  name      String?
+  role      Role     @default(STUDENT)
+  schoolId  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  school      School?      @relation(fields: [schoolId], references: [id])
+  assessments Assessment[]
+  activities  UserActivity[]
+  universityMatches UniversityMatch[]
+}
+
+model School {
+  id        String   @id @default(uuid())
+  name      String
+  code      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  users              User[]
+  assessments        Assessment[]
+  activities         UserActivity[]
+  universityMatches  UniversityMatch[]
+}
+
+model Assessment {
+  id                String   @id @default(uuid())
+  userId            String
+  schoolId          String?
+  user              User     @relation(fields: [userId], references: [id])
+  school            School?  @relation(fields: [schoolId], references: [id])
+  riasecAnswers     Json?
+  valuesAnswers     Json?
+  bigFiveAnswers    Json?
+  riasecScores      Json?
+  valuesScores      Json?
+  bigFiveScores     Json?
+  topRiasecCodes    String[]
+  majorResults      Json?
+  careerResults     Json?
+  currentStep       String   @default("welcome")
+  completedAt       DateTime?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model UserActivity {
+  id           String   @id @default(uuid())
+  userId       String
+  schoolId     String?
+  user         User     @relation(fields: [userId], references: [id])
+  school       School?  @relation(fields: [schoolId], references: [id])
+  questions    Json?
+  prediction   String?
+  createdAt    DateTime @default(now())
+}
+
+model University {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  location    String
+  ranking     Int?
+  tuition     String?
+  website     String?
+  programs    Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model UniversityMatch {
+  id                String   @id @default(uuid())
+  universityName    String
+  universityCountry String
+  userId            String
+  schoolId          String?
+  tier              String?
+  score             Int?
+  preferences       Json?
+  user              User     @relation(fields: [userId], references: [id])
+  school            School?  @relation(fields: [schoolId], references: [id])
+  createdAt         DateTime @default(now())
+}
+
+model PakistanProgram {
+  id                  String   @id @default(uuid())
+  university_name     String
+  city                String
+  department          String?
+  degree              String?
+  program             String?
+  duration            String?
+  eligibility_criteria String?
+  test_required       String?
+  fee_structure       Float?
+  admission_deadline  String?
+  program_url         String?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+}
+
+enum Role {
+  STUDENT
+  SCHOOL_ADMIN
+  SUPER_ADMIN
+}
