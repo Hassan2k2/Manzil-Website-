@@ -1,7 +1,7 @@
 // API Utility for the frontend
 
-// In production, this should be an environment variable like import.meta.env.VITE_API_URL
-export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+// In production, use the relative /api path for Vercel Monolithic Deployment, in dev use localhost
+export const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://localhost:5000/api');
 
 export const fetchWithAuth = async (endpoint: string, options: RequestInit = {}) => {
   const token = localStorage.getItem('auth_token');
