@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import authRouter from './auth';
-import assessmentRouter from './assessment';
-import universityRouter from './university';
-import aiRouter from './ai';
-import profileRouter from './profile';
-import schoolRouter from './school';
+import authRouter from './auth.js';
+import assessmentRouter from './assessment.js';
+import universityRouter from './university.js';
+import aiRouter from './ai.js';
+import profileRouter from './profile.js';
+import schoolRouter from './school.js';
 
 const router = Router();
 

@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getAllUniversities, getUniversityById, createUniversity, saveUniversityMatches, getPakistanPrograms } from '../controllers/university';
-import { requireAuth } from '../middleware/auth';
+import { getAllUniversities, getUniversityById, createUniversity, saveUniversityMatches, getPakistanPrograms } from '../controllers/university.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = Router();
 

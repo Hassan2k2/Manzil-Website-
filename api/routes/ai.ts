@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getRecommendations } from '../controllers/ai';
-import { requireAuth } from '../middleware/auth';
+import { getRecommendations } from '../controllers/ai.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = Router();
 
