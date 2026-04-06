@@ -39,11 +39,16 @@ export const register = async (req: Request, res: Response): Promise<void> => {
       token,
       user: { id: user.id, email: user.email, name: user.name, role: user.role }
     });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Server error' });
+  } catch (error: any) {
+    console.error('[REGISTER ERROR]', error);
+    res.status(500).json({ 
+      message: 'Server error',
+      detail: error?.message || String(error),
+      code: error?.code
+    });
   }
 };
+
 
 export const login = async (req: Request, res: Response): Promise<void> => {
 // ... implementation retained ...
