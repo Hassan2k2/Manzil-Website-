@@ -10,7 +10,7 @@ dotenv.config();
 neonConfig.webSocketConstructor = ws;
 
 const connectionString = process.env.DATABASE_URL!;
-const pool = new Pool({ connectionString });
+const pool = new Pool({ connectionString: connectionString.trim() });
 const adapter = new PrismaNeon(pool as any);
 
 const prisma = new PrismaClient({ adapter });
