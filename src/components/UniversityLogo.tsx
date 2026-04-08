@@ -34,10 +34,7 @@ function getDomainFromUrl(url?: string): string | null {
   }
 }
 
-function buildFaviconUrl(domain: string) {
-  // Google's s2 favicon service is generally reliable.
-  return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`;
-}
+// Favicon service removed to prevent Google logos from displaying for fallback search URLs.
 
 function buildClearbitUrl(domain: string) {
   return `https://logo.clearbit.com/${domain}`;
@@ -58,10 +55,9 @@ export function UniversityLogo({
   const sources = useMemo(() => {
     const srcs: string[] = [];
     if (logo) srcs.push(logo);
-    if (domain) {
+    if (domain && !domain.includes("google.com")) {
       const clearbit = buildClearbitUrl(domain);
       if (!srcs.includes(clearbit)) srcs.push(clearbit);
-      srcs.push(buildFaviconUrl(domain));
     }
     // De-dupe
     return Array.from(new Set(srcs));

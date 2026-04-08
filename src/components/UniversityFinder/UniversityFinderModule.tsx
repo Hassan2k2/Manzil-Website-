@@ -357,7 +357,12 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
 
     pakistaniUniversities.forEach((uni) => {
       if (passesCommonFilters(uni)) {
-        results.push(uni);
+        // Intercept clearbit logos and prioritize the local LOGO_MAP
+        const localLogo = getUniversityLogoUrl(uni.name);
+        results.push({
+          ...uni,
+          logo: localLogo || uni.logo // Use the local logo directory first, fallback to clearbit
+        });
         addedInstituteKeys.add(normalizeForMatch(uni.name));
         if (uni.shortName) addedInstituteKeys.add(normalizeForMatch(uni.shortName));
       }
