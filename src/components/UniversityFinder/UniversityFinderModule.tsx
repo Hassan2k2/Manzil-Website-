@@ -57,9 +57,78 @@ function formatPKR(amount: number): string {
   return `PKR ${amount.toLocaleString()}`;
 }
 
+const LOGO_MAP: Record<string, string> = {
+  "Aga Khan University": "/logos/Aga Khan University.png",
+  "Air University": "/logos/Air University.png",
+  "Bahria University": "/logos/Bahria University.png",
+  "Beaconhouse National University": "/logos/Beaconhouse National University.png",
+  "COMSATS University Islamabad": "/logos/COMSATS University Islamabad.png",
+  "Dow University of Health Sciences": "/logos/Dow University of Health Sciences (DUHS).png",
+  "Dow University of Health Sciences (DUHS)": "/logos/Dow University of Health Sciences (DUHS).png",
+  "FAST National University of Computer & Emerging Sciences": "/logos/FAST National University of Computer & Emerging Sciences.png",
+  "FAST": "/logos/FAST National University of Computer & Emerging Sciences.png",
+  "Forman Christian College": "/logos/Forman Christian College (Chartered University).png",
+  "Forman Christian College (Chartered University)": "/logos/Forman Christian College (Chartered University).png",
+  "Foundation University Islamabad": "/logos/Foundation University Islamabad.png",
+  "Government College University Lahore": "/logos/Government College University Lahore.png",
+  "Habib University": "/logos/Habib University.png",
+  "Information Technology University": "/logos/Information Technology University.png",
+  "Institute of Business Administration": "/logos/Institute of Business Administration (IBA).png",
+  "Institute of Business Administration (IBA)": "/logos/Institute of Business Administration (IBA).png",
+  "Institute of Business Management": "/logos/Institute of Business Management (IoBM).png",
+  "Institute of Business Management (IoBM)": "/logos/Institute of Business Management (IoBM).png",
+  "International Islamic University Islamabad": "/logos/International Islamic University Islamabad.png",
+  "Iqra University": "/logos/Iqra University.png",
+  "Jinnah Sindh Medical University": "/logos/Jinnah Sindh Medical University.png",
+  "King Edward Medical University": "/logos/King Edward Medical University.png",
+  "Lahore School of Economics": "/logos/Lahore School of Economics.png",
+  "Lahore University of Management Sciences": "/logos/Lahore University of Management Sciences.png",
+  "LUMS": "/logos/Lahore University of Management Sciences.png",
+  "Millennium Institute of Technology & Entrepreneurship": "/logos/Millennium Institute of Technology & Entrepreneurship.png",
+  "Muhammad Ali Jinnah University": "/logos/Muhammad Ali Jinnah University.png",
+  "NED University of Engineering & Technology": "/logos/NED University of Engineering & Technology.png",
+  "National University of Sciences and Technology (NUST)": "/logos/NUST.png",
+  "National University of Sciences and Technology": "/logos/NUST.png",
+  "NUST": "/logos/NUST.png",
+  "National College of Arts": "/logos/National College of Arts (NCA).png",
+  "National College of Arts (NCA)": "/logos/National College of Arts (NCA).png",
+  "National University of Modern Languages": "/logos/National University of Modern Languages.png",
+  "National University of Modern Languages (NUML)": "/logos/National University of Modern Languages.png",
+  "Quaid-e-Azam University": "/logos/Quaid-e-Azam University.png",
+  "Riphah International University": "/logos/Riphah International University.png",
+  "SZABIST": "/logos/Shaheed Zulfikar Ali Bhutto Institute of Science & Technology (SZABIST).png",
+  "Shaheed Zulfikar Ali Bhutto Institute of Science & Technology": "/logos/Shaheed Zulfikar Ali Bhutto Institute of Science & Technology (SZABIST).png",
+  "Shaheed Zulfikar Ali Bhutto Institute of Science & Technology (SZABIST)": "/logos/Shaheed Zulfikar Ali Bhutto Institute of Science & Technology (SZABIST).png",
+  "Sir Syed CASE Institute of Technology": "/logos/Sir Syed CASE Institute of Technology.png",
+  "Sir Syed University of Engineering and Technology": "/logos/Sir Syed University of Engineering and Technology.png",
+  "University of Central Punjab": "/logos/University of Central Punjab.png",
+  "University of Health Sciences": "/logos/University of Health Sciences.png",
+  "University of Health Sciences (UHS) Lahore": "/logos/University of Health Sciences.png",
+  "University of Karachi": "/logos/University of Karachi.png",
+  "University of Management and Technology": "/logos/University of Management and Technology.png",
+  "University of Veterinary and Animal Sciences": "/logos/University of Veterinary and Animal Sciences.png",
+  "University of the Punjab": "/logos/University of the Punjab.png",
+  "Ziauddin University": "/logos/Ziauddin University.png"
+};
+
 function getUniversityLogoUrl(universityName: string): string | null {
-  // Use the local Logos directory with the exact university name as filename
-  return `/Logos/${encodeURIComponent(universityName)}.png`;
+  // Check precise static map
+  if (LOGO_MAP[universityName]) {
+    return LOGO_MAP[universityName];
+  }
+  
+  // Check for partial matches
+  const matchKey = Object.keys(LOGO_MAP).find(k => 
+    universityName.toLowerCase().includes(k.toLowerCase()) || 
+    k.toLowerCase().includes(universityName.toLowerCase())
+  );
+
+  if (matchKey) {
+    return LOGO_MAP[matchKey];
+  }
+
+  // Fallback to exactly what we were doing, but with lowercase /logos/ folder
+  return `/logos/${encodeURIComponent(universityName)}.png`;
 }
 
 function createVirtualUniversity(
