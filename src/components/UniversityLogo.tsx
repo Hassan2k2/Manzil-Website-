@@ -81,11 +81,11 @@ export function UniversityLogo({
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-lg bg-white",
+        "relative overflow-hidden rounded-lg bg-white shrink-0",
         "flex items-center justify-center",
         className,
       )}
-      style={{ width: size, height: size }}
+      style={{ width: size, height: size, minWidth: size, minHeight: size }}
       aria-label={`${name} logo`}
     >
       {/* Fallback only shown when no image loads */}
