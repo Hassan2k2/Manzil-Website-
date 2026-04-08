@@ -12,7 +12,7 @@ type UniversityLogoProps = {
   imgClassName?: string;
 };
 
-const DEFAULT_SIZE = 56;
+const DEFAULT_SIZE = 64;
 
 // Removed countryFlags as Windows fails to render them, showing 'PK' instead
 
@@ -68,9 +68,8 @@ export function UniversityLogo({
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-lg bg-white shrink-0",
-        "flex items-center justify-center",
-        className,
+        "relative rounded-full overflow-hidden flex items-center justify-center shrink-0 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm",
+        className
       )}
       style={{ width: size, height: size, minWidth: size, minHeight: size }}
       aria-label={`${name} logo`}
@@ -84,7 +83,7 @@ export function UniversityLogo({
           key={src}
           src={src}
           alt={`${name} logo`}
-          className={cn("w-full h-full object-contain p-0.5", imgClassName)}
+          className={cn("w-full h-full object-contain p-1", imgClassName)}
           loading="lazy"
           referrerPolicy="no-referrer"
           onError={() => {
