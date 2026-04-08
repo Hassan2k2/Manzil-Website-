@@ -14,15 +14,7 @@ type UniversityLogoProps = {
 
 const DEFAULT_SIZE = 56;
 
-const countryFlags: Record<string, string> = {
-  Pakistan: "🇵🇰",
-  UK: "🇬🇧",
-  US: "🇺🇸",
-  Canada: "🇨🇦",
-  Europe: "🇪🇺",
-  "Middle East": "🇦🇪",
-  Australia: "🇦🇺",
-};
+// Removed countryFlags as Windows fails to render them, showing 'PK' instead
 
 function getDomainFromUrl(url?: string): string | null {
   if (!url) return null;
@@ -71,8 +63,7 @@ export function UniversityLogo({
     setSrcIndex(0);
   }, [logo, domain]);
 
-  const fallbackText = (shortName?.trim()?.[0] || name.trim()?.[0] || "U").toUpperCase();
-  const flag = country ? countryFlags[country] : undefined;
+  const fallbackText = (shortName?.trim() || name.trim() || "U").slice(0, 2).toUpperCase();
 
   return (
     <div
@@ -84,9 +75,8 @@ export function UniversityLogo({
       style={{ width: size, height: size, minWidth: size, minHeight: size }}
       aria-label={`${name} logo`}
     >
-      {/* Fallback only shown when no image loads */}
       {!src && (
-        <span className="text-lg font-bold text-gray-500">{flag ?? fallbackText}</span>
+        <span className="text-xl font-bold tracking-wider text-muted-foreground">{fallbackText}</span>
       )}
 
       {src && (
@@ -94,7 +84,7 @@ export function UniversityLogo({
           key={src}
           src={src}
           alt={`${name} logo`}
-          className={cn("w-full h-full object-contain p-1.5", imgClassName)}
+          className={cn("w-full h-full object-contain p-0.5", imgClassName)}
           loading="lazy"
           referrerPolicy="no-referrer"
           onError={() => {
