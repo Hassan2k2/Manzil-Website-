@@ -13,6 +13,7 @@ type UniversityLogoProps = {
 };
 
 const DEFAULT_SIZE = 64;
+const DEFAULT_WIDTH = 88;
 
 // Removed countryFlags as Windows fails to render them, showing 'PK' instead
 
@@ -42,6 +43,9 @@ export function UniversityLogo({
   className,
   imgClassName,
 }: UniversityLogoProps) {
+  // width can be dynamically customized, otherwise default to a landscape format
+  const w = DEFAULT_WIDTH;
+  const h = size;
   const domain = useMemo(() => getDomainFromUrl(website), [website]);
 
   const sources = useMemo(() => {
@@ -68,10 +72,10 @@ export function UniversityLogo({
   return (
     <div
       className={cn(
-        "relative rounded-full overflow-hidden flex items-center justify-center shrink-0 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm",
+        "relative rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-white dark:bg-slate-800 border shadow-sm",
         className
       )}
-      style={{ width: size, height: size, minWidth: size, minHeight: size }}
+      style={{ width: w, height: h, minWidth: w, minHeight: h }}
       aria-label={`${name} logo`}
     >
       {!src && (
@@ -83,7 +87,7 @@ export function UniversityLogo({
           key={src}
           src={src}
           alt={`${name} logo`}
-          className={cn("w-full h-full object-contain p-1", imgClassName)}
+          className={cn("w-full h-full object-contain scale-[1.15]", imgClassName)}
           loading="lazy"
           referrerPolicy="no-referrer"
           onError={() => {
