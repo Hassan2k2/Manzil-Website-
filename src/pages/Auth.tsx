@@ -24,7 +24,9 @@ export default function Auth() {
   const [schoolCode, setSchoolCode] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
+  const [accountType, setAccountType] = useState<"student" | "admin">("student");
+  const [schoolName, setSchoolName] = useState("");
+  const [errors, setErrors] = useState<{ email?: string; password?: string; schoolName?: string }>({});
   
   const { signIn, signUp, signInWithGoogle, user, loading } = useAuth();
   const navigate = useNavigate();
@@ -39,17 +41,24 @@ export default function Auth() {
 
   const validateForm = () => {
     const result = authSchema.safeParse({ email, password });
+    let isValid = true;
+    const fieldErrors: { email?: string; password?: string; schoolName?: string } = {};
+
     if (!result.success) {
-      const fieldErrors: { email?: string; password?: string } = {};
+      isValid = false;
       result.error.errors.forEach((err) => {
         if (err.path[0] === "email") fieldErrors.email = err.message;
         if (err.path[0] === "password") fieldErrors.password = err.message;
       });
-      setErrors(fieldErrors);
-      return false;
     }
-    setErrors({});
-    return true;
+
+    if (!isLogin && accountType === "admin" && !schoolName.trim()) {
+      isValid = false;
+      fieldErrors.schoolName = "School name is required";
+    }
+
+    setErrors(fieldErrors);
+    return isValid;
   };
 
   const handleJoinSchool = async (code: string) => {
@@ -109,7 +118,8 @@ export default function Auth() {
           navigate("/", { replace: true });
         }
       } else {
-        const { error } = await signUp(email, password);
+        const extraData = accountType === "admin" ? { role: "SCHOOL_ADMIN", schoolName: schoolName.trim() } : undefined;
+        const { error } = await signUp(email, password, extraData);
         if (error) {
           let message = error.message;
           if (message.includes("User already registered")) {
@@ -121,17 +131,28 @@ export default function Auth() {
             variant: "destructive",
           });
         } else {
-          // After signup, try to join school if code provided
-          if (schoolCode.trim()) {
-            setTimeout(() => handleJoinSchool(schoolCode), 1000);
+          if (accountType === "admin") {
+            toast({
+              title: "School Created!",
+              description: "Welcome to your School Dashboard.",
+            });
+            setTimeout(() => {
+              navigate("/school", { replace: true });
+              window.location.reload();
+            }, 100);
+          } else {
+            // After signup, try to join school if code provided
+            if (schoolCode.trim()) {
+              setTimeout(() => handleJoinSchool(schoolCode), 1000);
+            }
+            toast({
+              title: "Account created!",
+              description: schoolCode.trim() 
+                ? "Welcome to Manzil. Linking your school..." 
+                : "Welcome to Manzil. You are now logged in.",
+            });
+            navigate("/", { replace: true });
           }
-          toast({
-            title: "Account created!",
-            description: schoolCode.trim() 
-              ? "Welcome to Manzil. Linking your school..." 
-              : "Welcome to Manzil. You are now logged in.",
-          });
-          navigate("/", { replace: true });
         }
       }
     } finally {
@@ -231,6 +252,29 @@ export default function Auth() {
               </div>
             </div>
 
+            {!isLogin && (
+              <div className="flex bg-muted p-1 rounded-lg mb-6">
+                <button
+                  type="button"
+                  className={`flex-1 py-1.5 text-sm font-medium rounded-md transition-colors ${
+                    accountType === "student" ? "bg-background shadow-sm text-foreground" : "text-muted-foreground hover:text-foreground"
+                  }`}
+                  onClick={() => setAccountType("student")}
+                >
+                  Student
+                </button>
+                <button
+                  type="button"
+                  className={`flex-1 py-1.5 text-sm font-medium rounded-md transition-colors ${
+                    accountType === "admin" ? "bg-background shadow-sm text-foreground" : "text-muted-foreground hover:text-foreground"
+                  }`}
+                  onClick={() => setAccountType("admin")}
+                >
+                  Administrator
+                </button>
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="space-y-4">
               {/* Email */}
               <div className="space-y-2">
@@ -279,8 +323,8 @@ export default function Auth() {
                 )}
               </div>
 
-              {/* School Code - Only on signup */}
-              {!isLogin && (
+              {/* School Code - Only on signup for students */}
+              {!isLogin && accountType === "student" && (
                 <div className="space-y-2">
                   <Label htmlFor="school-code">
                     School Code <span className="text-muted-foreground font-normal text-xs">(optional)</span>
@@ -300,6 +344,34 @@ export default function Auth() {
                   </div>
                   <p className="text-xs text-muted-foreground">
                     Got a code from your school? Enter it to link your account.
+                  </p>
+                </div>
+              )}
+
+              {/* School Name - Only on signup for admins */}
+              {!isLogin && accountType === "admin" && (
+                <div className="space-y-2">
+                  <Label htmlFor="school-name">
+                    School Name
+                  </Label>
+                  <div className="relative">
+                    <School className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                    <Input
+                      id="school-name"
+                      type="text"
+                      placeholder="e.g. Springfield High"
+                      value={schoolName}
+                      onChange={(e) => setSchoolName(e.target.value)}
+                      className={`pl-10 ${errors.schoolName ? "border-destructive" : ""}`}
+                      disabled={isSubmitting}
+                      maxLength={100}
+                    />
+                  </div>
+                  {errors.schoolName && (
+                    <p className="text-sm text-destructive">{errors.schoolName}</p>
+                  )}
+                  <p className="text-xs text-muted-foreground">
+                    Register your school to start tracking student progress.
                   </p>
                 </div>
               )}

@@ -6,7 +6,7 @@ import prisma from '../lib/prisma.js';
 export const register = async (req: Request, res: Response): Promise<void> => {
 // ... implementation retained ...
   try {
-    const { email, password, name, role } = req.body;
+    const { email, password, name, role, schoolName } = req.body;
     
     // Check if user exists
     const existingUser = await prisma.user.findUnique({ where: { email } });
@@ -17,6 +17,20 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 
     // Hash password
     const hashedPassword = await bcrypt.hash(password, 10);
+
+    let userSchoolId = null;
+
+    if (role === 'SCHOOL_ADMIN' && schoolName) {
+      // Generate a unique 6-character school code
+      const schoolCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+      const newSchool = await prisma.school.create({
+        data: {
+          name: schoolName,
+          code: schoolCode,
+        }
+      });
+      userSchoolId = newSchool.id;
+    }
     
     // Create user
     const user = await prisma.user.create({
@@ -25,6 +39,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
         password: hashedPassword,
         name,
         role: role || 'STUDENT',
+        schoolId: userSchoolId,
       },
     });
 

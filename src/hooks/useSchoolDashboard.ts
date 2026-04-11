@@ -69,8 +69,8 @@ export function useSchoolDashboard() {
 
   const getStudentDetails = useCallback(async (studentId: string) => {
     try {
-      // In a full implementation, you'd add a GET /api/schools/students/:id endpoint
-      return null;
+      const data = await fetchWithAuth(`/schools/students/${studentId}`);
+      return data;
     } catch (err) {
       console.error("Error fetching student details:", err);
       return null;
