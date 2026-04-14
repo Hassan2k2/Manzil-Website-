@@ -273,7 +273,11 @@ const Index = () => {
       {/* Main Content */}
       <main className="flex-1 flex flex-col">
         {/* Mobile Progress */}
-        <MobileProgress currentStep={currentStep} totalProgress={totalProgress} />
+        <MobileProgress 
+          currentStep={currentStep} 
+          totalProgress={totalProgress} 
+          onHomeClick={() => goToStep("welcome")} 
+        />
 
         {/* Question Area */}
         <div className="flex-1 flex items-center justify-center p-6 pt-28 lg:pt-6">

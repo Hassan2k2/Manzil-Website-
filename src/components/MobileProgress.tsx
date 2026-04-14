@@ -6,9 +6,10 @@ import { Sparkles, Target, TrendingUp } from "lucide-react";
 interface MobileProgressProps {
   currentStep: AssessmentStep;
   totalProgress: number;
+  onHomeClick?: () => void;
 }
 
-export function MobileProgress({ currentStep, totalProgress }: MobileProgressProps) {
+export function MobileProgress({ currentStep, totalProgress, onHomeClick }: MobileProgressProps) {
   const steps = [
     { id: "riasec", label: "Interests", icon: <Sparkles className="w-4 h-4" /> },
     { id: "values", label: "Values", icon: <Target className="w-4 h-4" /> },
@@ -20,7 +21,12 @@ export function MobileProgress({ currentStep, totalProgress }: MobileProgressPro
   return (
     <div className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border px-4 py-3">
       <div className="flex items-center justify-between mb-2">
-        <h1 className="text-lg font-display font-bold text-gradient">Manzil</h1>
+        <h1 
+          className="text-lg font-display font-bold text-gradient cursor-pointer"
+          onClick={onHomeClick}
+        >
+          Manzil
+        </h1>
         <span className="text-sm text-muted-foreground">{Math.round(totalProgress)}% complete</span>
       </div>
       <Progress value={totalProgress} variant="gradient" className="h-1.5 mb-3" />

@@ -47,7 +47,10 @@ export function ProgressSidebar({
   return (
     <aside className="hidden lg:flex flex-col w-72 bg-sidebar border-r border-sidebar-border p-6 h-screen sticky top-0">
       {/* Logo */}
-      <div className="mb-8">
+      <div 
+        className="mb-8 cursor-pointer hover:opacity-80 transition-opacity" 
+        onClick={() => onStepClick("welcome")}
+      >
         <h2 className="text-2xl font-display font-bold text-gradient">Manzil</h2>
         <p className="text-sm text-sidebar-foreground/70 mt-1">Your career compass</p>
       </div>

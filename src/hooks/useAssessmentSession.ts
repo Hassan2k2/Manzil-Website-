@@ -42,6 +42,9 @@ export function useAssessmentSession(): UseAssessmentSessionReturn {
   useEffect(() => {
     const checkExistingSession = async () => {
       if (!user) {
+        setHasExistingSession(false);
+        setResumeSession(null);
+        setSessionId(null);
         setIsLoading(false);
         return;
       }

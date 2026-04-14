@@ -51,7 +51,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password, ...extraData }),
       });
-      const data = await resp.json();
+      
+      let data;
+      try {
+        data = await resp.json();
+      } catch (err) {
+        throw new Error("Server connection error. Please try again later.");
+      }
+
       if (!resp.ok) {
         throw new Error(data.message || "Registration failed");
       }
@@ -70,7 +77,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
-      const data = await resp.json();
+      
+      let data;
+      try {
+        data = await resp.json();
+      } catch (err) {
+        throw new Error("Server connection error. Please try again later.");
+      }
+
       if (!resp.ok) {
         throw new Error(data.message || "Login failed");
       }
