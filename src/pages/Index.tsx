@@ -106,9 +106,13 @@ const Index = () => {
       navigate("/auth");
       return;
     }
+    if (totalProgress > 0) {
+      goToStep("riasec");
+      return;
+    }
     goToStep("riasec");
     initSession();
-  }, [user, navigate, initSession, goToStep]);
+  }, [user, navigate, initSession, goToStep, totalProgress]);
 
   // Handle direct university finder - require sign-in first
   const handleUniversityFinder = useCallback(() => {
@@ -146,14 +150,23 @@ const Index = () => {
         onStart={handleStart} 
         onDirectUniversityFinder={handleUniversityFinder}
         onPreviewResults={(import.meta.env.DEV || new URLSearchParams(window.location.search).has('dev')) ? skipToResults : undefined}
-        hasExistingSession={hasExistingSession}
-        onResume={handleResume}
-        resumeProgress={hasExistingSession && resumeSession ? Math.round(
-          ((Object.keys(resumeSession.riasec_answers || {}).length +
-            Object.keys(resumeSession.values_answers || {}).length +
-            Object.keys(resumeSession.big_five_answers || {}).length) /
-            (riasecQuestions.length + valuesQuestions.length + bigFiveQuestions.length)) * 100
-        ) : 0}
+        hasExistingSession={hasExistingSession || totalProgress > 0}
+        onResume={() => {
+          if (totalProgress > 0) {
+            goToStep("riasec");
+          } else {
+            handleResume();
+          }
+        }}
+        resumeProgress={Math.max(
+          Math.round(totalProgress), 
+          hasExistingSession && resumeSession ? Math.round(
+            ((Object.keys(resumeSession.riasec_answers || {}).length +
+              Object.keys(resumeSession.values_answers || {}).length +
+              Object.keys(resumeSession.big_five_answers || {}).length) /
+              (riasecQuestions.length + valuesQuestions.length + bigFiveQuestions.length)) * 100
+          ) : 0
+        )}
       />
     );
   }

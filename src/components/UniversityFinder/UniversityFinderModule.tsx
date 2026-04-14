@@ -61,7 +61,7 @@ const LOGO_MAP: Record<string, string> = {
   "Aga Khan University": "/logos/Aga Khan University.png",
   "Air University": "/logos/Air University.png",
   "Bahria University": "/logos/Bahria University.png",
-  "Beaconhouse National University": "/logos/Beaconhouse National University.png",
+  "Beaconhouse National University": "https://logo.clearbit.com/bnu.edu.pk",
   "COMSATS University Islamabad": "/logos/COMSATS University Islamabad.png",
   "Dow University of Health Sciences": "/logos/Dow University of Health Sciences (DUHS).png",
   "Dow University of Health Sciences (DUHS)": "/logos/Dow University of Health Sciences (DUHS).png",
@@ -69,7 +69,7 @@ const LOGO_MAP: Record<string, string> = {
   "FAST": "/logos/FAST National University of Computer & Emerging Sciences.png",
   "Forman Christian College": "/logos/Forman Christian College (Chartered University).png",
   "Forman Christian College (Chartered University)": "/logos/Forman Christian College (Chartered University).png",
-  "Foundation University Islamabad": "/logos/Foundation University Islamabad.png",
+  "Foundation University Islamabad": "https://logo.clearbit.com/fui.edu.pk",
   "Government College University Lahore": "/logos/Government College University Lahore.png",
   "Habib University": "/logos/Habib University.png",
   "Information Technology University": "/logos/Information Technology University.png",
@@ -87,10 +87,10 @@ const LOGO_MAP: Record<string, string> = {
   "Millennium Institute of Technology & Entrepreneurship": "/logos/Millennium Institute of Technology & Entrepreneurship.png",
   "Muhammad Ali Jinnah University": "/logos/Muhammad Ali Jinnah University.png",
   "NED University of Engineering & Technology": "/logos/NED University of Engineering & Technology.png",
-  "National University of Sciences and Technology (NUST)": "/logos/NUST.png",
-  "National University of Sciences & Technology": "/logos/NUST.png",
-  "National University of Sciences and Technology": "/logos/NUST.png",
-  "NUST": "/logos/NUST.png",
+  "National University of Sciences and Technology (NUST)": "https://logo.clearbit.com/nust.edu.pk",
+  "National University of Sciences & Technology": "https://logo.clearbit.com/nust.edu.pk",
+  "National University of Sciences and Technology": "https://logo.clearbit.com/nust.edu.pk",
+  "NUST": "https://logo.clearbit.com/nust.edu.pk",
   "National College of Arts": "/logos/National College of Arts (NCA).png",
   "National College of Arts (NCA)": "/logos/National College of Arts (NCA).png",
   "National University of Modern Languages": "/logos/National University of Modern Languages.png",
@@ -110,7 +110,17 @@ const LOGO_MAP: Record<string, string> = {
   "University of Management and Technology": "/logos/University of Management and Technology.png",
   "University of Veterinary and Animal Sciences": "/logos/University of Veterinary and Animal Sciences.png",
   "University of the Punjab": "/logos/University of the Punjab.png",
-  "Ziauddin University": "/logos/Ziauddin University.png"
+  "Ziauddin University": "/logos/Ziauddin University.png",
+  // Overrides for missing logos found during testing
+  "Ghulam Ishaq Khan Institute": "https://logo.clearbit.com/giki.edu.pk",
+  "GIKI": "https://logo.clearbit.com/giki.edu.pk",
+  "PIEAS": "https://logo.clearbit.com/pieas.edu.pk",
+  "Pakistan Institute of Engineering": "https://logo.clearbit.com/pieas.edu.pk",
+  "UET Lahore": "https://logo.clearbit.com/uet.edu.pk",
+  "University of Engineering and Technology (UET)": "https://logo.clearbit.com/uet.edu.pk",
+  "University of Engineering and Technology": "https://logo.clearbit.com/uet.edu.pk",
+  "UET": "https://logo.clearbit.com/uet.edu.pk",
+  "Air University": "https://logo.clearbit.com/au.edu.pk"
 };
 
 function getUniversityLogoUrl(universityName: string): string | null {
