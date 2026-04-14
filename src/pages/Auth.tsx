@@ -27,7 +27,7 @@ export default function Auth() {
   const [accountType, setAccountType] = useState<"student" | "admin">("student");
   const [schoolName, setSchoolName] = useState("");
   const [errors, setErrors] = useState<{ email?: string; password?: string; schoolName?: string }>({});
-  
+
   const { signIn, signUp, signInWithGoogle, user, loading } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -92,11 +92,11 @@ export default function Auth() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) return;
-    
+
     setIsSubmitting(true);
-    
+
     try {
       if (isLogin) {
         const { error } = await signIn(email, password);
@@ -111,11 +111,19 @@ export default function Auth() {
             variant: "destructive",
           });
         } else {
+          if (accountType === "student" && schoolCode.trim()) {
+            setTimeout(() => handleJoinSchool(schoolCode), 1000);
+          }
           toast({
             title: "Welcome back!",
             description: "You have successfully logged in.",
           });
-          navigate("/", { replace: true });
+
+          if (accountType === "admin") {
+            navigate("/school", { replace: true });
+          } else {
+            navigate("/", { replace: true });
+          }
         }
       } else {
         const extraData = accountType === "admin" ? { role: "SCHOOL_ADMIN", schoolName: schoolName.trim() } : undefined;
@@ -147,8 +155,8 @@ export default function Auth() {
             }
             toast({
               title: "Account created!",
-              description: schoolCode.trim() 
-                ? "Welcome to Manzil. Linking your school..." 
+              description: schoolCode.trim()
+                ? "Welcome to Manzil. Linking your school..."
                 : "Welcome to Manzil. You are now logged in.",
             });
             navigate("/", { replace: true });
@@ -165,7 +173,7 @@ export default function Auth() {
       setIsSubmitting(true);
       const { error } = await signInWithGoogle(credentialResponse.credential);
       setIsSubmitting(false);
-      
+
       if (error) {
         toast({
           title: "Google Login Failed",
@@ -173,14 +181,19 @@ export default function Auth() {
           variant: "destructive",
         });
       } else {
-        if (!isLogin && schoolCode.trim()) {
+        if (accountType === "student" && schoolCode.trim()) {
           setTimeout(() => handleJoinSchool(schoolCode), 1000);
         }
         toast({
           title: "Welcome!",
           description: "Successfully logged in with Google.",
         });
-        navigate("/", { replace: true });
+
+        if (accountType === "admin") {
+          navigate("/school", { replace: true });
+        } else {
+          navigate("/", { replace: true });
+        }
       }
     }
   };
@@ -229,7 +242,7 @@ export default function Auth() {
           <CardContent>
             {/* Google Authentication */}
             <div className="mb-4 flex flex-col items-center">
-              <GoogleLogin 
+              <GoogleLogin
                 onSuccess={handleGoogleAuth}
                 onError={() => {
                   toast({
@@ -242,7 +255,7 @@ export default function Auth() {
                 width="100%"
               />
             </div>
-            
+
             <div className="relative mb-4">
               <div className="absolute inset-0 flex items-center">
                 <span className="w-full border-t border-muted-foreground/30" />
@@ -252,28 +265,24 @@ export default function Auth() {
               </div>
             </div>
 
-            {!isLogin && (
-              <div className="flex bg-muted p-1 rounded-lg mb-6">
-                <button
-                  type="button"
-                  className={`flex-1 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                    accountType === "student" ? "bg-background shadow-sm text-foreground" : "text-muted-foreground hover:text-foreground"
+            <div className="flex bg-muted p-1 rounded-lg mb-6">
+              <button
+                type="button"
+                className={`flex-1 py-1.5 text-sm font-medium rounded-md transition-colors ${accountType === "student" ? "bg-background shadow-sm text-foreground" : "text-muted-foreground hover:text-foreground"
                   }`}
-                  onClick={() => setAccountType("student")}
-                >
-                  Student
-                </button>
-                <button
-                  type="button"
-                  className={`flex-1 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                    accountType === "admin" ? "bg-background shadow-sm text-foreground" : "text-muted-foreground hover:text-foreground"
+                onClick={() => setAccountType("student")}
+              >
+                Student
+              </button>
+              <button
+                type="button"
+                className={`flex-1 py-1.5 text-sm font-medium rounded-md transition-colors ${accountType === "admin" ? "bg-background shadow-sm text-foreground" : "text-muted-foreground hover:text-foreground"
                   }`}
-                  onClick={() => setAccountType("admin")}
-                >
-                  Administrator
-                </button>
-              </div>
-            )}
+                onClick={() => setAccountType("admin")}
+              >
+                Administrator
+              </button>
+            </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               {/* Email */}
@@ -323,8 +332,8 @@ export default function Auth() {
                 )}
               </div>
 
-              {/* School Code - Only on signup for students */}
-              {!isLogin && accountType === "student" && (
+              {/* School Code - For students (login or signup) */}
+              {accountType === "student" && (
                 <div className="space-y-2">
                   <Label htmlFor="school-code">
                     School Code <span className="text-muted-foreground font-normal text-xs">(optional)</span>
