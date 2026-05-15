@@ -138,3 +138,43 @@ export const getPakistanPrograms = async (req: Request, res: Response): Promise<
     res.status(500).json({ message: 'Error fetching programs' });
   }
 };
+
+export const getUkPrograms = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { search, city, major, degree } = req.query;
+
+    const where: any = {};
+
+    if (search) {
+      where.OR = [
+        { university_name: { contains: search as string, mode: 'insensitive' } },
+        { program: { contains: search as string, mode: 'insensitive' } },
+        { city: { contains: search as string, mode: 'insensitive' } },
+      ];
+    }
+
+    if (city) {
+      where.city = { contains: city as string, mode: 'insensitive' };
+    }
+
+    if (major) {
+      where.program = { contains: major as string, mode: 'insensitive' };
+    }
+
+    if (degree) {
+      where.degree = { contains: degree as string, mode: 'insensitive' };
+    }
+
+    const programs = await prisma.ukProgram.findMany({
+      where,
+      orderBy: {
+        university_name: 'asc'
+      }
+    });
+
+    res.json(programs);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Error fetching UK programs' });
+  }
+};

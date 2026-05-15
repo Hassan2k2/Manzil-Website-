@@ -29,7 +29,7 @@ interface UniversityFiltersProps {
 const countryOptions = [
   { value: "Pakistan", label: "Pakistan", available: true },
   { value: "US", label: "United States", available: false },
-  { value: "UK", label: "United Kingdom", available: false },
+  { value: "UK", label: "United Kingdom", available: true },
   { value: "Canada", label: "Canada", available: false },
   { value: "Australia", label: "Australia", available: false },
   { value: "Europe", label: "Europe", available: false },
@@ -212,8 +212,8 @@ export function UniversityFilters({
     filters.institutes.length +
     (filters.budgetRange !== "any" ? 1 : 0);
 
-  // Show institute filter only when Pakistan is selected (or no country filter)
-  const showInstituteFilter = filters.countries.length === 0 || filters.countries.includes("Pakistan");
+  // Show institute filter when Pakistan or UK is selected (or no country filter)
+  const showInstituteFilter = filters.countries.length === 0 || filters.countries.includes("Pakistan") || filters.countries.includes("UK");
 
   return (
     <div className="space-y-5">

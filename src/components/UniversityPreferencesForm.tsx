@@ -31,7 +31,7 @@ const fundingOptions = [
 const countryOptions = [
   { value: "Pakistan", flag: "🇵🇰", available: true },
   { value: "US", flag: "🇺🇸", available: false },
-  { value: "UK", flag: "🇬🇧", available: false },
+  { value: "UK", flag: "🇬🇧", available: true },
   { value: "Canada", flag: "🇨🇦", available: false },
   { value: "Australia", flag: "🇦🇺", available: false },
   { value: "Europe", flag: "🇪🇺", available: false },
