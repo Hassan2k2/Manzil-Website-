@@ -111,22 +111,20 @@ export function UniversityFilters({
     return universities.filter((u) => u.country === "Pakistan");
   }, []);
 
-  // Get cities - use Supabase cities if available, otherwise use fallback
   const filteredCities = useMemo(() => {
-    // If we have cities from props (Supabase), use those
     if (availableCities.length > 0) {
       return availableCities;
     }
-    // Get cities that actually have universities from static data
+    
+    // Fallback if availableCities is empty for some reason
     const citiesWithUnis = new Set<string>();
     pakistaniUniversities.forEach((uni) => {
       if (filters.countries.length === 0 || filters.countries.includes(uni.country)) {
         citiesWithUnis.add(extractCity(uni.location));
       }
     });
-    // Return fallback cities that have universities
     return fallbackCitiesInPakistan.filter(city => citiesWithUnis.has(city));
-  }, [filters.countries, pakistaniUniversities, availableCities]);
+  }, [availableCities, filters.countries, pakistaniUniversities]);
 
   // Get majors - combine top majors with available ones
   const displayMajors = useMemo(() => {
@@ -149,16 +147,14 @@ export function UniversityFilters({
       ? current.filter((v) => v !== country)
       : [...current, country];
     
-    // Clear cities that don't belong to the new country selection
-    const newValidCities = filters.cities.filter((city) => {
-      return pakistaniUniversities.some(
-        (uni) =>
-          extractCity(uni.location) === city &&
-          (updated.length === 0 || updated.includes(uni.country))
-      );
+    // Reset country-specific filters when country selection changes to avoid invalid selections
+    onChange({ 
+      ...filters, 
+      countries: updated,
+      cities: [], 
+      institutes: [], 
+      majors: [] 
     });
-
-    onChange({ ...filters, countries: updated, cities: newValidCities });
   };
 
   const toggleArrayFilter = <K extends keyof UniversityFilters>(

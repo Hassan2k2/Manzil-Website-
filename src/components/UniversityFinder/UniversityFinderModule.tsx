@@ -303,15 +303,39 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     const staticMajorsSet = new Set<string>();
     const staticCitiesSet = new Set<string>();
     const rankingsSet = new Set<string>();
+    
+    const showPak = filters.countries.length === 0 || filters.countries.includes("Pakistan");
+    const showUk = filters.countries.length === 0 || filters.countries.includes("UK");
+
     pakistaniUniversities.forEach((uni) => {
-      uni.majorsOffered.forEach((m) => staticMajorsSet.add(m));
-      staticCitiesSet.add(extractCity(uni.location));
+      if (showPak) {
+        uni.majorsOffered.forEach((m) => staticMajorsSet.add(m));
+        staticCitiesSet.add(extractCity(uni.location));
+      }
       if (uni.ranking) rankingsSet.add(uni.ranking);
     });
-    const majors = combinedMajors.length > 0 ? combinedMajors : Array.from(staticMajorsSet).sort();
-    const cities = combinedCities.length > 0 ? combinedCities : Array.from(staticCitiesSet).sort();
-    return { majors, cities, rankings: Array.from(rankingsSet), institutes: combinedInstitutes };
-  }, [pakistaniUniversities, combinedMajors, combinedInstitutes, combinedCities]);
+
+    let currentMajors = new Set<string>();
+    let currentCities = new Set<string>();
+    let currentInstitutes = new Set<string>();
+    
+    if (showPak) {
+      pakData.pakistanMajors.forEach(m => currentMajors.add(m));
+      pakData.pakistanCities.forEach(c => currentCities.add(c));
+      pakData.pakistanInstitutes.forEach(i => currentInstitutes.add(i));
+    }
+    if (showUk) {
+      ukData.ukMajors.forEach(m => currentMajors.add(m));
+      ukData.ukCities.forEach(c => currentCities.add(c));
+      ukData.ukInstitutes.forEach(i => currentInstitutes.add(i));
+    }
+
+    const majors = currentMajors.size > 0 ? Array.from(currentMajors).sort() : Array.from(staticMajorsSet).sort();
+    const cities = currentCities.size > 0 ? Array.from(currentCities).sort() : Array.from(staticCitiesSet).sort();
+    const institutes = Array.from(currentInstitutes);
+    
+    return { majors, cities, rankings: Array.from(rankingsSet), institutes };
+  }, [pakistaniUniversities, filters.countries, pakData, ukData]);
 
   const dbInstitutesToShow = useMemo(() => {
     const hasMajor = filters.majors.length > 0;

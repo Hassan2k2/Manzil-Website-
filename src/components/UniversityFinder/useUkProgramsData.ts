@@ -59,11 +59,23 @@ export function useUkProgramsData(options: {
       setProgramsError(false);
 
       try {
-        const data = await fetchWithAuth("/university/uk-programs");
+        const [tier1Res, tier2Res, tier3Res] = await Promise.all([
+          fetch("/UK Unis/Tier_1_uk_universities_merged.json"),
+          fetch("/UK Unis/Tier_2_UK_unis_merged.json"),
+          fetch("/UK Unis/merged_tier_3_unis.json")
+        ]);
+
+        if (!tier1Res.ok || !tier2Res.ok || !tier3Res.ok) {
+          throw new Error("Failed to fetch UK programs data files");
+        }
+
+        const tier1 = await tier1Res.json();
+        const tier2 = await tier2Res.json();
+        const tier3 = await tier3Res.json();
         
         if (cancelled) return;
 
-        const all = data as UkProgram[];
+        const all = [...tier1, ...tier2, ...tier3] as UkProgram[];
         setAllPrograms(all);
         const institutes = uniqSorted(all.map((p) => p.university_name));
         const programs = uniqSorted(all.map((p) => p.program).filter(Boolean) as string[]);
