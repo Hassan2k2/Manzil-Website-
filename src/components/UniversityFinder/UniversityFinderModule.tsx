@@ -124,7 +124,7 @@ const LOGO_MAP: Record<string, string> = {
   "Air University": "https://logo.clearbit.com/au.edu.pk"
 };
 
-function getUniversityLogoUrl(universityName: string): string | null {
+function getUniversityLogoUrl(universityName: string, country?: string): string | null {
   // Check precise static map
   if (LOGO_MAP[universityName]) {
     return LOGO_MAP[universityName];
@@ -138,6 +138,10 @@ function getUniversityLogoUrl(universityName: string): string | null {
 
   if (matchKey) {
     return LOGO_MAP[matchKey];
+  }
+
+  if (country === "United Kingdom" || country === "UK") {
+    return `/UK_unis_logo/${encodeURIComponent(universityName)}.png`;
   }
 
   // Fallback to exactly what we were doing, but with lowercase /logos/ folder
@@ -303,7 +307,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     const staticMajorsSet = new Set<string>();
     const staticCitiesSet = new Set<string>();
     const rankingsSet = new Set<string>();
-    
+
     const showPak = filters.countries.length === 0 || filters.countries.includes("Pakistan");
     const showUk = filters.countries.length === 0 || filters.countries.includes("UK");
 
@@ -318,7 +322,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     let currentMajors = new Set<string>();
     let currentCities = new Set<string>();
     let currentInstitutes = new Set<string>();
-    
+
     if (showPak) {
       pakData.pakistanMajors.forEach(m => currentMajors.add(m));
       pakData.pakistanCities.forEach(c => currentCities.add(c));
@@ -333,7 +337,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     const majors = currentMajors.size > 0 ? Array.from(currentMajors).sort() : Array.from(staticMajorsSet).sort();
     const cities = currentCities.size > 0 ? Array.from(currentCities).sort() : Array.from(staticCitiesSet).sort();
     const institutes = Array.from(currentInstitutes);
-    
+
     return { majors, cities, rankings: Array.from(rankingsSet), institutes };
   }, [pakistaniUniversities, filters.countries, pakData, ukData]);
 
@@ -410,7 +414,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     pakistaniUniversities.forEach((uni) => {
       if (passesCommonFilters(uni)) {
         // Intercept clearbit logos and prioritize the local LOGO_MAP
-        const localLogo = getUniversityLogoUrl(uni.name);
+        const localLogo = getUniversityLogoUrl(uni.name, uni.country);
         results.push({
           ...uni,
           logo: localLogo || uni.logo // Use the local logo directory first, fallback to clearbit
@@ -423,7 +427,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     const buildVirtualUni = (instituteName: string, displayCity?: string) => {
       const data = instituteDataMap.get(instituteName);
       if (!data) return null;
-      const logoUrl = getUniversityLogoUrl(instituteName);
+      const logoUrl = getUniversityLogoUrl(instituteName, data._country);
       return createVirtualUniversity(
         instituteName,
         displayCity || data.primaryCity,
