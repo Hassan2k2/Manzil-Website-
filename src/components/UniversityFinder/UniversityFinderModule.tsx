@@ -1,5 +1,4 @@
 import { useState, useMemo } from "react";
-import { API_URL } from "@/lib/api";
 import { motion } from "framer-motion";
 import { ArrowLeft, GraduationCap, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,6 +8,7 @@ import { UniversityFinderCard } from "./UniversityFinderCard";
 import { UniversityPreferencesForm, UniversityPreferences } from "@/components/UniversityPreferencesForm";
 import { usePakistanProgramsData } from "./usePakistanProgramsData";
 import { useUkProgramsData } from "./useUkProgramsData";
+import { useUsProgramsData } from "./useUsProgramsData";
 
 interface UniversityFinderModuleProps {
   onBack?: () => void;
@@ -58,7 +58,8 @@ function formatPKR(amount: number): string {
   return `PKR ${amount.toLocaleString()}`;
 }
 
-const LOGO_MAP: Record<string, string> = {
+// Pakistan logo static map
+const PAK_LOGO_MAP: Record<string, string> = {
   "Aga Khan University": "/logos/Aga Khan University.png",
   "Air University": "/logos/Air University.png",
   "Bahria University": "/logos/Bahria University.png",
@@ -112,7 +113,6 @@ const LOGO_MAP: Record<string, string> = {
   "University of Veterinary and Animal Sciences": "/logos/University of Veterinary and Animal Sciences.png",
   "University of the Punjab": "/logos/University of the Punjab.png",
   "Ziauddin University": "/logos/Ziauddin University.png",
-  // Overrides for missing logos found during testing
   "Ghulam Ishaq Khan Institute": "https://logo.clearbit.com/giki.edu.pk",
   "GIKI": "https://logo.clearbit.com/giki.edu.pk",
   "PIEAS": "https://logo.clearbit.com/pieas.edu.pk",
@@ -121,30 +121,30 @@ const LOGO_MAP: Record<string, string> = {
   "University of Engineering and Technology (UET)": "https://logo.clearbit.com/uet.edu.pk",
   "University of Engineering and Technology": "https://logo.clearbit.com/uet.edu.pk",
   "UET": "https://logo.clearbit.com/uet.edu.pk",
-  "Air University": "https://logo.clearbit.com/au.edu.pk"
 };
 
 function getUniversityLogoUrl(universityName: string, country?: string): string | null {
-  // Check precise static map
-  if (LOGO_MAP[universityName]) {
-    return LOGO_MAP[universityName];
-  }
+  // 1. Check Pakistan static map first
+  if (PAK_LOGO_MAP[universityName]) return PAK_LOGO_MAP[universityName];
 
-  // Check for partial matches
-  const matchKey = Object.keys(LOGO_MAP).find(k =>
+  // 2. Partial match in Pakistan map
+  const pakMatch = Object.keys(PAK_LOGO_MAP).find(k =>
     universityName.toLowerCase().includes(k.toLowerCase()) ||
     k.toLowerCase().includes(universityName.toLowerCase())
   );
+  if (pakMatch) return PAK_LOGO_MAP[pakMatch];
 
-  if (matchKey) {
-    return LOGO_MAP[matchKey];
-  }
-
+  // 3. UK: use local logos folder
   if (country === "United Kingdom" || country === "UK") {
     return `/UK_unis_logo/${encodeURIComponent(universityName)}.png`;
   }
 
-  // Fallback to exactly what we were doing, but with lowercase /logos/ folder
+  // 4. US: use local US_unis_logos folder (downloaded individually per university)
+  if (country === "US" || country === "United States") {
+    return `/US_unis_logos/${encodeURIComponent(universityName)}.png`;
+  }
+
+  // 5. Pakistan fallback folder
   return `/logos/${encodeURIComponent(universityName)}.png`;
 }
 
@@ -181,10 +181,17 @@ function createVirtualUniversity(
     }
   }
 
+  const curriculums: ("Matric" | "O Levels" | "A Levels" | "IB" | "FSC" | "American High School")[] =
+    country === "US" || country === "United States"
+      ? ["American High School", "IB"]
+      : country === "United Kingdom" || country === "UK"
+      ? ["A Levels", "IB", "O Levels"]
+      : ["Matric", "FSC", "O Levels", "A Levels"];
+
   return {
     id: `db-${normalizeForMatch(universityName).replace(/\s+/g, "-")}`,
     name: universityName,
-    location: `${city}, ${country === "United Kingdom" ? "UK" : country}`,
+    location: `${city}, ${country === "United Kingdom" ? "UK" : country === "US" ? "USA" : country}`,
     country: country as any,
     type: "Private" as const,
     selectivity: "Moderately Selective" as const,
@@ -195,14 +202,14 @@ function createVirtualUniversity(
     majorsOffered: programs,
     admissionRequirements: {
       minGrades: (options?.eligibilityCriteria as any) || "Flexible" as const,
-      acceptedCurriculums: ["Matric", "FSC", "O Levels", "A Levels"],
+      acceptedCurriculums: curriculums,
       entranceTest: options?.testRequired || undefined,
     },
     scholarships: [],
-    website: options?.programUrl || website || `https://www.google.com/search?q=${encodeURIComponent(universityName + " Pakistan official website")}`,
+    website: options?.programUrl || website || `https://www.google.com/search?q=${encodeURIComponent(universityName + " official website")}`,
     logo: options?.logoUrl || undefined,
     tuitionFees: tuitionFees.length > 0 ? tuitionFees : undefined,
-    internationalFriendly: false,
+    internationalFriendly: country === "US" || country === "United States" || country === "United Kingdom" || country === "UK",
     financialAidForInternational: false,
     ...(allCities && allCities.size > 1 ? { additionalCities: Array.from(allCities) } : {}),
   };
@@ -214,19 +221,21 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
 
   const pakData = usePakistanProgramsData({ enabled: step === "results", pageSize: 1000 });
   const ukData = useUkProgramsData({ enabled: step === "results", pageSize: 1000 });
+  const usData = useUsProgramsData({ enabled: step === "results", pageSize: 1000 });
 
-  const allPrograms = useMemo(() => [...pakData.allPrograms, ...ukData.allPrograms], [pakData.allPrograms, ukData.allPrograms]);
-  const combinedInstitutes = useMemo(() => Array.from(new Set([...pakData.pakistanInstitutes, ...ukData.ukInstitutes])), [pakData.pakistanInstitutes, ukData.ukInstitutes]);
-  const combinedMajors = useMemo(() => Array.from(new Set([...pakData.pakistanMajors, ...ukData.ukMajors])), [pakData.pakistanMajors, ukData.ukMajors]);
-  const combinedCities = useMemo(() => Array.from(new Set([...pakData.pakistanCities, ...ukData.ukCities])), [pakData.pakistanCities, ukData.ukCities]);
-  const loadingProgramsData = pakData.loadingProgramsData || ukData.loadingProgramsData;
+  const allPrograms = useMemo(() => [...pakData.allPrograms, ...ukData.allPrograms, ...usData.allPrograms], [pakData.allPrograms, ukData.allPrograms, usData.allPrograms]);
+  const combinedInstitutes = useMemo(() => Array.from(new Set([...pakData.pakistanInstitutes, ...ukData.ukInstitutes, ...usData.usInstitutes])), [pakData.pakistanInstitutes, ukData.ukInstitutes, usData.usInstitutes]);
+  const combinedMajors = useMemo(() => Array.from(new Set([...pakData.pakistanMajors, ...ukData.ukMajors, ...usData.usMajors])), [pakData.pakistanMajors, ukData.ukMajors, usData.usMajors]);
+  const combinedCities = useMemo(() => Array.from(new Set([...pakData.pakistanCities, ...ukData.ukCities, ...usData.usCities])), [pakData.pakistanCities, ukData.ukCities, usData.usCities]);
+  const loadingProgramsData = pakData.loadingProgramsData || ukData.loadingProgramsData || usData.loadingProgramsData;
 
   const instituteDataMap = useMemo(() => {
     const map = new Map();
     pakData.instituteDataMap.forEach((val, key) => map.set(key, { ...val, _country: "Pakistan" }));
     ukData.instituteDataMap.forEach((val, key) => map.set(key, { ...val, _country: "United Kingdom" }));
+    usData.instituteDataMap.forEach((val, key) => map.set(key, { ...val, _country: "US" }));
     return map;
-  }, [pakData.instituteDataMap, ukData.instituteDataMap]);
+  }, [pakData.instituteDataMap, ukData.instituteDataMap, usData.instituteDataMap]);
 
   const pakistaniUniversities = useMemo(() => {
     return universities.filter((u) => u.country === "Pakistan");
@@ -310,6 +319,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
 
     const showPak = filters.countries.length === 0 || filters.countries.includes("Pakistan");
     const showUk = filters.countries.length === 0 || filters.countries.includes("UK");
+    const showUs = filters.countries.length === 0 || filters.countries.includes("US");
 
     pakistaniUniversities.forEach((uni) => {
       if (showPak) {
@@ -333,13 +343,18 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
       ukData.ukCities.forEach(c => currentCities.add(c));
       ukData.ukInstitutes.forEach(i => currentInstitutes.add(i));
     }
+    if (showUs) {
+      usData.usMajors.forEach(m => currentMajors.add(m));
+      usData.usCities.forEach(c => currentCities.add(c));
+      usData.usInstitutes.forEach(i => currentInstitutes.add(i));
+    }
 
     const majors = currentMajors.size > 0 ? Array.from(currentMajors).sort() : Array.from(staticMajorsSet).sort();
     const cities = currentCities.size > 0 ? Array.from(currentCities).sort() : Array.from(staticCitiesSet).sort();
     const institutes = Array.from(currentInstitutes);
 
     return { majors, cities, rankings: Array.from(rankingsSet), institutes };
-  }, [pakistaniUniversities, filters.countries, pakData, ukData]);
+  }, [pakistaniUniversities, filters.countries, pakData, ukData, usData]);
 
   const dbInstitutesToShow = useMemo(() => {
     const hasMajor = filters.majors.length > 0;
@@ -361,7 +376,9 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
 
     const passesCommonFilters = (uni: University): boolean => {
       if (filters.countries.length > 0) {
-        const mappedCountries = filters.countries.map(c => c === "UK" ? "United Kingdom" : c);
+        const mappedCountries = filters.countries.map(c =>
+          c === "UK" ? "United Kingdom" : c === "US" ? "US" : c
+        );
         if (!mappedCountries.includes(uni.country)) return false;
       }
       if (filters.search) {
