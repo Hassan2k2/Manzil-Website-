@@ -139,9 +139,9 @@ function getUniversityLogoUrl(universityName: string, country?: string): string 
     return `/UK_unis_logo/${encodeURIComponent(universityName)}.png`;
   }
 
-  // 4. US: use local US_unis_logos folder (downloaded individually per university)
+  // 4. US: use local US_unis_logo folder
   if (country === "US" || country === "United States") {
-    return `/US_unis_logos/${encodeURIComponent(universityName)}.png`;
+    return `/US_unis_logo/${encodeURIComponent(universityName)}.png`;
   }
 
   // 5. Pakistan fallback folder
