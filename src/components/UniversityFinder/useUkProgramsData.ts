@@ -162,7 +162,9 @@ export function useUkProgramsData(options: {
         if (data.website.includes("google.com/search")) {
           try {
             data.website = new URL(row.program_url).origin;
-          } catch (e) {}
+          } catch (e) {
+            // ignore
+          }
         }
       }
     });
