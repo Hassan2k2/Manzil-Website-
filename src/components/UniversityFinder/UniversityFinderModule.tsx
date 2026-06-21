@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, GraduationCap, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
