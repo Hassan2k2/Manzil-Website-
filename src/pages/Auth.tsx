@@ -70,7 +70,7 @@ export default function Auth() {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${localStorage.getItem("auth_token")}`
         },
-        body: JSON.stringify({ school_code: code.trim() })
+        body: JSON.stringify({ school_code: code.trim().toUpperCase() })
       });
       const result = await response.json();
       if (result.success) {
@@ -181,17 +181,13 @@ export default function Auth() {
           variant: "destructive",
         });
       } else {
-        if (accountType === "student" && schoolCode.trim()) {
-          setTimeout(() => handleJoinSchool(schoolCode), 1000);
-        }
-        toast({
-          title: "Welcome!",
-          description: "Successfully logged in with Google.",
-        });
-
+        toast({ title: "Google Login Successful" });
         if (accountType === "admin") {
           navigate("/school", { replace: true });
         } else {
+          if (accountType === "student" && schoolCode.trim()) {
+            setTimeout(() => handleJoinSchool(schoolCode), 1000);
+          }
           navigate("/", { replace: true });
         }
       }
