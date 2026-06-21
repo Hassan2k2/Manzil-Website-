@@ -27,6 +27,7 @@ export interface UkInstituteData {
   testRequired: string | null;
   programUrl: string | null;
   feeStructureText: string | null;
+  scholarships: any[];
 }
 
 function uniqSorted(values: string[]) {
@@ -46,6 +47,7 @@ export function useUkProgramsData(options: {
   const [allPrograms, setAllPrograms] = useState<UkProgram[]>([]);
   const [ukInstitutes, setUkInstitutes] = useState<string[]>([]);
   const [ukMajors, setUkMajors] = useState<string[]>([]);
+  const [ukScholarships, setUkScholarships] = useState<any[]>([]);
   const [loadingProgramsData, setLoadingProgramsData] = useState(false);
   const [programsError, setProgramsError] = useState(false);
 
@@ -59,19 +61,23 @@ export function useUkProgramsData(options: {
       setProgramsError(false);
 
       try {
-        const [tier1Res, tier2Res, tier3Res] = await Promise.all([
+        const [tier1Res, tier2Res, tier3Res, schTier1Res, schTier2Res] = await Promise.all([
           fetch("/UK Unis/Tier_1_uk_universities_merged.json"),
           fetch("/UK Unis/Tier_2_UK_unis_merged.json"),
-          fetch("/UK Unis/merged_tier_3_unis.json")
+          fetch("/UK Unis/merged_tier_3_unis.json"),
+          fetch("/UK_unis_scholarships/UK_Russell_Group_Tier_1_Scholarships_Merged.json"),
+          fetch("/UK_unis_scholarships/UK_Tier_2_Scholarships_Merged.json"),
         ]);
 
-        if (!tier1Res.ok || !tier2Res.ok || !tier3Res.ok) {
-          throw new Error("Failed to fetch UK programs data files");
+        if (!tier1Res.ok || !tier2Res.ok || !tier3Res.ok || !schTier1Res.ok || !schTier2Res.ok) {
+          throw new Error("Failed to fetch UK programs or scholarships data files");
         }
 
         const tier1 = await tier1Res.json();
         const tier2 = await tier2Res.json();
         const tier3 = await tier3Res.json();
+        const schTier1 = await schTier1Res.json();
+        const schTier2 = await schTier2Res.json();
         
         if (cancelled) return;
 
@@ -79,6 +85,9 @@ export function useUkProgramsData(options: {
         setAllPrograms(all);
         const institutes = uniqSorted(all.map((p) => p.university_name));
         const programs = uniqSorted(all.map((p) => p.program).filter(Boolean) as string[]);
+        
+        const allScholarships = [...schTier1, ...schTier2];
+        setUkScholarships(allScholarships);
         setUkInstitutes(institutes);
         setUkMajors(programs);
       } catch (e) {
@@ -106,6 +115,18 @@ export function useUkProgramsData(options: {
   }, [allPrograms]);
 
   const instituteDataMap = useMemo(() => {
+    const schMap = new Map<string, any[]>();
+    ukScholarships.forEach((sch) => {
+      if (!schMap.has(sch.university_name)) schMap.set(sch.university_name, []);
+      schMap.get(sch.university_name)!.push({
+        name: sch.scholarship_name,
+        coverage: sch.award_amount || sch.scholarship_type,
+        eligibility: sch.eligibility_criteria || "Check website for details",
+        deadline: sch.application_deadline,
+        applyLink: sch.scholarship_url || sch.link || sch.url || `https://www.google.com/search?q=${encodeURIComponent(sch.university_name + " " + sch.scholarship_name + " scholarship")}`,
+      });
+    });
+
     const map = new Map<string, UkInstituteData>();
     allPrograms.forEach((row) => {
       if (!map.has(row.university_name)) {
@@ -121,6 +142,7 @@ export function useUkProgramsData(options: {
           testRequired: null,
           programUrl: null,
           feeStructureText: null,
+          scholarships: schMap.get(row.university_name) || [],
         });
       }
       const data = map.get(row.university_name)!;
@@ -129,11 +151,23 @@ export function useUkProgramsData(options: {
       if (row.department) data.departments.add(row.department);
       if (row.degree) data.degrees.add(row.degree);
 
+      // Capture first non-null value for text fields
       if (row.fee_structure && !data.feeStructureText) data.feeStructureText = row.fee_structure;
       if (row.admission_deadline && !data.deadlineText) data.deadlineText = row.admission_deadline;
+      if (row.eligibility_criteria && !data.eligibilityCriteria) data.eligibilityCriteria = row.eligibility_criteria;
+      if (row.test_required && !data.testRequired) data.testRequired = row.test_required;
+      // Prefer actual program URL over fallback
+      if (row.program_url && !data.programUrl) {
+        data.programUrl = row.program_url;
+        if (data.website.includes("google.com/search")) {
+          try {
+            data.website = new URL(row.program_url).origin;
+          } catch (e) {}
+        }
+      }
     });
     return map;
-  }, [allPrograms]);
+  }, [allPrograms, ukScholarships]);
 
   return {
     allPrograms,

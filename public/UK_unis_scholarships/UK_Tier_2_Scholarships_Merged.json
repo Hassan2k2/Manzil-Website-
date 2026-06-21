@@ -1,0 +1,458 @@
+[
+  {
+    "university_name": "Aston University",
+    "scholarship_name": "Aston Enterprise Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition fee reduction",
+    "eligibility_criteria": "International students with a business startup idea.",
+    "application_deadline": "June"
+  },
+  {
+    "university_name": "Aston University",
+    "scholarship_name": "Vice-Chancellor's International Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£8,000 fee reduction",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "June"
+  },
+  {
+    "university_name": "Aston University",
+    "scholarship_name": "Aston Support Scholarship",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,250",
+    "eligibility_criteria": "UK students with household income up to £32,200.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Bangor University",
+    "scholarship_name": "Vice-Chancellor Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £10,000",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Bangor University",
+    "scholarship_name": "Bangor Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,000/year",
+    "eligibility_criteria": "UK/Home students with household income below £40,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Bangor University",
+    "scholarship_name": "International Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £4,000 fee reduction",
+    "eligibility_criteria": "International students meeting standard entry requirements.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Brunel University London",
+    "scholarship_name": "International Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£6,000 fee waiver in year 1",
+    "eligibility_criteria": "International students with high academic achievement.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "Brunel University London",
+    "scholarship_name": "Brunel Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "£1,000/year",
+    "eligibility_criteria": "UK students with household income below £25,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Brunel University London",
+    "scholarship_name": "Academic Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£2,000/year",
+    "eligibility_criteria": "UK students achieving AAA at A-level or equivalent.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Keele University",
+    "scholarship_name": "Keele International Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £5,000 fee reduction",
+    "eligibility_criteria": "International students exceeding academic entry criteria.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Keele University",
+    "scholarship_name": "Keele Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "£1,000/year",
+    "eligibility_criteria": "UK students with household income below £25,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Keele University",
+    "scholarship_name": "Developing Countries Scholarship",
+    "scholarship_type": "Need/Merit",
+    "award_amount": "£1,000 fee reduction",
+    "eligibility_criteria": "International students from World Bank classified developing countries.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Lancaster University",
+    "scholarship_name": "Lancaster Global Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £3,000 fee reduction",
+    "eligibility_criteria": "International students achieving high grades.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Lancaster University",
+    "scholarship_name": "Lancaster Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,000/year",
+    "eligibility_criteria": "UK students with household income below £30,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Lancaster University",
+    "scholarship_name": "Sanctuary Scholarship",
+    "scholarship_type": "Need/Status",
+    "award_amount": "Full tuition + living costs",
+    "eligibility_criteria": "Asylum seekers.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "Loughborough University",
+    "scholarship_name": "Loughborough University Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,200/year",
+    "eligibility_criteria": "UK students with household income below £30,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Loughborough University",
+    "scholarship_name": "International Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "25% tuition fee reduction",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "No separate app required (assessed on application)"
+  },
+  {
+    "university_name": "Loughborough University",
+    "scholarship_name": "Sports Scholarships",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Free gym access, coaching + up to £3,000",
+    "eligibility_criteria": "Elite athletes representing the university.",
+    "application_deadline": "October"
+  },
+  {
+    "university_name": "Royal Holloway, University of London",
+    "scholarship_name": "International Future Leaders Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£6,000 fee reduction",
+    "eligibility_criteria": "International students demonstrating strong leadership.",
+    "application_deadline": "March"
+  },
+  {
+    "university_name": "Royal Holloway, University of London",
+    "scholarship_name": "Royal Holloway Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,500/year",
+    "eligibility_criteria": "UK students with household income below £30,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Royal Holloway, University of London",
+    "scholarship_name": "Music/Choral Scholarships",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Varies (£300 to £1,500)",
+    "eligibility_criteria": "Students with exceptional musical talent.",
+    "application_deadline": "Varies"
+  },
+  {
+    "university_name": "Swansea University",
+    "scholarship_name": "Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £3,000",
+    "eligibility_criteria": "UK students achieving AAA at A-Level.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "Swansea University",
+    "scholarship_name": "International Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £6,000 fee reduction",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "June"
+  },
+  {
+    "university_name": "Swansea University",
+    "scholarship_name": "Swansea University Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,000/year",
+    "eligibility_criteria": "UK/Welsh students from low-income households.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of East Anglia (UEA)",
+    "scholarship_name": "International Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £4,000/year",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "April/May"
+  },
+  {
+    "university_name": "University of East Anglia (UEA)",
+    "scholarship_name": "UEA Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,000/year",
+    "eligibility_criteria": "UK students with household income below £30,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of East Anglia (UEA)",
+    "scholarship_name": "Music/Sport Scholarships",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Up to £1,500/year",
+    "eligibility_criteria": "Students competing at national level or playing instrument at Grade 8+.",
+    "application_deadline": "October"
+  },
+  {
+    "university_name": "University of Bath",
+    "scholarship_name": "Bath Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £3,000/year",
+    "eligibility_criteria": "UK students with household income below £25,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Bath",
+    "scholarship_name": "Chancellor's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£2,000 fee waiver in Year 1",
+    "eligibility_criteria": "International students with outstanding academic results (A*A*A).",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Bath",
+    "scholarship_name": "Gold Scholarship Programme",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "£5,000/year + mentoring",
+    "eligibility_criteria": "UK students from widening participation backgrounds.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Essex",
+    "scholarship_name": "Academic Excellence International Masters Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £5,000 fee discount",
+    "eligibility_criteria": "High-achieving international postgraduate students.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Essex",
+    "scholarship_name": "Essex Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,000/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Essex",
+    "scholarship_name": "Regional Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £4,000 fee discount",
+    "eligibility_criteria": "Applicants from specific global regions (e.g. Africa, Americas, South Asia).",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Hull",
+    "scholarship_name": "Fairer Future Global Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "50% tuition fee reduction",
+    "eligibility_criteria": "International students with outstanding academic potential.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Hull",
+    "scholarship_name": "Hull Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "£1,000/year",
+    "eligibility_criteria": "UK students with household income below £25,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Hull",
+    "scholarship_name": "Talented Athlete Programme",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Financial support + tailored sports services",
+    "eligibility_criteria": "Elite athletes competing at high levels.",
+    "application_deadline": "August"
+  },
+  {
+    "university_name": "University of Kent",
+    "scholarship_name": "International Scholarships for Undergraduate Students",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£3,000 fee reduction",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Kent",
+    "scholarship_name": "Kent Financial Support Package",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,500/year",
+    "eligibility_criteria": "UK students with household income below £30,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Kent",
+    "scholarship_name": "Academic Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£2,000/year",
+    "eligibility_criteria": "UK students achieving AAA at A-level or equivalent.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Leicester",
+    "scholarship_name": "Citizens of Change Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "50% tuition fee reduction",
+    "eligibility_criteria": "International students submitting a video response to a specific prompt.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Leicester",
+    "scholarship_name": "University of Leicester Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "£1,000/year",
+    "eligibility_criteria": "UK students with household income below £25,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Leicester",
+    "scholarship_name": "Centenary Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£2,000 to £4,000/year",
+    "eligibility_criteria": "International students meeting high academic requirements.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Reading",
+    "scholarship_name": "Vice-Chancellor Global Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£4,000 fee reduction",
+    "eligibility_criteria": "International applicants with outstanding academic profiles.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Reading",
+    "scholarship_name": "Reading Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "£1,100/year",
+    "eligibility_criteria": "UK students with household income below £27,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Reading",
+    "scholarship_name": "Subject Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £2,000",
+    "eligibility_criteria": "Students entering specific departments (e.g. Henley Business School).",
+    "application_deadline": "Varies"
+  },
+  {
+    "university_name": "University of Strathclyde",
+    "scholarship_name": "Faculty of Engineering/Science Excellence Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £4,000/year fee reduction",
+    "eligibility_criteria": "International students with excellent academic profiles.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Strathclyde",
+    "scholarship_name": "Strathclyde Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£1,500/year",
+    "eligibility_criteria": "UK (RUK) students achieving AAB or above.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Strathclyde",
+    "scholarship_name": "Access Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,500/year",
+    "eligibility_criteria": "UK/Scottish students from low-income backgrounds.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of St Andrews",
+    "scholarship_name": "International Excellence Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Up to £25,000/year",
+    "eligibility_criteria": "Outstanding international students demonstrating financial need.",
+    "application_deadline": "February"
+  },
+  {
+    "university_name": "University of St Andrews",
+    "scholarship_name": "St Andrews Access Scholarship",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £4,000/year",
+    "eligibility_criteria": "UK students from low-income households or widening access backgrounds.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of St Andrews",
+    "scholarship_name": "Saints Sport Scholarships",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Elite athletes competing at a high level.",
+    "application_deadline": "Varies"
+  },
+  {
+    "university_name": "University of Surrey",
+    "scholarship_name": "International Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£5,000 fee reduction",
+    "eligibility_criteria": "International students achieving high grades (e.g. AAA/AAB).",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Surrey",
+    "scholarship_name": "Surrey Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £3,000/year",
+    "eligibility_criteria": "UK students with household income below £30,000.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Surrey",
+    "scholarship_name": "Performance/Sport Scholarships",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Free coaching/gym access + up to £2,000",
+    "eligibility_criteria": "Students competing in high-level sports or performing arts.",
+    "application_deadline": "October"
+  },
+  {
+    "university_name": "University of Sussex",
+    "scholarship_name": "Sussex Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£3,000 cash award in Year 1",
+    "eligibility_criteria": "UK/Home students achieving AAA or equivalent.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Sussex",
+    "scholarship_name": "Chancellor's International Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£5,000 fee reduction",
+    "eligibility_criteria": "International students with excellent academic potential.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Sussex",
+    "scholarship_name": "Sussex Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,000/year",
+    "eligibility_criteria": "UK students with household income below £25,000.",
+    "application_deadline": "Automatically assessed"
+  }
+]

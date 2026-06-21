@@ -1,0 +1,586 @@
+[
+  {
+    "university_name": "Cardiff University",
+    "scholarship_name": "Cardiff University Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,000/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "Cardiff University",
+    "scholarship_name": "Vice-Chancellor's International Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £2,000 fee reduction",
+    "eligibility_criteria": "International students exceeding academic entry requirements.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Cardiff University",
+    "scholarship_name": "Welsh Medium Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £3,000 total",
+    "eligibility_criteria": "Students studying a portion of their degree in Welsh.",
+    "application_deadline": "Varies"
+  },
+  {
+    "university_name": "Durham University",
+    "scholarship_name": "Durham Grant Scheme",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,500/year",
+    "eligibility_criteria": "UK students with household income below £47,200.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "Durham University",
+    "scholarship_name": "Vice-Chancellor's Scholarships for Sport, Music, and Arts",
+    "scholarship_type": "Talent/Merit",
+    "award_amount": "£2,000/year",
+    "eligibility_criteria": "Students demonstrating exceptional talent in extracurriculars.",
+    "application_deadline": "March"
+  },
+  {
+    "university_name": "Durham University",
+    "scholarship_name": "Durham Inspired Award",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Students from low-income backgrounds demonstrating high academic potential.",
+    "application_deadline": "Varies"
+  },
+  {
+    "university_name": "Imperial College London",
+    "scholarship_name": "Imperial Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £5,000/year",
+    "eligibility_criteria": "UK/Home students with a household income up to £70,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "Imperial College London",
+    "scholarship_name": "President's Undergraduate Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£1,000 for the first year",
+    "eligibility_criteria": "Top academic performers applying to Imperial. Highly selective.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Imperial College London",
+    "scholarship_name": "Departmental Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies (e.g., £1,000 - £3,000)",
+    "eligibility_criteria": "Varies by faculty (e.g. Engineering, Computing) for outstanding achievement.",
+    "application_deadline": "Varies"
+  },
+  {
+    "university_name": "King's College London",
+    "scholarship_name": "King's Living Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,600/year",
+    "eligibility_criteria": "UK/Home students with household income up to £42,875.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "King's College London",
+    "scholarship_name": "Global Health & Social Medicine Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £9,000 fee reduction",
+    "eligibility_criteria": "International students applying to specific BA/BSc programmes.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "King's College London",
+    "scholarship_name": "KCL Sanctuary Scholarships",
+    "scholarship_type": "Need/Status",
+    "award_amount": "Full tuition + living costs",
+    "eligibility_criteria": "Asylum seekers or students with forced migrant status.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "London School of Economics and Political Science (LSE)",
+    "scholarship_name": "LSE Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £4,000/year",
+    "eligibility_criteria": "UK/Home students with household income up to £42,875.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "London School of Economics and Political Science (LSE)",
+    "scholarship_name": "LSE Undergraduate Support Scheme",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "£6,000 to £15,000/year",
+    "eligibility_criteria": "International students demonstrating financial need.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "London School of Economics and Political Science (LSE)",
+    "scholarship_name": "Uggla Family Scholars Programme",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Full tuition + £21,438/year living costs",
+    "eligibility_criteria": "UK and Overseas students from low-income backgrounds.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "Newcastle University",
+    "scholarship_name": "Newcastle University Opportunity Scholarship",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,000/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "Newcastle University",
+    "scholarship_name": "Vice-Chancellor's International Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£4,000 tuition fee discount",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Newcastle University",
+    "scholarship_name": "Sports Scholarships",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Up to £3,000 + coaching",
+    "eligibility_criteria": "Students representing the university in high-level sport.",
+    "application_deadline": "October"
+  },
+  {
+    "university_name": "Queen's University Belfast",
+    "scholarship_name": "Queen's Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £455/year (NI) or higher for GB/UK students",
+    "eligibility_criteria": "Students from NI/GB with household income below £19,203.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "Queen's University Belfast",
+    "scholarship_name": "Vice-Chancellor's International Attainment Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "50% tuition fee reduction",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "June"
+  },
+  {
+    "university_name": "Queen's University Belfast",
+    "scholarship_name": "International Office Undergraduate Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£2,500 to £3,000 fee discount",
+    "eligibility_criteria": "International students meeting standard entry requirements.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Queen Mary University of London",
+    "scholarship_name": "Queen Mary Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,700/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "Queen Mary University of London",
+    "scholarship_name": "Global Excellence Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£2,000 fee reduction in year 1",
+    "eligibility_criteria": "International students achieving AAA or higher at A-level or equivalent.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "Queen Mary University of London",
+    "scholarship_name": "Excellence Scholarships (e.g., Engineering/Science)",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £3,000/year",
+    "eligibility_criteria": "UK students achieving A*AA or higher.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University College London (UCL)",
+    "scholarship_name": "UCL Undergraduate Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £3,000/year",
+    "eligibility_criteria": "UK students with household income below £42,875.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University College London (UCL)",
+    "scholarship_name": "UCL Global Undergraduate Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Full tuition + maintenance allowance",
+    "eligibility_criteria": "Exceptional international students from low-income backgrounds.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University College London (UCL)",
+    "scholarship_name": "UCL Access Opportunity Scholarship",
+    "scholarship_type": "Need/Status",
+    "award_amount": "Tuition fees and £11,000 living allowance",
+    "eligibility_criteria": "Students holding asylum seeker status.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Birmingham",
+    "scholarship_name": "Chamberlain Award",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,000/year",
+    "eligibility_criteria": "UK/Home students with a household income below £36,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Birmingham",
+    "scholarship_name": "Outstanding Achievement Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£3,000 fee reduction in year 1",
+    "eligibility_criteria": "International/EU students with exceptional academic profiles.",
+    "application_deadline": "Varies by region"
+  },
+  {
+    "university_name": "University of Birmingham",
+    "scholarship_name": "Subject-Specific Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies (e.g. £1,500 - £3,000)",
+    "eligibility_criteria": "Students achieving high grades (e.g. A*AA) entering specific colleges like Engineering.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Bristol",
+    "scholarship_name": "University of Bristol Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,060/year",
+    "eligibility_criteria": "UK students with household income below £42,875.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Bristol",
+    "scholarship_name": "Think Big Undergraduate Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£6,500 or £13,000/year fee waiver",
+    "eligibility_criteria": "International students demonstrating academic excellence and community impact.",
+    "application_deadline": "Late February"
+  },
+  {
+    "university_name": "University of Bristol",
+    "scholarship_name": "Global Accounting and Finance Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£13,000/year",
+    "eligibility_criteria": "International students applying for accounting/finance courses.",
+    "application_deadline": "Late February"
+  },
+  {
+    "university_name": "University of Cambridge",
+    "scholarship_name": "Cambridge Bursary Scheme",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £3,500/year",
+    "eligibility_criteria": "UK/Home students with household income below £62,215.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Cambridge",
+    "scholarship_name": "Gates Cambridge Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of study (Postgraduate primarily, but notable)",
+    "eligibility_criteria": "Outstanding intellectual ability and leadership potential.",
+    "application_deadline": "October/December/January depending on residency"
+  },
+  {
+    "university_name": "University of Cambridge",
+    "scholarship_name": "Cambridge Trust Scholarships",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Varies (up to full tuition/maintenance)",
+    "eligibility_criteria": "International/Overseas students demonstrating financial need and outstanding merit.",
+    "application_deadline": "Varies (Often requires college nomination)"
+  },
+  {
+    "university_name": "University of Edinburgh",
+    "scholarship_name": "Edinburgh Global Undergraduate Mathematics Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£5,000/year",
+    "eligibility_criteria": "International students applying to the School of Mathematics.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Edinburgh",
+    "scholarship_name": "Access Edinburgh Scholarship",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £3,000/year",
+    "eligibility_criteria": "UK students from low-income households.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Edinburgh",
+    "scholarship_name": "Robertson International Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£1,000/year",
+    "eligibility_criteria": "International students studying at the School of History, Classics and Archaeology.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Exeter",
+    "scholarship_name": "Access to Exeter Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,000 in Year 1",
+    "eligibility_criteria": "UK students with household income below £30,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Exeter",
+    "scholarship_name": "Global Excellence Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£5,000 or £10,000/year (or full fees)",
+    "eligibility_criteria": "International students demonstrating outstanding academic achievement.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Exeter",
+    "scholarship_name": "Sports Scholarships",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Up to £3,000 + support services",
+    "eligibility_criteria": "Students competing at a high national/international level in sport.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Glasgow",
+    "scholarship_name": "Undergraduate Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£7,000/year fee discount",
+    "eligibility_criteria": "International students demonstrating excellent academic achievement.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Glasgow",
+    "scholarship_name": "Glasgow Children of Alumni Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "10% tuition fee discount",
+    "eligibility_criteria": "International students whose parents/grandparents graduated from Glasgow.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Glasgow",
+    "scholarship_name": "Access Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £3,000/year",
+    "eligibility_criteria": "Scottish/UK students from low-income backgrounds.",
+    "application_deadline": "Automatically assessed"
+  },
+  {
+    "university_name": "University of Leeds",
+    "scholarship_name": "Leeds Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £3,000/year",
+    "eligibility_criteria": "UK students with household income below £42,875.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Leeds",
+    "scholarship_name": "International Excellence Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "50% fee reduction or £5,000/year",
+    "eligibility_criteria": "Outstanding international applicants across various faculties.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Leeds",
+    "scholarship_name": "Enterprise Scholarships",
+    "scholarship_type": "Merit/Talent",
+    "award_amount": "£3,000 + mentoring",
+    "eligibility_criteria": "Students demonstrating strong entrepreneurial potential.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Liverpool",
+    "scholarship_name": "Liverpool Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,000/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Liverpool",
+    "scholarship_name": "Vice-Chancellor's International Attainment Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£3,000 fee reduction in year 1",
+    "eligibility_criteria": "International students achieving AAB or equivalent in A-levels.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Liverpool",
+    "scholarship_name": "Sport Liverpool Scholarships",
+    "scholarship_type": "Talent Scholarship",
+    "award_amount": "Up to £2,000",
+    "eligibility_criteria": "Elite athletes competing at a national or international level.",
+    "application_deadline": "October"
+  },
+  {
+    "university_name": "University of Manchester",
+    "scholarship_name": "Manchester Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,000/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Manchester",
+    "scholarship_name": "Global Futures Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£5,000 in Year 1 or up to full tuition",
+    "eligibility_criteria": "International students demonstrating excellent academic achievement.",
+    "application_deadline": "June"
+  },
+  {
+    "university_name": "University of Manchester",
+    "scholarship_name": "Subject-Specific Excellence Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies (typically £1,000 - £2,000/year)",
+    "eligibility_criteria": "High achievers in specific departments (e.g. Physics, Engineering).",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Nottingham",
+    "scholarship_name": "Nottingham Core Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,000/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Nottingham",
+    "scholarship_name": "International Undergraduate Excellence Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£2,000 to £7,000 fee reduction in year 1",
+    "eligibility_criteria": "International students demonstrating academic excellence.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Nottingham",
+    "scholarship_name": "High Achiever Scholarships (e.g. Engineering)",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies (£1,000 to £3,000)",
+    "eligibility_criteria": "Students achieving AAA or higher at A-level entering specific faculties.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Oxford",
+    "scholarship_name": "Crankstart Scholarship",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £6,090/year",
+    "eligibility_criteria": "UK residents with a household income of £32,500 or less.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Oxford",
+    "scholarship_name": "Oxford Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £4,000/year",
+    "eligibility_criteria": "UK residents with a household income between £32,500 and £42,875.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Oxford",
+    "scholarship_name": "Reach Oxford Scholarships",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Tuition fees + living expenses + flights",
+    "eligibility_criteria": "Students from low-income countries who cannot study in their own countries.",
+    "application_deadline": "February"
+  },
+  {
+    "university_name": "University of Oxford",
+    "scholarship_name": "Simon and June Li Undergraduate Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Tuition fees + living expenses",
+    "eligibility_criteria": "Undergraduate applicants from Asia demonstrating exceptional academic merit and financial need.",
+    "application_deadline": "February"
+  },
+  {
+    "university_name": "University of Sheffield",
+    "scholarship_name": "Sheffield Bursary Scheme",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £1,230/year",
+    "eligibility_criteria": "UK students with household income below £40,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Sheffield",
+    "scholarship_name": "International Undergraduate Merit Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "50% tuition fee reduction",
+    "eligibility_criteria": "Outstanding international applicants across specific subjects.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Sheffield",
+    "scholarship_name": "Experience Sheffield Scholarships",
+    "scholarship_type": "Need/Merit",
+    "award_amount": "£1,200/year",
+    "eligibility_criteria": "UK students from widening participation backgrounds.",
+    "application_deadline": "April"
+  },
+  {
+    "university_name": "University of Southampton",
+    "scholarship_name": "Southampton Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,000/year",
+    "eligibility_criteria": "UK students with household income below £30,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Southampton",
+    "scholarship_name": "International Merit Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to £3,000 fee reduction",
+    "eligibility_criteria": "International students exceeding academic entry requirements.",
+    "application_deadline": "No separate app required"
+  },
+  {
+    "university_name": "University of Southampton",
+    "scholarship_name": "Ignite Your Success Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "£10,000/year",
+    "eligibility_criteria": "UK students from underrepresented backgrounds achieving high grades.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of Warwick",
+    "scholarship_name": "Warwick Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,000/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of Warwick",
+    "scholarship_name": "Warwick Undergraduate Global Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition or £13,000/year fee reduction",
+    "eligibility_criteria": "Outstanding international applicants.",
+    "application_deadline": "March"
+  },
+  {
+    "university_name": "University of Warwick",
+    "scholarship_name": "Multicultural Scholars' Programme",
+    "scholarship_type": "Diversity/Need",
+    "award_amount": "£2,000/year + mentoring",
+    "eligibility_criteria": "UK students from specific ethnic backgrounds entering Law or Business.",
+    "application_deadline": "May"
+  },
+  {
+    "university_name": "University of York",
+    "scholarship_name": "York Bursary",
+    "scholarship_type": "Need-Based Bursary",
+    "award_amount": "Up to £2,000/year",
+    "eligibility_criteria": "UK students with household income below £35,000.",
+    "application_deadline": "Automatically assessed via Student Finance"
+  },
+  {
+    "university_name": "University of York",
+    "scholarship_name": "Be Exceptional Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£2,500 to £7,500 fee reduction",
+    "eligibility_criteria": "International students demonstrating excellent academic achievement.",
+    "application_deadline": "March/April"
+  },
+  {
+    "university_name": "University of York",
+    "scholarship_name": "Vice-Chancellor's Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "£10,000 to £20,000 fee reduction",
+    "eligibility_criteria": "The highest achieving international students.",
+    "application_deadline": "March/April"
+  }
+]

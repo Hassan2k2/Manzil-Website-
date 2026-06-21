@@ -1,0 +1,344 @@
+[
+  {
+    "university_name": "Brown University",
+    "scholarship_name": "University Scholarship (Brown Grant)",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance",
+    "eligibility_criteria": "Demonstrated financial need; domestic and international students",
+    "application_deadline": "Varies (typically matching admission deadlines)",
+    "scholarship_url": "https://finaid.brown.edu/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Brown University",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.brown.edu/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Brown University",
+    "scholarship_name": "Federal Supplemental Educational Opportunity Grant (SEOG)",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need; Pell Grant recipients prioritized",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.brown.edu/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Brown University",
+    "scholarship_name": "State Grants",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies by state",
+    "eligibility_criteria": "Residency and financial need",
+    "application_deadline": "Varies by state",
+    "scholarship_url": "https://finaid.brown.edu/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Brown University",
+    "scholarship_name": "Outside Scholarships (Administered by Brown)",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Merit or specific criteria from external organizations",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://finaid.brown.edu/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Columbia University",
+    "scholarship_name": "Columbia Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance (average ~$70,000)",
+    "eligibility_criteria": "Demonstrated financial need; guaranteed for all 4 years if need remains",
+    "application_deadline": "Early Decision/Regular Decision deadlines",
+    "scholarship_url": "https://cc-seas.financialaid.columbia.edu/types/grants-scholarships"
+  },
+  {
+    "university_name": "Columbia University",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "FAFSA Priority Deadline",
+    "scholarship_url": "https://cc-seas.financialaid.columbia.edu/types/grants-scholarships"
+  },
+  {
+    "university_name": "Columbia University",
+    "scholarship_name": "Federal SEOG Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need; Pell Grant eligible",
+    "application_deadline": "FAFSA Priority Deadline",
+    "scholarship_url": "https://cc-seas.financialaid.columbia.edu/types/grants-scholarships"
+  },
+  {
+    "university_name": "Columbia University",
+    "scholarship_name": "New York State TAP",
+    "scholarship_type": "State Grant",
+    "award_amount": "Up to $5,665/year",
+    "eligibility_criteria": "New York State residents with financial need",
+    "application_deadline": "State deadline",
+    "scholarship_url": "https://cc-seas.financialaid.columbia.edu/types/grants-scholarships"
+  },
+  {
+    "university_name": "Columbia University",
+    "scholarship_name": "Global Center Scholarships",
+    "scholarship_type": "Need-Based/Endowed",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Specific regional or academic criteria based on financial need",
+    "application_deadline": "Matching financial aid deadline",
+    "scholarship_url": "https://cc-seas.financialaid.columbia.edu/types/grants-scholarships"
+  },
+  {
+    "university_name": "Cornell University",
+    "scholarship_name": "Cornell University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance",
+    "eligibility_criteria": "Demonstrated financial need; calculated via CSS Profile and FAFSA",
+    "application_deadline": "Varies (Typically Nov/Jan based on admission phase)",
+    "scholarship_url": "https://finaid.cornell.edu/types-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Cornell University",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.cornell.edu/types-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Cornell University",
+    "scholarship_name": "Federal SEOG Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need; Pell Grant eligible",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.cornell.edu/types-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Cornell University",
+    "scholarship_name": "New York State TAP",
+    "scholarship_type": "State Grant",
+    "award_amount": "Up to $5,665/year",
+    "eligibility_criteria": "New York State residents attending NY colleges",
+    "application_deadline": "June 30 of academic year",
+    "scholarship_url": "https://finaid.cornell.edu/types-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Cornell University",
+    "scholarship_name": "Endowed Scholarships",
+    "scholarship_type": "Need-Based/Endowed",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Based on specific donor criteria but awarded strictly based on financial need",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://finaid.cornell.edu/types-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Dartmouth College",
+    "scholarship_name": "Dartmouth Endowed Scholarships",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance",
+    "eligibility_criteria": "Demonstrated financial need; automatically considered during financial aid review",
+    "application_deadline": "Early Decision/Regular Decision deadlines",
+    "scholarship_url": "https://financialaid.dartmouth.edu/types-aid/grants-scholarships"
+  },
+  {
+    "university_name": "Dartmouth College",
+    "scholarship_name": "Dartmouth General Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Institutional grant for students whose need isn't covered by endowed funds",
+    "application_deadline": "Early Decision/Regular Decision deadlines",
+    "scholarship_url": "https://financialaid.dartmouth.edu/types-aid/grants-scholarships"
+  },
+  {
+    "university_name": "Dartmouth College",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "FAFSA Priority Deadline",
+    "scholarship_url": "https://financialaid.dartmouth.edu/types-aid/grants-scholarships"
+  },
+  {
+    "university_name": "Dartmouth College",
+    "scholarship_name": "Federal SEOG",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need; Pell Grant recipients prioritized",
+    "application_deadline": "FAFSA Priority Deadline",
+    "scholarship_url": "https://financialaid.dartmouth.edu/types-aid/grants-scholarships"
+  },
+  {
+    "university_name": "Dartmouth College",
+    "scholarship_name": "Outside Scholarships",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Varies by provider (used to reduce student contribution/work expectation)",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://financialaid.dartmouth.edu/types-aid/grants-scholarships"
+  },
+  {
+    "university_name": "Harvard University",
+    "scholarship_name": "Harvard Scholarship / Harvard Financial Aid Initiative",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Covers 100% of demonstrated need (often free tuition for incomes under $85,000)",
+    "eligibility_criteria": "Demonstrated financial need; international students evaluated exactly as domestic students",
+    "application_deadline": "Restrictive Early Action / Regular Decision deadlines",
+    "scholarship_url": "https://college.harvard.edu/financial-aid/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "Harvard University",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://college.harvard.edu/financial-aid/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "Harvard University",
+    "scholarship_name": "Federal SEOG Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need; Pell Grant eligible",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://college.harvard.edu/financial-aid/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "Harvard University",
+    "scholarship_name": "Outside Awards",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Merit or specific criteria from external organizations",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://college.harvard.edu/financial-aid/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "Princeton University",
+    "scholarship_name": "Princeton University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance (often free tuition/board for incomes under $100,000)",
+    "eligibility_criteria": "Demonstrated financial need; international students evaluated exactly as domestic students",
+    "application_deadline": "Single-Choice Early Action / Regular Decision deadlines",
+    "scholarship_url": "https://admission.princeton.edu/cost-aid/financial-aid"
+  },
+  {
+    "university_name": "Princeton University",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://admission.princeton.edu/cost-aid/financial-aid"
+  },
+  {
+    "university_name": "Princeton University",
+    "scholarship_name": "Federal SEOG",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need; Pell Grant recipients prioritized",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://admission.princeton.edu/cost-aid/financial-aid"
+  },
+  {
+    "university_name": "Princeton University",
+    "scholarship_name": "Outside Scholarships",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Used to reduce the student contribution/campus job requirement",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://admission.princeton.edu/cost-aid/financial-aid"
+  },
+  {
+    "university_name": "University of Pennsylvania",
+    "scholarship_name": "Penn Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance",
+    "eligibility_criteria": "Demonstrated financial need; domestic and Canadian/Mexican students",
+    "application_deadline": "Early Decision/Regular Decision deadlines",
+    "scholarship_url": "https://srfs.upenn.edu/financial-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "University of Pennsylvania",
+    "scholarship_name": "Named/Endowed Scholarships",
+    "scholarship_type": "Need-Based/Endowed",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Based on donor criteria (e.g. hometown, major) but awarded strictly based on financial need",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://srfs.upenn.edu/financial-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "University of Pennsylvania",
+    "scholarship_name": "Mayor's Scholarship",
+    "scholarship_type": "Need-Based/Endowed",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Highly qualified students from Philadelphia public/charter schools with financial need",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://srfs.upenn.edu/financial-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "University of Pennsylvania",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "FAFSA Priority Deadline",
+    "scholarship_url": "https://srfs.upenn.edu/financial-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "University of Pennsylvania",
+    "scholarship_name": "PHEAA State Grant",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Pennsylvania residents with financial need",
+    "application_deadline": "May 1",
+    "scholarship_url": "https://srfs.upenn.edu/financial-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Yale University",
+    "scholarship_name": "Yale Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies from a few hundred dollars to over $80,000/year",
+    "eligibility_criteria": "Demonstrated financial need; calculated strictly on family income/assets",
+    "application_deadline": "Single-Choice Early Action / Regular Decision deadlines",
+    "scholarship_url": "https://finaid.yale.edu/costs-affordability/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Yale University",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.yale.edu/costs-affordability/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Yale University",
+    "scholarship_name": "Federal SEOG Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need; Pell Grant eligible",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.yale.edu/costs-affordability/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Yale University",
+    "scholarship_name": "Outside Scholarships",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Used to meet the Student Share or reduce student contribution",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://finaid.yale.edu/costs-affordability/types-aid/scholarships-and-grants"
+  },
+  {
+    "university_name": "Yale University",
+    "scholarship_name": "Yale Endowed Scholarships",
+    "scholarship_type": "Need-Based/Endowed",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Funded by alumni/donors; criteria varies but purely awarded to meet demonstrated need",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://finaid.yale.edu/costs-affordability/types-aid/scholarships-and-grants"
+  }
+]

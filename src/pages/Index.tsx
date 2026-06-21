@@ -1,5 +1,5 @@
 import { useEffect, useCallback, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useAssessment } from "@/hooks/useAssessment";
 import { useAssessmentSession } from "@/hooks/useAssessmentSession";
 import { useSaveUserActivity } from "@/hooks/useSaveUserActivity";
@@ -60,7 +60,25 @@ const Index = () => {
   const { saveUserActivity } = useSaveUserActivity();
   const { user } = useAuth();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const hasTriggeredSaveRef = useRef(false);
+
+  // Handle direct university finder - require sign-in first (moved up)
+  const handleUniversityFinder = useCallback(() => {
+    if (!user) {
+      navigate("/auth");
+      return;
+    }
+    goToUniversityFinder();
+  }, [user, navigate, goToUniversityFinder]);
+
+  // Read view parameter to restore university finder state when navigating back
+  useEffect(() => {
+    if (searchParams.get("view") === "finder" && currentStep !== "university-finder") {
+      goToUniversityFinder();
+      setSearchParams({}, { replace: true });
+    }
+  }, [searchParams, currentStep, goToUniversityFinder, setSearchParams]);
 
   // Save progress whenever answers or step changes
   useEffect(() => {
@@ -113,15 +131,6 @@ const Index = () => {
     goToStep("riasec");
     initSession();
   }, [user, navigate, initSession, goToStep, totalProgress]);
-
-  // Handle direct university finder - require sign-in first
-  const handleUniversityFinder = useCallback(() => {
-    if (!user) {
-      navigate("/auth");
-      return;
-    }
-    goToUniversityFinder();
-  }, [user, navigate, goToUniversityFinder]);
 
   // Handle resuming session - restore immediately
   const handleResume = useCallback(() => {

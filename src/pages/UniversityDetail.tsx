@@ -96,7 +96,7 @@ export default function UniversityDetail() {
             <Button 
               variant="ghost" 
               size="icon"
-              onClick={() => navigate(-1)}
+              onClick={() => navigate("/?view=finder")}
             >
               <ArrowLeft className="w-5 h-5" />
             </Button>
@@ -251,34 +251,36 @@ export default function UniversityDetail() {
                       key={i} 
                       className="p-4 rounded-xl bg-gradient-to-r from-amber/5 to-coral/5 border border-amber/20"
                     >
-                      <div className="flex items-start justify-between gap-3 mb-2">
-                        <div className="flex items-center gap-2">
-                          <Award className="w-5 h-5 text-amber" />
-                          <h3 className="font-semibold text-foreground text-lg">{sch.name}</h3>
+                      <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 mb-3">
+                        <div className="flex items-start gap-2">
+                          <Award className="w-5 h-5 text-amber mt-0.5 shrink-0" />
+                          <h3 className="font-semibold text-foreground text-lg leading-tight">{sch.name}</h3>
                         </div>
-                        <span className="px-4 py-1.5 rounded-full bg-teal text-primary-foreground text-sm font-bold whitespace-nowrap">
+                        <div className="inline-flex px-3 py-1.5 rounded-lg bg-teal text-primary-foreground text-sm font-bold text-center shadow-sm w-fit md:max-w-[40%] leading-tight">
                           {sch.coverage}
-                        </span>
-                      </div>
-                      <p className="text-muted-foreground ml-7 mb-2">{sch.eligibility}</p>
-                      {sch.deadline && (
-                        <div className="flex items-center gap-1.5 ml-7 text-sm text-coral font-medium mb-3">
-                          <Clock className="w-4 h-4" />
-                          Deadline: {sch.deadline}
                         </div>
-                      )}
-                      {sch.applyLink && (
-                        <a
-                          href={sch.applyLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          className="ml-7 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber text-accent-foreground text-sm font-semibold hover:bg-amber/80 transition-colors"
-                        >
-                          Apply for Scholarship
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      )}
+                      </div>
+                      <p className="text-muted-foreground ml-7 mb-3 text-sm leading-relaxed">{sch.eligibility}</p>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-3 ml-7">
+                        {sch.deadline && (
+                          <div className="flex items-center gap-1.5 text-sm text-coral font-medium">
+                            <Clock className="w-4 h-4 shrink-0" />
+                            <span>Deadline: {sch.deadline}</span>
+                          </div>
+                        )}
+                        {sch.applyLink && (
+                          <a
+                            href={sch.applyLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber text-accent-foreground text-sm font-semibold hover:bg-amber/80 transition-colors w-fit sm:ml-auto shadow-sm"
+                          >
+                            Apply for Scholarship
+                            <ExternalLink className="w-4 h-4 shrink-0" />
+                          </a>
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>

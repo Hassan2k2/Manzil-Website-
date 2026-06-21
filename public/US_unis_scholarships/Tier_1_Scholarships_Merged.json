@@ -1,0 +1,1010 @@
+[
+  {
+    "university_name": "California Institute of Technology (Caltech)",
+    "scholarship_name": "Caltech Scholarships",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance",
+    "eligibility_criteria": "Demonstrated financial need; calculated via CSS Profile and FAFSA. Caltech does not offer merit-based scholarships.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://finaid.caltech.edu/typesofaid"
+  },
+  {
+    "university_name": "California Institute of Technology (Caltech)",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.caltech.edu/typesofaid"
+  },
+  {
+    "university_name": "California Institute of Technology (Caltech)",
+    "scholarship_name": "Federal SEOG",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.caltech.edu/typesofaid"
+  },
+  {
+    "university_name": "California Institute of Technology (Caltech)",
+    "scholarship_name": "Cal Grant",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "California residents with qualifying GPA and financial need",
+    "application_deadline": "March 2",
+    "scholarship_url": "https://finaid.caltech.edu/typesofaid"
+  },
+  {
+    "university_name": "California Institute of Technology (Caltech)",
+    "scholarship_name": "Outside Scholarships",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Used to replace the student summer earnings expectation before reducing Caltech grants",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://finaid.caltech.edu/typesofaid"
+  },
+  {
+    "university_name": "Carnegie Mellon University",
+    "scholarship_name": "Carnegie Mellon University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via FAFSA and CSS Profile. Primarily available to U.S. citizens and permanent residents.",
+    "application_deadline": "Feb 15 (Regular Decision)",
+    "scholarship_url": "https://www.cmu.edu/sfs/financial-aid/types/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Carnegie Mellon University",
+    "scholarship_name": "Tartan Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Institutional grant for students who demonstrate high need.",
+    "application_deadline": "Feb 15",
+    "scholarship_url": "https://www.cmu.edu/sfs/financial-aid/types/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Carnegie Mellon University",
+    "scholarship_name": "Presidential Fellowships and Scholarships",
+    "scholarship_type": "Merit/Endowed",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Awarded to select top-performing admitted students; no separate application required.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://www.cmu.edu/sfs/financial-aid/types/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Carnegie Mellon University",
+    "scholarship_name": "Federal Pell Grant & SEOG",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "FAFSA Priority Deadline",
+    "scholarship_url": "https://www.cmu.edu/sfs/financial-aid/types/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Carnegie Mellon University",
+    "scholarship_name": "PHEAA State Grant",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Pennsylvania residents demonstrating financial need.",
+    "application_deadline": "May 1",
+    "scholarship_url": "https://www.cmu.edu/sfs/financial-aid/types/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Duke University",
+    "scholarship_name": "A.B. Duke Memorial Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board + funding for research/study away",
+    "eligibility_criteria": "Outstanding academic achievement and promise for students studying at Trinity College of Arts & Sciences. All applicants automatically considered.",
+    "application_deadline": "No separate application (admissions deadline)",
+    "scholarship_url": "https://financialaid.duke.edu/undergraduate-applicants/merit-scholarships/"
+  },
+  {
+    "university_name": "Duke University",
+    "scholarship_name": "Robertson Scholars Leadership Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board + 3 summers of funding",
+    "eligibility_criteria": "Demonstrated leadership, intellectual curiosity, and commitment to service. Joint program with UNC-Chapel Hill.",
+    "application_deadline": "Mid-November (Requires separate application)",
+    "scholarship_url": "https://financialaid.duke.edu/undergraduate-applicants/merit-scholarships/"
+  },
+  {
+    "university_name": "Duke University",
+    "scholarship_name": "University Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Interdisciplinary interests and ability to cross academic boundaries.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.duke.edu/undergraduate-applicants/merit-scholarships/"
+  },
+  {
+    "university_name": "Duke University",
+    "scholarship_name": "Karsh International Scholars Program",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Full demonstrated need + funding for research",
+    "eligibility_criteria": "International students who demonstrate outstanding academic achievement and financial need.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.duke.edu/undergraduate-applicants/merit-scholarships/"
+  },
+  {
+    "university_name": "Duke University",
+    "scholarship_name": "BN Duke Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Students from North and South Carolina who demonstrate strong leadership and academic excellence.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.duke.edu/undergraduate-applicants/merit-scholarships/"
+  },
+  {
+    "university_name": "Duke University",
+    "scholarship_name": "Duke University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Covers 100% of demonstrated need without loans for undergraduate students.",
+    "application_deadline": "Early/Regular Decision deadlines",
+    "scholarship_url": "https://financialaid.duke.edu/undergraduate-applicants/merit-scholarships/"
+  },
+  {
+    "university_name": "Emory University",
+    "scholarship_name": "Emory University Scholar Programs (Woodruff Scholars)",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Exceptional academic achievement, leadership, and a commitment to community. Top 1-2% of applicants.",
+    "application_deadline": "Nov 1 (Must select Scholar Programs on application)",
+    "scholarship_url": "https://apply.emory.edu/financial-aid/types-of-aid/index.html"
+  },
+  {
+    "university_name": "Emory University",
+    "scholarship_name": "Goizueta Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition or varying amounts",
+    "eligibility_criteria": "Students interested in business with strong leadership and academic records.",
+    "application_deadline": "Nov 1",
+    "scholarship_url": "https://apply.emory.edu/financial-aid/types-of-aid/index.html"
+  },
+  {
+    "university_name": "Emory University",
+    "scholarship_name": "Emory Advantage (Need-Based Grant)",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Emory replaces loans with institutional grants for families with domestic incomes below $100,000. Covers 100% of demonstrated need for all domestic students.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://apply.emory.edu/financial-aid/types-of-aid/index.html"
+  },
+  {
+    "university_name": "Emory University",
+    "scholarship_name": "Federal Pell & SEOG Grants",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://apply.emory.edu/financial-aid/types-of-aid/index.html"
+  },
+  {
+    "university_name": "Emory University",
+    "scholarship_name": "HOPE/Zell Miller Scholarship",
+    "scholarship_type": "State Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Georgia residents graduating from a GA high school with a minimum GPA.",
+    "application_deadline": "State deadline",
+    "scholarship_url": "https://apply.emory.edu/financial-aid/types-of-aid/index.html"
+  },
+  {
+    "university_name": "Georgetown University",
+    "scholarship_name": "Georgetown University Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile and FAFSA. Georgetown does not offer academic or merit-based scholarships.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://finaid.georgetown.edu/undergraduate/types-of-aid/"
+  },
+  {
+    "university_name": "Georgetown University",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.georgetown.edu/undergraduate/types-of-aid/"
+  },
+  {
+    "university_name": "Georgetown University",
+    "scholarship_name": "Federal SEOG Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.georgetown.edu/undergraduate/types-of-aid/"
+  },
+  {
+    "university_name": "Georgetown University",
+    "scholarship_name": "Outside Scholarships",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Must be reported; used to reduce the student loan or work-study expectation before reducing Georgetown Scholarships.",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://finaid.georgetown.edu/undergraduate/types-of-aid/"
+  },
+  {
+    "university_name": "Johns Hopkins University",
+    "scholarship_name": "Hodson Trust Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "~$40,000 to full tuition",
+    "eligibility_criteria": "Awarded to fewer than 20 freshmen based on academic and personal achievement, leadership, and contribution.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://finaid.jhu.edu/undergraduate-aid/types-of-aid/"
+  },
+  {
+    "university_name": "Johns Hopkins University",
+    "scholarship_name": "Charles R. Westgate Scholarship in Engineering",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Outstanding high school academic record and interest in engineering.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://finaid.jhu.edu/undergraduate-aid/types-of-aid/"
+  },
+  {
+    "university_name": "Johns Hopkins University",
+    "scholarship_name": "Clark Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Engineering students combining academic excellence with business, leadership, and community service.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://finaid.jhu.edu/undergraduate-aid/types-of-aid/"
+  },
+  {
+    "university_name": "Johns Hopkins University",
+    "scholarship_name": "Hopkins Grant / JHU Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Covers 100% of demonstrated need without loans. JHU is need-blind for domestic and international students.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://finaid.jhu.edu/undergraduate-aid/types-of-aid/"
+  },
+  {
+    "university_name": "Johns Hopkins University",
+    "scholarship_name": "Federal Pell Grant & SEOG",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://finaid.jhu.edu/undergraduate-aid/types-of-aid/"
+  },
+  {
+    "university_name": "Massachusetts Institute of Technology (MIT)",
+    "scholarship_name": "MIT Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost (average is over $50,000)",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile and FAFSA. MIT does not award merit, athletic, or legacy scholarships.",
+    "application_deadline": "Early Action / Regular Decision deadlines",
+    "scholarship_url": "https://sfs.mit.edu/undergraduate-financial-aid/types-of-aid/mit-scholarships/"
+  },
+  {
+    "university_name": "Massachusetts Institute of Technology (MIT)",
+    "scholarship_name": "Federal Pell Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Up to ~$7,395/year",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://sfs.mit.edu/undergraduate-financial-aid/types-of-aid/mit-scholarships/"
+  },
+  {
+    "university_name": "Massachusetts Institute of Technology (MIT)",
+    "scholarship_name": "Federal SEOG Grant",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional financial need",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://sfs.mit.edu/undergraduate-financial-aid/types-of-aid/mit-scholarships/"
+  },
+  {
+    "university_name": "Massachusetts Institute of Technology (MIT)",
+    "scholarship_name": "Outside Scholarships",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Used to reduce the student's self-help expectation (work-study) before reducing the MIT Scholarship.",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://sfs.mit.edu/undergraduate-financial-aid/types-of-aid/mit-scholarships/"
+  },
+  {
+    "university_name": "Northwestern University",
+    "scholarship_name": "Northwestern University Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost of attendance",
+    "eligibility_criteria": "Meets 100% of demonstrated need without loans for domestic students.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://undergradaid.northwestern.edu/types-of-aid/scholarships-grants/"
+  },
+  {
+    "university_name": "Northwestern University",
+    "scholarship_name": "Good Neighbor Great University Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Students who graduate from a Chicago or Evanston high school demonstrating financial need.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://undergradaid.northwestern.edu/types-of-aid/scholarships-grants/"
+  },
+  {
+    "university_name": "Northwestern University",
+    "scholarship_name": "Federal Pell Grant & SEOG",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://undergradaid.northwestern.edu/types-of-aid/scholarships-grants/"
+  },
+  {
+    "university_name": "Northwestern University",
+    "scholarship_name": "Illinois MAP Grant",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Illinois residents demonstrating financial need.",
+    "application_deadline": "State deadline",
+    "scholarship_url": "https://undergradaid.northwestern.edu/types-of-aid/scholarships-grants/"
+  },
+  {
+    "university_name": "New York University (NYU)",
+    "scholarship_name": "AnBryce Scholarships",
+    "scholarship_type": "Merit/Need Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Academically motivated students who are the first in their family to attend college and demonstrate financial need.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html"
+  },
+  {
+    "university_name": "New York University (NYU)",
+    "scholarship_name": "Lenape Scholarship",
+    "scholarship_type": "Merit/Need Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "For students demonstrating a commitment to Native American or Indigenous communities.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html"
+  },
+  {
+    "university_name": "New York University (NYU)",
+    "scholarship_name": "Martin Luther King, Jr. Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Students with a demonstrated commitment to social justice and the legacy of Dr. King.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html"
+  },
+  {
+    "university_name": "New York University (NYU)",
+    "scholarship_name": "Presidential Honors Scholars",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional academic achievement across NYU's various undergraduate colleges.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html"
+  },
+  {
+    "university_name": "New York University (NYU)",
+    "scholarship_name": "NYU Promise (Need-Based Grant)",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition or more",
+    "eligibility_criteria": "Meets 100% of demonstrated financial need. Families with income under $100,000 pay no tuition.",
+    "application_deadline": "Early/Regular Decision deadlines",
+    "scholarship_url": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html"
+  },
+  {
+    "university_name": "New York University (NYU)",
+    "scholarship_name": "New York State TAP",
+    "scholarship_type": "State Grant",
+    "award_amount": "Up to $5,665/year",
+    "eligibility_criteria": "New York State residents attending college in NY",
+    "application_deadline": "State deadline",
+    "scholarship_url": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html"
+  },
+  {
+    "university_name": "Rice University",
+    "scholarship_name": "Trustee Distinguished Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Exceptional academic and personal accomplishment.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.rice.edu/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "Rice University",
+    "scholarship_name": "Century Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies + faculty mentorship/research stipend",
+    "eligibility_criteria": "Demonstrated aptitude for research and academics.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.rice.edu/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "Rice University",
+    "scholarship_name": "Barbara Jordan Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Students who have distinguished themselves in building bridges across communities.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.rice.edu/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "Rice University",
+    "scholarship_name": "The Rice Investment",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition, room & board (if <$75k income); Full tuition (if $75k-$140k); Half tuition (if $140k-$200k)",
+    "eligibility_criteria": "Domestic students whose family income falls within the specified tiers.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://financialaid.rice.edu/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "Stanford University",
+    "scholarship_name": "Stanford Fund Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies (often full tuition/room/board for incomes <$100,000)",
+    "eligibility_criteria": "Meets 100% of demonstrated financial need. No merit scholarships offered.",
+    "application_deadline": "Restrictive Early Action / Regular Decision deadlines",
+    "scholarship_url": "https://financialaid.stanford.edu/undergrad/types/"
+  },
+  {
+    "university_name": "Stanford University",
+    "scholarship_name": "Federal Pell & SEOG Grants",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://financialaid.stanford.edu/undergrad/types/"
+  },
+  {
+    "university_name": "Stanford University",
+    "scholarship_name": "Cal Grant",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "California residents meeting income and GPA requirements.",
+    "application_deadline": "March 2",
+    "scholarship_url": "https://financialaid.stanford.edu/undergrad/types/"
+  },
+  {
+    "university_name": "Stanford University",
+    "scholarship_name": "Outside Scholarships",
+    "scholarship_type": "External/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Used to reduce the student expectation (summer earnings/academic year work) before reducing Stanford funds.",
+    "application_deadline": "Varies by organization",
+    "scholarship_url": "https://financialaid.stanford.edu/undergrad/types/"
+  },
+  {
+    "university_name": "Tufts University",
+    "scholarship_name": "Tufts Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Meets 100% of demonstrated financial need. Tufts does not offer merit-based, athletic, or academic scholarships.",
+    "application_deadline": "Early/Regular Decision deadlines",
+    "scholarship_url": "https://students.tufts.edu/financial-services/financial-aid/types-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Tufts University",
+    "scholarship_name": "Federal Pell & SEOG Grants",
+    "scholarship_type": "Federal Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "High financial need; U.S. citizens/eligible noncitizens",
+    "application_deadline": "Determined by FAFSA",
+    "scholarship_url": "https://students.tufts.edu/financial-services/financial-aid/types-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Tufts University",
+    "scholarship_name": "State Grants",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "State residents meeting income requirements (varies by state).",
+    "application_deadline": "Varies by state",
+    "scholarship_url": "https://students.tufts.edu/financial-services/financial-aid/types-aid/grants-and-scholarships"
+  },
+  {
+    "university_name": "Tulane University",
+    "scholarship_name": "Deans' Honor Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Outstanding academic achievement, test scores, and a creative project. Requires separate application.",
+    "application_deadline": "Dec 5",
+    "scholarship_url": "https://financialaid.tulane.edu/types-of-aid/gifts/undergraduate/merit-based"
+  },
+  {
+    "university_name": "Tulane University",
+    "scholarship_name": "Paul Tulane Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Exceptional academic achievement and leadership. Requires separate application.",
+    "application_deadline": "Dec 5",
+    "scholarship_url": "https://financialaid.tulane.edu/types-of-aid/gifts/undergraduate/merit-based"
+  },
+  {
+    "university_name": "Tulane University",
+    "scholarship_name": "Stamps Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + enrichment fund",
+    "eligibility_criteria": "Top-tier academic performance and demonstrated leadership.",
+    "application_deadline": "Dec 5",
+    "scholarship_url": "https://financialaid.tulane.edu/types-of-aid/gifts/undergraduate/merit-based"
+  },
+  {
+    "university_name": "Tulane University",
+    "scholarship_name": "Community Service Fellowship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to $5,000 to full tuition",
+    "eligibility_criteria": "Demonstrated commitment to community service and leadership.",
+    "application_deadline": "Dec 5",
+    "scholarship_url": "https://financialaid.tulane.edu/types-of-aid/gifts/undergraduate/merit-based"
+  },
+  {
+    "university_name": "Tulane University",
+    "scholarship_name": "Global Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies (partial to full tuition)",
+    "eligibility_criteria": "Outstanding international students.",
+    "application_deadline": "Dec 5",
+    "scholarship_url": "https://financialaid.tulane.edu/types-of-aid/gifts/undergraduate/merit-based"
+  },
+  {
+    "university_name": "Tulane University",
+    "scholarship_name": "Tulane Need-Based Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile and FAFSA.",
+    "application_deadline": "Early/Regular Decision deadlines",
+    "scholarship_url": "https://financialaid.tulane.edu/types-of-aid/gifts/undergraduate/merit-based"
+  },
+  {
+    "university_name": "University of California, Los Angeles (UCLA)",
+    "scholarship_name": "Blue and Gold Opportunity Plan",
+    "scholarship_type": "State/Institutional Grant",
+    "award_amount": "Systemwide tuition and fees covered",
+    "eligibility_criteria": "California residents with family income below $80,000.",
+    "application_deadline": "March 2 (FAFSA/CADAA deadline)",
+    "scholarship_url": "https://financialaid.ucla.edu/types-of-aid/scholarships"
+  },
+  {
+    "university_name": "University of California, Los Angeles (UCLA)",
+    "scholarship_name": "Middle Class Scholarship",
+    "scholarship_type": "State Grant",
+    "award_amount": "10% to 40% of tuition",
+    "eligibility_criteria": "California residents with family income up to $201,000.",
+    "application_deadline": "March 2",
+    "scholarship_url": "https://financialaid.ucla.edu/types-of-aid/scholarships"
+  },
+  {
+    "university_name": "University of California, Los Angeles (UCLA)",
+    "scholarship_name": "Regents Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$2,000 honorarium or up to full need",
+    "eligibility_criteria": "Top entering students based on academic excellence. Invited to apply after admission.",
+    "application_deadline": "Varies (By invitation)",
+    "scholarship_url": "https://financialaid.ucla.edu/types-of-aid/scholarships"
+  },
+  {
+    "university_name": "University of California, Los Angeles (UCLA)",
+    "scholarship_name": "Alumni Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$1,500 to $5,000/year",
+    "eligibility_criteria": "Academic excellence, leadership, and community involvement. Open to all students.",
+    "application_deadline": "Requires separate application through Alumni Association",
+    "scholarship_url": "https://financialaid.ucla.edu/types-of-aid/scholarships"
+  },
+  {
+    "university_name": "University of California, Los Angeles (UCLA)",
+    "scholarship_name": "UCLA Achievement Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Varies",
+    "eligibility_criteria": "High-achieving students from low-income backgrounds.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.ucla.edu/types-of-aid/scholarships"
+  },
+  {
+    "university_name": "University of California, Berkeley (UC Berkeley)",
+    "scholarship_name": "Blue and Gold Opportunity Plan",
+    "scholarship_type": "State/Institutional Grant",
+    "award_amount": "Systemwide tuition and fees covered",
+    "eligibility_criteria": "California residents with family income below $80,000.",
+    "application_deadline": "March 2 (FAFSA/CADAA deadline)",
+    "scholarship_url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/"
+  },
+  {
+    "university_name": "University of California, Berkeley (UC Berkeley)",
+    "scholarship_name": "Middle Class Scholarship",
+    "scholarship_type": "State Grant",
+    "award_amount": "10% to 40% of tuition",
+    "eligibility_criteria": "California residents with family income up to $201,000.",
+    "application_deadline": "March 2",
+    "scholarship_url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/"
+  },
+  {
+    "university_name": "University of California, Berkeley (UC Berkeley)",
+    "scholarship_name": "UC Berkeley Undergraduate Scholarships",
+    "scholarship_type": "Need-Based/Merit",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Admitted students with financial need and a minimum 3.0 GPA.",
+    "application_deadline": "March 2",
+    "scholarship_url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/"
+  },
+  {
+    "university_name": "University of California, Berkeley (UC Berkeley)",
+    "scholarship_name": "Regents' and Chancellor's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Honorarium of $2,000 or up to full need",
+    "eligibility_criteria": "Top 1-2% of entering class based on academic excellence and leadership.",
+    "application_deadline": "No separate application (Admissions application)",
+    "scholarship_url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/"
+  },
+  {
+    "university_name": "University of California, Berkeley (UC Berkeley)",
+    "scholarship_name": "Fiat Lux Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Students from partner high schools in California who show academic achievement and financial need.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/"
+  },
+  {
+    "university_name": "University of California, Berkeley (UC Berkeley)",
+    "scholarship_name": "Cal Grant A/B",
+    "scholarship_type": "State Grant",
+    "award_amount": "Up to full systemwide tuition",
+    "eligibility_criteria": "California residents meeting income/asset ceilings and GPA requirements.",
+    "application_deadline": "March 2",
+    "scholarship_url": "https://financialaid.berkeley.edu/types-of-aid-at-berkeley/scholarships/"
+  },
+  {
+    "university_name": "University of Chicago",
+    "scholarship_name": "Odyssey Scholarship Program",
+    "scholarship_type": "Need-Based/Merit",
+    "award_amount": "Comprehensive support including tuition, room, board, and study abroad",
+    "eligibility_criteria": "Outstanding students from lower-income families or who are the first in their families to attend college.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.uchicago.edu/undergraduate/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "University of Chicago",
+    "scholarship_name": "University Scholars",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Outstanding academic extracurricular achievement and leadership.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.uchicago.edu/undergraduate/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "University of Chicago",
+    "scholarship_name": "National Police and Fire Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Up to full tuition",
+    "eligibility_criteria": "Children of professional, active-duty/killed-in-action police officers and firefighters.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.uchicago.edu/undergraduate/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "University of Chicago",
+    "scholarship_name": "UChicago Promise / UChicago Empower",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition (for family income <$125k)",
+    "eligibility_criteria": "Meets 100% of demonstrated need without loans.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://financialaid.uchicago.edu/undergraduate/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "University of Michigan, Ann Arbor",
+    "scholarship_name": "Go Blue Guarantee",
+    "scholarship_type": "State/Institutional Grant",
+    "award_amount": "Free Tuition for 4 years",
+    "eligibility_criteria": "In-state students with family incomes of $75,000 or under and assets below $75,000.",
+    "application_deadline": "FAFSA/CSS Profile deadline",
+    "scholarship_url": "https://finaid.umich.edu/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "University of Michigan, Ann Arbor",
+    "scholarship_name": "Shipman Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$32,000 to full out-of-state tuition",
+    "eligibility_criteria": "Outstanding academic and personal achievement. Highly selective.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://finaid.umich.edu/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "University of Michigan, Ann Arbor",
+    "scholarship_name": "Stamps Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + $10,000 enrichment fund",
+    "eligibility_criteria": "Top-tier incoming freshmen demonstrating leadership, perseverance, and service.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://finaid.umich.edu/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "University of Michigan, Ann Arbor",
+    "scholarship_name": "HAIL Scholarship",
+    "scholarship_type": "Institutional Grant",
+    "award_amount": "Full tuition and fees",
+    "eligibility_criteria": "High-achieving, low-income students from Michigan.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://finaid.umich.edu/types-aid/scholarships-grants"
+  },
+  {
+    "university_name": "University of Notre Dame",
+    "scholarship_name": "Hesburgh-Yusko Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$25,000/year + summer funding",
+    "eligibility_criteria": "Outstanding academic achievement, leadership, and commitment to service.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.nd.edu/types-of-aid/scholarships-grants/"
+  },
+  {
+    "university_name": "University of Notre Dame",
+    "scholarship_name": "Stamps Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, board + $12,000 enrichment fund",
+    "eligibility_criteria": "Top-tier academic performance and demonstrated leadership.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.nd.edu/types-of-aid/scholarships-grants/"
+  },
+  {
+    "university_name": "University of Notre Dame",
+    "scholarship_name": "Notre Dame Scholars' Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies (up to full tuition)",
+    "eligibility_criteria": "Approximately 25 different merit scholarship programs automatically considered for admitted students.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://financialaid.nd.edu/types-of-aid/scholarships-grants/"
+  },
+  {
+    "university_name": "University of Notre Dame",
+    "scholarship_name": "Notre Dame University Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Meets 100% of demonstrated financial need for all admitted students.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://financialaid.nd.edu/types-of-aid/scholarships-grants/"
+  },
+  {
+    "university_name": "University of Southern California (USC)",
+    "scholarship_name": "Mork Family Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition + $5,000 stipend",
+    "eligibility_criteria": "Top 1-2% of applicants demonstrating exceptional academic achievement and leadership.",
+    "application_deadline": "Dec 1 (Must apply Early Action/by Merit deadline)",
+    "scholarship_url": "https://financialaid.usc.edu/undergraduates/prospective/scholarships.html"
+  },
+  {
+    "university_name": "University of Southern California (USC)",
+    "scholarship_name": "Stamps Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition + $20,000 enrichment fund",
+    "eligibility_criteria": "Top applicants demonstrating leadership, perseverance, and service.",
+    "application_deadline": "Dec 1",
+    "scholarship_url": "https://financialaid.usc.edu/undergraduates/prospective/scholarships.html"
+  },
+  {
+    "university_name": "University of Southern California (USC)",
+    "scholarship_name": "Trustee Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Outstanding academic and leadership abilities.",
+    "application_deadline": "Dec 1",
+    "scholarship_url": "https://financialaid.usc.edu/undergraduates/prospective/scholarships.html"
+  },
+  {
+    "university_name": "University of Southern California (USC)",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Half tuition",
+    "eligibility_criteria": "High academic achievement and leadership.",
+    "application_deadline": "Dec 1",
+    "scholarship_url": "https://financialaid.usc.edu/undergraduates/prospective/scholarships.html"
+  },
+  {
+    "university_name": "University of Southern California (USC)",
+    "scholarship_name": "Dean's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Quarter tuition",
+    "eligibility_criteria": "Strong academic performance.",
+    "application_deadline": "Dec 1",
+    "scholarship_url": "https://financialaid.usc.edu/undergraduates/prospective/scholarships.html"
+  },
+  {
+    "university_name": "University of Southern California (USC)",
+    "scholarship_name": "USC University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies (Free tuition for <$80k income)",
+    "eligibility_criteria": "Meets 100% of demonstrated need for domestic students. Free tuition for families earning under $80,000.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://financialaid.usc.edu/undergraduates/prospective/scholarships.html"
+  },
+  {
+    "university_name": "University of Virginia (UVA)",
+    "scholarship_name": "Jefferson Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, board, and enrichment fund",
+    "eligibility_criteria": "Nomination by high school required. Exceptional leadership, scholarship, and citizenship.",
+    "application_deadline": "Dec 1 (Nomination deadline)",
+    "scholarship_url": "https://sfs.virginia.edu/financial-aid-new/scholarships-and-grants"
+  },
+  {
+    "university_name": "University of Virginia (UVA)",
+    "scholarship_name": "Walentas Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Outstanding first-generation college students from the Commonwealth of Virginia, NYC, Rochester NY, and Baltimore MD. Nomination required.",
+    "application_deadline": "Dec 1 (Nomination deadline)",
+    "scholarship_url": "https://sfs.virginia.edu/financial-aid-new/scholarships-and-grants"
+  },
+  {
+    "university_name": "University of Virginia (UVA)",
+    "scholarship_name": "AccessUVA / Need-Based Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Meets 100% of demonstrated need for all undergraduate students. Limits loans for high-need families.",
+    "application_deadline": "March 1",
+    "scholarship_url": "https://sfs.virginia.edu/financial-aid-new/scholarships-and-grants"
+  },
+  {
+    "university_name": "University of Virginia (UVA)",
+    "scholarship_name": "Virginia Commonwealth Grants",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Virginia residents with demonstrated financial need.",
+    "application_deadline": "March 1",
+    "scholarship_url": "https://sfs.virginia.edu/financial-aid-new/scholarships-and-grants"
+  },
+  {
+    "university_name": "Vanderbilt University",
+    "scholarship_name": "Ingram Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition + stipend for summer project",
+    "eligibility_criteria": "Students who plan to combine a professional career with a lifetime commitment to community service/business. Requires separate application.",
+    "application_deadline": "Dec 1",
+    "scholarship_url": "https://admissions.vanderbilt.edu/affordability/scholarships/"
+  },
+  {
+    "university_name": "Vanderbilt University",
+    "scholarship_name": "Cornelius Vanderbilt Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition + one-time stipend for study abroad/research",
+    "eligibility_criteria": "Outstanding academic achievement and leadership. Requires separate application.",
+    "application_deadline": "Dec 1",
+    "scholarship_url": "https://admissions.vanderbilt.edu/affordability/scholarships/"
+  },
+  {
+    "university_name": "Vanderbilt University",
+    "scholarship_name": "Chancellor's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition + one-time stipend for study abroad/research",
+    "eligibility_criteria": "Students who have worked to build strong high school communities by bridging gaps among economically, socially, and racially diverse groups. Requires separate application.",
+    "application_deadline": "Dec 1",
+    "scholarship_url": "https://admissions.vanderbilt.edu/affordability/scholarships/"
+  },
+  {
+    "university_name": "Vanderbilt University",
+    "scholarship_name": "Opportunity Vanderbilt",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Meets 100% of demonstrated financial need without loans for all admitted students.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://admissions.vanderbilt.edu/affordability/scholarships/"
+  },
+  {
+    "university_name": "Wake Forest University",
+    "scholarship_name": "Guy T. Carswell Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + stipend",
+    "eligibility_criteria": "Outstanding academic and leadership achievement.",
+    "application_deadline": "Nov 15",
+    "scholarship_url": "https://financialaid.wfu.edu/merit-scholarships/"
+  },
+  {
+    "university_name": "Wake Forest University",
+    "scholarship_name": "Joseph G. Gordon Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + stipend",
+    "eligibility_criteria": "Outstanding students who show exceptional promise and commitment to diversity.",
+    "application_deadline": "Nov 15",
+    "scholarship_url": "https://financialaid.wfu.edu/merit-scholarships/"
+  },
+  {
+    "university_name": "Wake Forest University",
+    "scholarship_name": "Nancy Susan Reynolds Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + stipend",
+    "eligibility_criteria": "Students who possess unusual distinction in academics and leadership.",
+    "application_deadline": "Nov 15",
+    "scholarship_url": "https://financialaid.wfu.edu/merit-scholarships/"
+  },
+  {
+    "university_name": "Wake Forest University",
+    "scholarship_name": "Stamps Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + $3,400 enrichment fund",
+    "eligibility_criteria": "Top-tier academic performance, leadership, and perseverance.",
+    "application_deadline": "Nov 15",
+    "scholarship_url": "https://financialaid.wfu.edu/merit-scholarships/"
+  },
+  {
+    "university_name": "Wake Forest University",
+    "scholarship_name": "Wake Forest Need-Based Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Meets 100% of demonstrated financial need.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://financialaid.wfu.edu/merit-scholarships/"
+  },
+  {
+    "university_name": "Washington University in St. Louis (WashU)",
+    "scholarship_name": "Danforth Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Half to full tuition",
+    "eligibility_criteria": "Students with a passion for community service and leadership. Requires nomination or separate application.",
+    "application_deadline": "Jan 2",
+    "scholarship_url": "https://financialaid.wustl.edu/how-aid-works/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Washington University in St. Louis (WashU)",
+    "scholarship_name": "John B. Ervin Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Partial to full tuition",
+    "eligibility_criteria": "Students committed to diversity, leadership, and community service.",
+    "application_deadline": "Jan 2",
+    "scholarship_url": "https://financialaid.wustl.edu/how-aid-works/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Washington University in St. Louis (WashU)",
+    "scholarship_name": "Annika Rodriguez Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Partial to full tuition",
+    "eligibility_criteria": "Students with a commitment to the Latinx community and academic excellence.",
+    "application_deadline": "Jan 2",
+    "scholarship_url": "https://financialaid.wustl.edu/how-aid-works/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Washington University in St. Louis (WashU)",
+    "scholarship_name": "WashU Pledge",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Students from Missouri and Southern Illinois who are Pell Grant eligible or from families with incomes under $75,000.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://financialaid.wustl.edu/how-aid-works/scholarships-and-grants/"
+  },
+  {
+    "university_name": "Washington University in St. Louis (WashU)",
+    "scholarship_name": "WashU Need-Based Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full cost",
+    "eligibility_criteria": "Meets 100% of demonstrated financial need without loans for undergraduate students.",
+    "application_deadline": "Regular Decision deadline",
+    "scholarship_url": "https://financialaid.wustl.edu/how-aid-works/scholarships-and-grants/"
+  },
+  {
+    "university_name": "William & Mary",
+    "scholarship_name": "1693 Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "In-state: full tuition, room/board; Out-of-state: partial",
+    "eligibility_criteria": "Top applicants demonstrating exceptional academic and extracurricular achievements.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://www.wm.edu/admission/financialaid/types/scholarships/"
+  },
+  {
+    "university_name": "William & Mary",
+    "scholarship_name": "Monroe Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$3,000 summer research stipend",
+    "eligibility_criteria": "Top 7% of admitted students with outstanding academic records.",
+    "application_deadline": "No separate application",
+    "scholarship_url": "https://www.wm.edu/admission/financialaid/types/scholarships/"
+  },
+  {
+    "university_name": "William & Mary",
+    "scholarship_name": "William & Mary Promise / Need-Based Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Meets 100% of demonstrated financial need for in-state students.",
+    "application_deadline": "March 1",
+    "scholarship_url": "https://www.wm.edu/admission/financialaid/types/scholarships/"
+  },
+  {
+    "university_name": "William & Mary",
+    "scholarship_name": "Virginia Commonwealth Award",
+    "scholarship_type": "State Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Virginia residents demonstrating financial need.",
+    "application_deadline": "March 1",
+    "scholarship_url": "https://www.wm.edu/admission/financialaid/types/scholarships/"
+  }
+]

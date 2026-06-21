@@ -166,9 +166,10 @@ function createVirtualUniversity(
     programUrl?: string | null;
     departments?: Set<string>;
     feeStructureText?: string | null;
+    scholarships?: any[];
   }
 ): University {
-  const { country = "Pakistan", allCities, website, minFee, maxFee, degrees, deadlineText, feeStructureText } = options ?? {};
+  const { country = "Pakistan", allCities, website, minFee, maxFee, degrees, deadlineText, feeStructureText, scholarships } = options ?? {};
 
   const tuitionFees: { program: string; localFee: string }[] = [];
   if (feeStructureText) {
@@ -205,8 +206,9 @@ function createVirtualUniversity(
       acceptedCurriculums: curriculums,
       entranceTest: options?.testRequired || undefined,
     },
-    scholarships: [],
+    scholarships: scholarships || [],
     website: options?.programUrl || website || `https://www.google.com/search?q=${encodeURIComponent(universityName + " official website")}`,
+    applyLink: options?.programUrl || website || `https://www.google.com/search?q=${encodeURIComponent(universityName + " admission")}`,
     logo: options?.logoUrl || undefined,
     tuitionFees: tuitionFees.length > 0 ? tuitionFees : undefined,
     internationalFriendly: country === "US" || country === "United States" || country === "United Kingdom" || country === "UK",
@@ -241,16 +243,43 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     return universities.filter((u) => u.country === "Pakistan");
   }, []);
 
-  const [filters, setFilters] = useState<FiltersType>({
-    search: "",
-    majors: [],
-    countries: [],
-    cities: [],
-    types: [],
-    budgetRange: "any",
-    rankings: [],
-    institutes: [],
+  const [filters, setFilters] = useState<FiltersType>(() => {
+    const defaultFilters: FiltersType = {
+      search: "",
+      majors: [],
+      countries: [],
+      cities: [],
+      types: [],
+      budgetRange: "any",
+      rankings: [],
+      institutes: [],
+    };
+    try {
+      const saved = sessionStorage.getItem("universityFinderFilters");
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        return {
+          ...defaultFilters,
+          ...parsed,
+          search: parsed?.search || "",
+          budgetRange: parsed?.budgetRange || "any",
+          majors: Array.isArray(parsed?.majors) ? parsed.majors : [],
+          countries: Array.isArray(parsed?.countries) ? parsed.countries : [],
+          cities: Array.isArray(parsed?.cities) ? parsed.cities : [],
+          types: Array.isArray(parsed?.types) ? parsed.types : [],
+          rankings: Array.isArray(parsed?.rankings) ? parsed.rankings : [],
+          institutes: Array.isArray(parsed?.institutes) ? parsed.institutes : [],
+        };
+      }
+    } catch (e) {
+      // ignore
+    }
+    return defaultFilters;
   });
+
+  useEffect(() => {
+    sessionStorage.setItem("universityFinderFilters", JSON.stringify(filters));
+  }, [filters]);
 
   // Get institutes that offer selected programs
   const institutesOfferingSelectedSubjects = useMemo(() => {
@@ -463,6 +492,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
           programUrl: data.programUrl,
           departments: data.departments,
           feeStructureText: data.feeStructureText,
+          scholarships: (data as any).scholarships || [],
         }
       );
     };

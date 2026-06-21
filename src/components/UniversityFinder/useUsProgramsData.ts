@@ -27,6 +27,7 @@ export interface UsInstituteData {
   programUrl: string | null;
   feeStructureText: string | null;
   durations: Set<string>;
+  scholarships: any[];
 }
 
 function uniqSorted(values: string[]) {
@@ -198,6 +199,7 @@ export function useUsProgramsData(options: {
   const [allPrograms, setAllPrograms] = useState<UsProgram[]>([]);
   const [usInstitutes, setUsInstitutes] = useState<string[]>([]);
   const [usMajors, setUsMajors] = useState<string[]>([]);
+  const [usScholarships, setUsScholarships] = useState<any[]>([]);
   const [loadingProgramsData, setLoadingProgramsData] = useState(false);
   const [programsError, setProgramsError] = useState(false);
 
@@ -211,24 +213,30 @@ export function useUsProgramsData(options: {
       setProgramsError(false);
 
       try {
-        const [ivyRes, tier1Res, tier2Res, tier3Res, tier4Res] = await Promise.all([
+        const [ivyRes, tier1Res, tier2Res, tier3Res, tier4Res, schIvyRes, schTier1Res, schTier2Res] = await Promise.all([
           fetch("/US_Unis/IVY_leagu_unis_merger.json"),
           fetch("/US_Unis/Tier_1_US_unis_Merge.json"),
           fetch("/US_Unis/Tier_2_US_unis_Merge.json"),
           fetch("/US_Unis/Tier_3_US_unis_Merge.json"),
           fetch("/US_Unis/Tier_4_US_unis_Merge.json"),
+          fetch("/US_unis_scholarships/Ivy_League_Scholarships_Merged.json"),
+          fetch("/US_unis_scholarships/Tier_1_Scholarships_Merged.json"),
+          fetch("/US_unis_scholarships/Tier_2_Scholarships_Merged.json"),
         ]);
 
-        if (!ivyRes.ok || !tier1Res.ok || !tier2Res.ok || !tier3Res.ok || !tier4Res.ok) {
-          throw new Error("Failed to fetch US programs data files");
+        if (!ivyRes.ok || !tier1Res.ok || !tier2Res.ok || !tier3Res.ok || !tier4Res.ok || !schIvyRes.ok || !schTier1Res.ok || !schTier2Res.ok) {
+          throw new Error("Failed to fetch US programs or scholarship data files");
         }
 
-        const [ivy, tier1, tier2, tier3, tier4] = await Promise.all([
+        const [ivy, tier1, tier2, tier3, tier4, schIvy, schTier1, schTier2] = await Promise.all([
           ivyRes.json(),
           tier1Res.json(),
           tier2Res.json(),
           tier3Res.json(),
           tier4Res.json(),
+          schIvyRes.json(),
+          schTier1Res.json(),
+          schTier2Res.json(),
         ]);
 
         if (cancelled) return;
@@ -246,6 +254,9 @@ export function useUsProgramsData(options: {
         setAllPrograms(all);
         const institutes = uniqSorted(all.map((p) => p.university_name));
         const programs = uniqSorted(all.map((p) => p.program).filter(Boolean) as string[]);
+        
+        const allScholarships = [...schIvy, ...schTier1, ...schTier2];
+        setUsScholarships(allScholarships);
         setUsInstitutes(institutes);
         setUsMajors(programs);
       } catch (e) {
@@ -273,6 +284,18 @@ export function useUsProgramsData(options: {
   }, [allPrograms]);
 
   const instituteDataMap = useMemo(() => {
+    const schMap = new Map<string, any[]>();
+    usScholarships.forEach((sch) => {
+      if (!schMap.has(sch.university_name)) schMap.set(sch.university_name, []);
+      schMap.get(sch.university_name)!.push({
+        name: sch.scholarship_name,
+        coverage: sch.award_amount || sch.scholarship_type,
+        eligibility: sch.eligibility_criteria || "Check website for details",
+        deadline: sch.application_deadline,
+        applyLink: sch.scholarship_url || sch.link || sch.url || `https://www.google.com/search?q=${encodeURIComponent(sch.university_name + " " + sch.scholarship_name + " scholarship")}`,
+      });
+    });
+
     const map = new Map<string, UsInstituteData>();
     allPrograms.forEach((row) => {
       if (!map.has(row.university_name)) {
@@ -289,6 +312,7 @@ export function useUsProgramsData(options: {
           programUrl: null,
           feeStructureText: null,
           durations: new Set(),
+          scholarships: schMap.get(row.university_name) || [],
         });
       }
       const data = map.get(row.university_name)!;
@@ -304,10 +328,20 @@ export function useUsProgramsData(options: {
       if (row.eligibility_criteria && !data.eligibilityCriteria) data.eligibilityCriteria = row.eligibility_criteria;
       if (row.test_required && !data.testRequired) data.testRequired = row.test_required;
       // Prefer actual program URL over fallback
-      if (row.program_url && !data.programUrl) data.programUrl = row.program_url;
+      if (row.program_url && !data.programUrl) {
+        data.programUrl = row.program_url;
+        // If the website is still the Google Search fallback, try to use the origin of the program URL
+        if (data.website.includes("google.com/search")) {
+          try {
+            data.website = new URL(row.program_url).origin;
+          } catch (e) {
+            // ignore invalid URL
+          }
+        }
+      }
     });
     return map;
-  }, [allPrograms]);
+  }, [allPrograms, usScholarships]);
 
   return {
     allPrograms,

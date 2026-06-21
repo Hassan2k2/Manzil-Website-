@@ -1,0 +1,1242 @@
+[
+  {
+    "university_name": "American University",
+    "scholarship_name": "Frederick Douglass Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Full tuition, room, board, and books",
+    "eligibility_criteria": "High academic achievement and commitment to social justice. Must demonstrate financial need.",
+    "application_deadline": "Dec 15"
+  },
+  {
+    "university_name": "American University",
+    "scholarship_name": "AU Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Partial to full tuition",
+    "eligibility_criteria": "Top academic performance. Automatically considered upon admission.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "American University",
+    "scholarship_name": "AU Need-Based Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile and FAFSA.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Arizona State University",
+    "scholarship_name": "New American University Scholarship (President's/Provost's)",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies by residency (Up to $15k+)",
+    "eligibility_criteria": "High GPA and test scores. Auto-considered upon admission.",
+    "application_deadline": "May 1"
+  },
+  {
+    "university_name": "Arizona State University",
+    "scholarship_name": "Obama Scholars Program",
+    "scholarship_type": "Need-Based/State",
+    "award_amount": "Covers full demonstrated need (tuition, room, board)",
+    "eligibility_criteria": "Arizona residents with family income under $42k.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Arizona State University",
+    "scholarship_name": "College Attainment Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Tuition coverage",
+    "eligibility_criteria": "Arizona residents who are Pell-eligible.",
+    "application_deadline": "July 1"
+  },
+  {
+    "university_name": "Boston College",
+    "scholarship_name": "Presidential Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Top 1-2% of Early Action applicants demonstrating leadership.",
+    "application_deadline": "Nov 1 (Early Action)"
+  },
+  {
+    "university_name": "Boston College",
+    "scholarship_name": "Boston College Need-Based Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Meets 100% of demonstrated need",
+    "eligibility_criteria": "Admitted students with demonstrated need via CSS Profile.",
+    "application_deadline": "Regular Decision deadline"
+  },
+  {
+    "university_name": "Boston University",
+    "scholarship_name": "Trustee Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full undergraduate tuition + fees",
+    "eligibility_criteria": "Top academic students demonstrating exceptional leadership.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Boston University",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$25,000 per year",
+    "eligibility_criteria": "Academic excellence and extracurricular involvement.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Boston University",
+    "scholarship_name": "BU Scholarship Assurance (Need-Based)",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Meets 100% of demonstrated need",
+    "eligibility_criteria": "Available for all admitted domestic students. Need matched without loans.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Brandeis University",
+    "scholarship_name": "Wien International Scholarship",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Meets full demonstrated need",
+    "eligibility_criteria": "Exceptional international students.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Brandeis University",
+    "scholarship_name": "Justice Brandeis Scholar",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000 to $20,500/year",
+    "eligibility_criteria": "Outstanding academic achievement and community involvement.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Brandeis University",
+    "scholarship_name": "Alumni Scholars",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Strong academic record and engagement.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Case Western Reserve University",
+    "scholarship_name": "University Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000 to $35,000/year",
+    "eligibility_criteria": "Top academic performance; automatically considered upon admission.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Case Western Reserve University",
+    "scholarship_name": "Michelson-Morley Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Outstanding students in STEM fields.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Case Western Reserve University",
+    "scholarship_name": "CWRU Need-Based Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Meets 100% of demonstrated need",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Clemson University",
+    "scholarship_name": "National Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, board + enrichment",
+    "eligibility_criteria": "Top-tier applicants demonstrating academic excellence and leadership.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Clemson University",
+    "scholarship_name": "Palmetto Fellows Scholarship",
+    "scholarship_type": "State Merit",
+    "award_amount": "Up to $6,700 (freshman), $7,500 (upperclassmen)",
+    "eligibility_criteria": "SC residents with high GPA/Test scores.",
+    "application_deadline": "June 15"
+  },
+  {
+    "university_name": "Clemson University",
+    "scholarship_name": "LIFE Scholarship",
+    "scholarship_type": "State Merit",
+    "award_amount": "Up to $5,000/year",
+    "eligibility_criteria": "SC residents meeting state academic criteria.",
+    "application_deadline": "No separate app"
+  },
+  {
+    "university_name": "College of William & Mary",
+    "scholarship_name": "1693 Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "In-state: full tuition, room/board; Out-of-state: partial",
+    "eligibility_criteria": "Top applicants demonstrating exceptional academic achievements.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "College of William & Mary",
+    "scholarship_name": "Monroe Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$3,000 summer research stipend",
+    "eligibility_criteria": "Top 7% of admitted students.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "College of William & Mary",
+    "scholarship_name": "W&M Promise",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Meets 100% of demonstrated need",
+    "eligibility_criteria": "In-state students with demonstrated need.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Colorado State University",
+    "scholarship_name": "Green and Gold Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$2,500 to $10,000/year",
+    "eligibility_criteria": "Non-resident students demonstrating academic excellence.",
+    "application_deadline": "May 1"
+  },
+  {
+    "university_name": "Colorado State University",
+    "scholarship_name": "Partnership Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$2,500/year",
+    "eligibility_criteria": "Colorado residents demonstrating high academic achievement.",
+    "application_deadline": "May 1"
+  },
+  {
+    "university_name": "Colorado State University",
+    "scholarship_name": "CSU Tuition Assistance Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Colorado residents who are Pell-eligible.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Florida State University",
+    "scholarship_name": "Presidential Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + $12,000 enrichment",
+    "eligibility_criteria": "Top academic students. Highly selective.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Florida State University",
+    "scholarship_name": "Out-of-State Tuition Waiver",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full or partial out-of-state tuition waived",
+    "eligibility_criteria": "Non-Florida residents with outstanding academic records.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Florida State University",
+    "scholarship_name": "Florida Bright Futures",
+    "scholarship_type": "State Merit",
+    "award_amount": "Up to 100% of tuition",
+    "eligibility_criteria": "Florida residents meeting state GPA and test score requirements.",
+    "application_deadline": "Aug 31"
+  },
+  {
+    "university_name": "Fordham University",
+    "scholarship_name": "Cunniffe Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Top 1% of admitted class; extraordinary academic and leadership profiles.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Fordham University",
+    "scholarship_name": "Excellence in Theatre/Dance Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to full tuition",
+    "eligibility_criteria": "Exceptional talent in performing arts.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Fordham University",
+    "scholarship_name": "Fordham Tuition Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "George Washington University",
+    "scholarship_name": "Presidential Academic Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000 to $30,000/year",
+    "eligibility_criteria": "Top academic performance. Automatically considered.",
+    "application_deadline": "Jan 5"
+  },
+  {
+    "university_name": "George Washington University",
+    "scholarship_name": "Stephen Joel Trachtenberg Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, board, and fees",
+    "eligibility_criteria": "Top DC high school students demonstrating leadership and academics.",
+    "application_deadline": "Jan 5"
+  },
+  {
+    "university_name": "George Washington University",
+    "scholarship_name": "GW University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile.",
+    "application_deadline": "Jan 5"
+  },
+  {
+    "university_name": "Georgia Institute of Technology (Georgia Tech)",
+    "scholarship_name": "Stamps President's Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + enrichment fund",
+    "eligibility_criteria": "Top 1% of applicants; exceptional leadership and academics.",
+    "application_deadline": "Oct 15 (Early Action)"
+  },
+  {
+    "university_name": "Georgia Institute of Technology (Georgia Tech)",
+    "scholarship_name": "G. Wayne Clough Tech Promise Program",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Covers full cost without loans",
+    "eligibility_criteria": "Georgia residents with family income under $33,300.",
+    "application_deadline": "Jan 31"
+  },
+  {
+    "university_name": "Georgia Institute of Technology (Georgia Tech)",
+    "scholarship_name": "HOPE/Zell Miller Scholarships",
+    "scholarship_type": "State Merit",
+    "award_amount": "Partial to full tuition",
+    "eligibility_criteria": "Georgia residents meeting state GPA and rigor requirements.",
+    "application_deadline": "State deadline"
+  },
+  {
+    "university_name": "Indiana University Bloomington",
+    "scholarship_name": "Wells Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, fees, and living stipend",
+    "eligibility_criteria": "Outstanding academics and leadership; nomination required.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Indiana University Bloomington",
+    "scholarship_name": "Dean's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$1,000 to $11,000/year",
+    "eligibility_criteria": "Out-of-state students demonstrating academic excellence.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Indiana University Bloomington",
+    "scholarship_name": "Provost's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$1,000 to $8,000/year",
+    "eligibility_criteria": "In-state students demonstrating academic excellence.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Iowa State University",
+    "scholarship_name": "Journey to Iowa Scholar",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$8,500 to $11,000/year",
+    "eligibility_criteria": "Out-of-state students meeting specific GPA/test score criteria.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Iowa State University",
+    "scholarship_name": "MVP Award (Multicultural Vision Program)",
+    "scholarship_type": "Merit/Need",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "In-state minority or first-gen students with financial need.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Iowa State University",
+    "scholarship_name": "Iowa State Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "In-state students demonstrating need via FAFSA.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Lehigh University",
+    "scholarship_name": "Asa Packer Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Exceptional academic and extracurricular achievement.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Lehigh University",
+    "scholarship_name": "Dean's Scholars",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$12,000/year",
+    "eligibility_criteria": "Outstanding academic performance.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Lehigh University",
+    "scholarship_name": "Lehigh University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Meets 100% of demonstrated need",
+    "eligibility_criteria": "Students with financial need via CSS Profile.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Loyola University Chicago",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$20,000 to $25,000/year",
+    "eligibility_criteria": "Top academic performance upon admission.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Loyola University Chicago",
+    "scholarship_name": "Ignatian Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to full tuition",
+    "eligibility_criteria": "High-achieving students demonstrating Jesuit values.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "Loyola University Chicago",
+    "scholarship_name": "Loyola Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via FAFSA.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Michigan State University",
+    "scholarship_name": "Alumni Distinguished Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Top high school seniors; requires participation in the ADS exam.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Michigan State University",
+    "scholarship_name": "Spartan Advantage Program",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Michigan residents who are Pell Grant eligible.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Michigan State University",
+    "scholarship_name": "Honors College Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$13,000/year (out-of-state)",
+    "eligibility_criteria": "Non-resident students invited to the Honors College.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Northeastern University",
+    "scholarship_name": "Northeastern National Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "National Merit Finalists.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Northeastern University",
+    "scholarship_name": "Dean's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000 to $28,000/year",
+    "eligibility_criteria": "Top 10-15% of applicant pool.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Northeastern University",
+    "scholarship_name": "Northeastern Promise",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Meets 100% of demonstrated need",
+    "eligibility_criteria": "Meets full demonstrated need for all admitted students.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "Ohio State University",
+    "scholarship_name": "Eminence Fellows Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + $3,000 enrichment",
+    "eligibility_criteria": "Top academic students; highly competitive.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Ohio State University",
+    "scholarship_name": "Morrill Scholarship Program (MSP)",
+    "scholarship_type": "Merit/Diversity",
+    "award_amount": "Full tuition to full cost of attendance",
+    "eligibility_criteria": "Academically exceptional students engaged in diversity-based leadership.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Ohio State University",
+    "scholarship_name": "National Buckeye Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$13,500/year",
+    "eligibility_criteria": "Out-of-state students demonstrating high academic achievement.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Oregon State University",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000/year",
+    "eligibility_criteria": "Top in-state students demonstrating exceptional academic achievement.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "Oregon State University",
+    "scholarship_name": "Provost Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$2,000 to $12,000/year",
+    "eligibility_criteria": "Out-of-state students demonstrating academic excellence.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "Oregon State University",
+    "scholarship_name": "Bridge to Success",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Oregon residents who are Pell Grant eligible.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Pennsylvania State University (Penn State)",
+    "scholarship_name": "Schreyer Honors College Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$5,000/year",
+    "eligibility_criteria": "Students admitted to the Schreyer Honors College.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Pennsylvania State University (Penn State)",
+    "scholarship_name": "Provost Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$5,000 to $7,000/year",
+    "eligibility_criteria": "Out-of-state students demonstrating academic excellence.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Pennsylvania State University (Penn State)",
+    "scholarship_name": "Discover Penn State Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$6,000/year",
+    "eligibility_criteria": "Out-of-state students from select states attending a Commonwealth Campus.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Pepperdine University",
+    "scholarship_name": "Regents' Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Top 10% of admitted students based on GPA and standardized tests.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Pepperdine University",
+    "scholarship_name": "George Pepperdine Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$5,000 to $12,000/year",
+    "eligibility_criteria": "Admitted students demonstrating academic excellence.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Pepperdine University",
+    "scholarship_name": "Pepperdine Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Students demonstrating financial need via FAFSA.",
+    "application_deadline": "Feb 15"
+  },
+  {
+    "university_name": "Purdue University",
+    "scholarship_name": "Trustees Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000 to $16,000/year",
+    "eligibility_criteria": "Top out-of-state students demonstrating academic excellence.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Purdue University",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$5,000 to $10,000/year",
+    "eligibility_criteria": "High academic achieving students.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "Purdue University",
+    "scholarship_name": "Purdue Promise",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies up to full need",
+    "eligibility_criteria": "Indiana residents who are 21st Century Scholars and Pell-eligible.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Rutgers University – New Brunswick",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Top high school seniors demonstrating exceptional academic achievement.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Rutgers University – New Brunswick",
+    "scholarship_name": "Scarlet Promise Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Students demonstrating financial need.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Rutgers University – New Brunswick",
+    "scholarship_name": "Rutgers National Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000/year",
+    "eligibility_criteria": "Out-of-state students demonstrating high academic achievement.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "SMU (Southern Methodist University)",
+    "scholarship_name": "President's Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, fees, and study abroad",
+    "eligibility_criteria": "Top academic students; requires invitation to interview.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "SMU (Southern Methodist University)",
+    "scholarship_name": "Hunt Leadership Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$44,000/year",
+    "eligibility_criteria": "Outstanding leadership ability and academic record. Requires separate app.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "SMU (Southern Methodist University)",
+    "scholarship_name": "SMU Opportunity Award",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Meets 100% of demonstrated need for Texas residents.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Stevens Institute of Technology",
+    "scholarship_name": "Ann P. Neupauer Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Top incoming students demonstrating exceptional academic performance.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Stevens Institute of Technology",
+    "scholarship_name": "Edwin A. Stevens Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Outstanding academic achievement.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Stevens Institute of Technology",
+    "scholarship_name": "Stevens Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile and FAFSA.",
+    "application_deadline": "Feb 15"
+  },
+  {
+    "university_name": "Stony Brook University (SUNY)",
+    "scholarship_name": "University Scholars",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$3,000 to $5,000/year",
+    "eligibility_criteria": "Top 7% of admitted class; excellent academics and leadership.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Stony Brook University (SUNY)",
+    "scholarship_name": "Excelsior Scholarship",
+    "scholarship_type": "State Grant",
+    "award_amount": "Covers SUNY tuition",
+    "eligibility_criteria": "New York residents with family income up to $125k.",
+    "application_deadline": "State deadline"
+  },
+  {
+    "university_name": "Stony Brook University (SUNY)",
+    "scholarship_name": "Honors College Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition (In-State) or Partial (Out-of-State)",
+    "eligibility_criteria": "Admitted into the Honors College.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Syracuse University",
+    "scholarship_name": "Coronet Scholar Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Exceptional academic achievement and leadership. Limited awards.",
+    "application_deadline": "Jan 5"
+  },
+  {
+    "university_name": "Syracuse University",
+    "scholarship_name": "Founders' Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$20,000/year",
+    "eligibility_criteria": "Strong academic performance.",
+    "application_deadline": "Jan 5"
+  },
+  {
+    "university_name": "Syracuse University",
+    "scholarship_name": "Syracuse University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile.",
+    "application_deadline": "Jan 5"
+  },
+  {
+    "university_name": "Temple University",
+    "scholarship_name": "President's Scholar Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition",
+    "eligibility_criteria": "Top high school seniors with outstanding GPA/Test scores.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "Temple University",
+    "scholarship_name": "Provost's Scholar Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000 to partial tuition",
+    "eligibility_criteria": "Excellent academic record.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "Temple University",
+    "scholarship_name": "Fly in 4 Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "$4,000/year",
+    "eligibility_criteria": "Pell-eligible students committing to graduate in 4 years.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "Texas A&M University",
+    "scholarship_name": "Brown Foundation Scholars",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance",
+    "eligibility_criteria": "Top academic performance and leadership. Highly selective.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Texas A&M University",
+    "scholarship_name": "President's Endowed Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$12,000 total ($3k/yr)",
+    "eligibility_criteria": "High achieving freshmen.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "Texas A&M University",
+    "scholarship_name": "Aggie Assurance",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Covers tuition",
+    "eligibility_criteria": "Texas residents with family income under $60,000.",
+    "application_deadline": "March 15"
+  },
+  {
+    "university_name": "University of Connecticut",
+    "scholarship_name": "Stamps Scholar",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + enrichment fund",
+    "eligibility_criteria": "Top incoming freshmen demonstrating leadership and academic excellence.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "University of Connecticut",
+    "scholarship_name": "Nutmeg Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Outstanding Connecticut residents.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "University of Connecticut",
+    "scholarship_name": "UConn Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via FAFSA.",
+    "application_deadline": "Feb 15"
+  },
+  {
+    "university_name": "University of Colorado Boulder",
+    "scholarship_name": "Chancellor's Achievement Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$25,000 over 4 years",
+    "eligibility_criteria": "Top out-of-state students.",
+    "application_deadline": "Nov 15 (Early Action)"
+  },
+  {
+    "university_name": "University of Colorado Boulder",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$55,000 over 4 years",
+    "eligibility_criteria": "Top out-of-state students.",
+    "application_deadline": "Nov 15"
+  },
+  {
+    "university_name": "University of Colorado Boulder",
+    "scholarship_name": "CU Promise",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Covers tuition and fees",
+    "eligibility_criteria": "Colorado residents who are Pell Grant eligible.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "University of California, Davis",
+    "scholarship_name": "Blue and Gold Opportunity Plan",
+    "scholarship_type": "State/Institutional Grant",
+    "award_amount": "Systemwide tuition and fees",
+    "eligibility_criteria": "California residents with family income below $80k.",
+    "application_deadline": "March 2"
+  },
+  {
+    "university_name": "University of California, Davis",
+    "scholarship_name": "Regents Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$7,500 honorarium or up to full need",
+    "eligibility_criteria": "Top entering students based on academic excellence.",
+    "application_deadline": "Nov 30 (UC App)"
+  },
+  {
+    "university_name": "University of California, Davis",
+    "scholarship_name": "Provost Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to $40,000 total",
+    "eligibility_criteria": "Out-of-state/international students demonstrating high academic achievement.",
+    "application_deadline": "Nov 30"
+  },
+  {
+    "university_name": "University of California, Irvine",
+    "scholarship_name": "Blue and Gold Opportunity Plan",
+    "scholarship_type": "State/Institutional Grant",
+    "award_amount": "Systemwide tuition and fees",
+    "eligibility_criteria": "California residents with family income below $80k.",
+    "application_deadline": "March 2"
+  },
+  {
+    "university_name": "University of California, Irvine",
+    "scholarship_name": "Regents' Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Honorarium or up to full need",
+    "eligibility_criteria": "Outstanding entering students.",
+    "application_deadline": "Nov 30"
+  },
+  {
+    "university_name": "University of California, Irvine",
+    "scholarship_name": "Chancellor's Excellence Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "High achieving incoming students.",
+    "application_deadline": "Nov 30"
+  },
+  {
+    "university_name": "University of California, Santa Barbara (UCSB)",
+    "scholarship_name": "Blue and Gold Opportunity Plan",
+    "scholarship_type": "State/Institutional Grant",
+    "award_amount": "Systemwide tuition and fees",
+    "eligibility_criteria": "California residents with family income below $80k.",
+    "application_deadline": "March 2"
+  },
+  {
+    "university_name": "University of California, Santa Barbara (UCSB)",
+    "scholarship_name": "Regents Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Honorarium or up to full need",
+    "eligibility_criteria": "Top entering students based on academic excellence.",
+    "application_deadline": "Nov 30"
+  },
+  {
+    "university_name": "University of California, Santa Barbara (UCSB)",
+    "scholarship_name": "UCSB Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Admitted students with financial need.",
+    "application_deadline": "March 2"
+  },
+  {
+    "university_name": "University of California, San Diego (UCSD)",
+    "scholarship_name": "Blue and Gold Opportunity Plan",
+    "scholarship_type": "State/Institutional Grant",
+    "award_amount": "Systemwide tuition and fees",
+    "eligibility_criteria": "California residents with family income below $80k.",
+    "application_deadline": "March 2"
+  },
+  {
+    "university_name": "University of California, San Diego (UCSD)",
+    "scholarship_name": "Regents Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$2,000 honorarium or up to full need",
+    "eligibility_criteria": "Top entering students.",
+    "application_deadline": "Nov 30"
+  },
+  {
+    "university_name": "University of California, San Diego (UCSD)",
+    "scholarship_name": "Chancellor's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$5,000/year",
+    "eligibility_criteria": "Top entering students demonstrating leadership and academic excellence.",
+    "application_deadline": "Nov 30"
+  },
+  {
+    "university_name": "University of Illinois Urbana-Champaign",
+    "scholarship_name": "Stamps Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + $12,000 enrichment",
+    "eligibility_criteria": "Top incoming freshmen.",
+    "application_deadline": "Nov 1 (Early Action)"
+  },
+  {
+    "university_name": "University of Illinois Urbana-Champaign",
+    "scholarship_name": "Illinois Commitment",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition and fees",
+    "eligibility_criteria": "Illinois residents with family income under $67,100.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "University of Illinois Urbana-Champaign",
+    "scholarship_name": "President's Award Program (PAP)",
+    "scholarship_type": "Merit/Diversity",
+    "award_amount": "Varies",
+    "eligibility_criteria": "High achieving students from underrepresented backgrounds.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "University of Maryland, College Park",
+    "scholarship_name": "Banneker/Key Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Partial to full tuition, room, and board",
+    "eligibility_criteria": "Top 1-2% of admitted freshmen.",
+    "application_deadline": "Nov 1 (Early Action)"
+  },
+  {
+    "university_name": "University of Maryland, College Park",
+    "scholarship_name": "President's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$2,000 to $12,500/year",
+    "eligibility_criteria": "Outstanding incoming freshmen.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "University of Maryland, College Park",
+    "scholarship_name": "UMD Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via FAFSA.",
+    "application_deadline": "Jan 1"
+  },
+  {
+    "university_name": "University of Minnesota, Twin Cities",
+    "scholarship_name": "National Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$2,500 to $15,000/year",
+    "eligibility_criteria": "Out-of-state students demonstrating academic excellence.",
+    "application_deadline": "Dec 15"
+  },
+  {
+    "university_name": "University of Minnesota, Twin Cities",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$1,000 to $10,000/year",
+    "eligibility_criteria": "In-state students demonstrating academic excellence.",
+    "application_deadline": "Dec 15"
+  },
+  {
+    "university_name": "University of Minnesota, Twin Cities",
+    "scholarship_name": "U of M Promise Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Minnesota residents with family incomes up to $120,000.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "University of North Carolina at Chapel Hill",
+    "scholarship_name": "Morehead-Cain Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + summer enrichment",
+    "eligibility_criteria": "Outstanding leadership, character, scholarship, and physical vigor.",
+    "application_deadline": "Oct 15"
+  },
+  {
+    "university_name": "University of North Carolina at Chapel Hill",
+    "scholarship_name": "Robertson Scholars Leadership Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board + summer funding",
+    "eligibility_criteria": "Demonstrated leadership and intellectual curiosity. Joint program with Duke.",
+    "application_deadline": "Nov 15"
+  },
+  {
+    "university_name": "University of North Carolina at Chapel Hill",
+    "scholarship_name": "Carolina Covenant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full cost without loans",
+    "eligibility_criteria": "Students from low-income families (income under 200% of poverty guidelines).",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "University at Buffalo (SUNY)",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, fees, room, and board",
+    "eligibility_criteria": "Top incoming freshmen.",
+    "application_deadline": "Dec 15"
+  },
+  {
+    "university_name": "University at Buffalo (SUNY)",
+    "scholarship_name": "Provost Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$5,000/year",
+    "eligibility_criteria": "High achieving incoming freshmen.",
+    "application_deadline": "Dec 15"
+  },
+  {
+    "university_name": "University at Buffalo (SUNY)",
+    "scholarship_name": "Excelsior Scholarship",
+    "scholarship_type": "State Grant",
+    "award_amount": "Covers SUNY tuition",
+    "eligibility_criteria": "New York residents with family income up to $125k.",
+    "application_deadline": "State deadline"
+  },
+  {
+    "university_name": "University of Florida",
+    "scholarship_name": "Lombardi and Stamps Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies + enrichment fund",
+    "eligibility_criteria": "Outstanding leadership and academic achievement. Requires nomination.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "University of Florida",
+    "scholarship_name": "Machen Florida Opportunity Scholars",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full cost of attendance",
+    "eligibility_criteria": "First-generation Florida residents from low-income backgrounds.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "University of Florida",
+    "scholarship_name": "Florida Bright Futures",
+    "scholarship_type": "State Merit",
+    "award_amount": "Up to 100% of tuition",
+    "eligibility_criteria": "Florida residents meeting state GPA/test requirements.",
+    "application_deadline": "Aug 31"
+  },
+  {
+    "university_name": "University of Georgia",
+    "scholarship_name": "Foundation Fellowship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + travel grants",
+    "eligibility_criteria": "Top 1% of applicants. Extraordinary academic and leadership profiles.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "University of Georgia",
+    "scholarship_name": "Bernard Ramsey Honors Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies + travel grants",
+    "eligibility_criteria": "Top applicants demonstrating academic excellence.",
+    "application_deadline": "Nov 1"
+  },
+  {
+    "university_name": "University of Georgia",
+    "scholarship_name": "HOPE/Zell Miller Scholarships",
+    "scholarship_type": "State Merit",
+    "award_amount": "Partial to full tuition",
+    "eligibility_criteria": "Georgia residents meeting state requirements.",
+    "application_deadline": "State deadline"
+  },
+  {
+    "university_name": "University of Iowa",
+    "scholarship_name": "National Scholars Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$2,000 to $12,000/year",
+    "eligibility_criteria": "Out-of-state students demonstrating high academic achievement.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "University of Iowa",
+    "scholarship_name": "Iowa Flagship Award",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$1,000 to $8,500/year",
+    "eligibility_criteria": "In-state students demonstrating high academic achievement.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "University of Iowa",
+    "scholarship_name": "Iowa Tuition Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "In-state students with financial need.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "University of Pittsburgh",
+    "scholarship_name": "Chancellor's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition, room, and board",
+    "eligibility_criteria": "Outstanding academics. Requires separate application.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "University of Pittsburgh",
+    "scholarship_name": "University Honors College Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Students admitted to the Honors College.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "University of Pittsburgh",
+    "scholarship_name": "Pitt Pell Plus Program",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Matches Pell Grant amount",
+    "eligibility_criteria": "Students receiving the Federal Pell Grant.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "University of Washington",
+    "scholarship_name": "Husky Promise",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition and standard fees",
+    "eligibility_criteria": "Washington residents who are Pell Grant or State Need Grant eligible.",
+    "application_deadline": "Feb 28"
+  },
+  {
+    "university_name": "University of Washington",
+    "scholarship_name": "Purple and Gold Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Out-of-state students demonstrating academic excellence.",
+    "application_deadline": "Nov 15"
+  },
+  {
+    "university_name": "University of Washington",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$10,000/year",
+    "eligibility_criteria": "In-state residents with outstanding academic records.",
+    "application_deadline": "Nov 15"
+  },
+  {
+    "university_name": "University of Texas at Austin",
+    "scholarship_name": "Forty Acres Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full cost of attendance + enrichment fund",
+    "eligibility_criteria": "Top academic and leadership profiles. Requires separate application via Texas Exes.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "University of Texas at Austin",
+    "scholarship_name": "Texas Advance Commitment",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Tuition coverage",
+    "eligibility_criteria": "Texas residents with family income under $65,000 get full tuition covered. Under $125k get partial.",
+    "application_deadline": "March 15"
+  },
+  {
+    "university_name": "University of Texas at Austin",
+    "scholarship_name": "Presidential Scholars",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Outstanding academic achievement.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "University of Wisconsin-Madison",
+    "scholarship_name": "Bucky's Tuition Promise",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition and segregated fees",
+    "eligibility_criteria": "Wisconsin residents with family income under $65,000.",
+    "application_deadline": "Dec 1"
+  },
+  {
+    "university_name": "University of Wisconsin-Madison",
+    "scholarship_name": "Chancellor's Scholarship Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Full tuition and book stipend",
+    "eligibility_criteria": "Academically outstanding students from historically underrepresented backgrounds.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "University of Wisconsin-Madison",
+    "scholarship_name": "Wisconsin Alumni Association Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Varies based on region and alumni chapter.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "Virginia Tech",
+    "scholarship_name": "Presidential Scholarship Initiative",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Full tuition, room, board, and fees",
+    "eligibility_criteria": "Virginia residents with high financial need who are academically competitive.",
+    "application_deadline": "Jan 22"
+  },
+  {
+    "university_name": "Virginia Tech",
+    "scholarship_name": "Pamplin Scholars Program",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Top students admitted to the Pamplin College of Business.",
+    "application_deadline": "Jan 22"
+  },
+  {
+    "university_name": "Virginia Tech",
+    "scholarship_name": "Virginia Tech Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via FAFSA.",
+    "application_deadline": "March 1"
+  },
+  {
+    "university_name": "Worcester Polytechnic Institute (WPI)",
+    "scholarship_name": "Presidential Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$15,000 to $25,000/year",
+    "eligibility_criteria": "Top academic performance upon admission.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Worcester Polytechnic Institute (WPI)",
+    "scholarship_name": "WPI Global Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "$5,000 one-time award",
+    "eligibility_criteria": "Funding for the Global Projects Program.",
+    "application_deadline": "Jan 15"
+  },
+  {
+    "university_name": "Worcester Polytechnic Institute (WPI)",
+    "scholarship_name": "WPI Need-Based Scholarship",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via CSS Profile and FAFSA.",
+    "application_deadline": "Feb 1"
+  },
+  {
+    "university_name": "Yeshiva University",
+    "scholarship_name": "Honors Program Scholarships",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Up to full tuition",
+    "eligibility_criteria": "Exceptional high school academic record. Must apply to the Honors Program.",
+    "application_deadline": "Dec 15"
+  },
+  {
+    "university_name": "Yeshiva University",
+    "scholarship_name": "Dean's Scholarship",
+    "scholarship_type": "Merit Scholarship",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Outstanding academic performance.",
+    "application_deadline": "Dec 15"
+  },
+  {
+    "university_name": "Yeshiva University",
+    "scholarship_name": "Yeshiva University Grant",
+    "scholarship_type": "Need-Based Grant",
+    "award_amount": "Varies",
+    "eligibility_criteria": "Demonstrated financial need via FAFSA.",
+    "application_deadline": "Feb 15"
+  }
+]
