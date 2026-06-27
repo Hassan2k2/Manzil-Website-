@@ -2,30 +2,17 @@ import { Request, Response } from 'express';
 import prisma from '../lib/prisma.js';
 
 /**
- * Checks if the authenticated user belongs to a QUIZ_ONLY school.
- * Returns true and sends a 403 response if they do.
- * Returns false and does nothing if they are allowed.
+ * Unconditionally locks University Finder for all users.
+ * Returns true and sends a 403 response.
  */
-async function rejectIfQuizOnly(req: Request, res: Response): Promise<boolean> {
-  const userId = (req as any).user?.userId;
-  if (!userId) return false; // Unauthenticated — handled by requireAuth middleware
-
-  const user = await prisma.user.findUnique({
-    where: { id: userId },
-    include: { school: true },
-  });
-
-  if (user?.school?.tier === 'QUIZ_ONLY') {
-    res.status(403).json({ message: "University Finder isn't available on your plan yet." });
-    return true;
-  }
-
-  return false;
+async function rejectUniversityFinderAccess(req: Request, res: Response): Promise<boolean> {
+  res.status(403).json({ message: "University Finder isn't available on your plan yet." });
+  return true;
 }
 
 export const getAllUniversities = async (req: Request, res: Response): Promise<void> => {
   try {
-    if (await rejectIfQuizOnly(req, res)) return;
+    if (await rejectUniversityFinderAccess(req, res)) return;
     const universities = await prisma.university.findMany();
     res.json(universities);
   } catch (error) {
@@ -36,7 +23,7 @@ export const getAllUniversities = async (req: Request, res: Response): Promise<v
 
 export const getUniversityById = async (req: Request, res: Response): Promise<void> => {
   try {
-    if (await rejectIfQuizOnly(req, res)) return;
+    if (await rejectUniversityFinderAccess(req, res)) return;
 
     const { id } = req.params;
     const university = await prisma.university.findUnique({
@@ -87,7 +74,7 @@ export const createUniversity = async (req: Request, res: Response): Promise<voi
 
 export const saveUniversityMatches = async (req: Request, res: Response): Promise<void> => {
   try {
-    if (await rejectIfQuizOnly(req, res)) return;
+    if (await rejectUniversityFinderAccess(req, res)) return;
 
     const userId = (req as any).user.userId;
     const { matches, preferences } = req.body;
@@ -128,7 +115,7 @@ export const saveUniversityMatches = async (req: Request, res: Response): Promis
 
 export const getPakistanPrograms = async (req: Request, res: Response): Promise<void> => {
   try {
-    if (await rejectIfQuizOnly(req, res)) return;
+    if (await rejectUniversityFinderAccess(req, res)) return;
 
     const { search, city, major, degree } = req.query;
 
@@ -170,7 +157,7 @@ export const getPakistanPrograms = async (req: Request, res: Response): Promise<
 
 export const getUkPrograms = async (req: Request, res: Response): Promise<void> => {
   try {
-    if (await rejectIfQuizOnly(req, res)) return;
+    if (await rejectUniversityFinderAccess(req, res)) return;
 
     const { search, city, major, degree } = req.query;
 

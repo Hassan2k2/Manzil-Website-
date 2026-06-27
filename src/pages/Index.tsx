@@ -64,8 +64,8 @@ const Index = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const hasTriggeredSaveRef = useRef(false);
 
-  // Compute quiz-only access restriction
-  const isQuizOnly = user?.schoolTier === "QUIZ_ONLY";
+  // University Finder is currently locked for all users
+  const lockUniversityFinder = true;
 
   // Handle direct university finder - require sign-in first, and block for QUIZ_ONLY
   const handleUniversityFinder = useCallback(() => {
@@ -73,17 +73,17 @@ const Index = () => {
       navigate("/auth");
       return;
     }
-    if (isQuizOnly) {
+    if (lockUniversityFinder) {
       // Silently no-op — the UI should never call this when locked, but be defensive
       return;
     }
     goToUniversityFinder();
-  }, [user, navigate, goToUniversityFinder, isQuizOnly]);
+  }, [user, navigate, goToUniversityFinder, lockUniversityFinder]);
 
   // Read view parameter to restore university finder state when navigating back
   useEffect(() => {
     if (searchParams.get("view") === "finder") {
-      if (isQuizOnly) {
+      if (lockUniversityFinder) {
         // Strip the param but do NOT navigate to university-finder
         setSearchParams({}, { replace: true });
         return;
@@ -93,15 +93,15 @@ const Index = () => {
         setSearchParams({}, { replace: true });
       }
     }
-  }, [searchParams, currentStep, goToUniversityFinder, setSearchParams, isQuizOnly]);
+  }, [searchParams, currentStep, goToUniversityFinder, setSearchParams, lockUniversityFinder]);
 
-  // Redirect stale university-finder state back to welcome for QUIZ_ONLY users
+  // Redirect stale university-finder state back to welcome for locked users
   useEffect(() => {
-    if (isQuizOnly && currentStep === "university-finder") {
+    if (lockUniversityFinder && currentStep === "university-finder") {
       goToStep("welcome");
       toast("University Finder isn't available on your plan yet.");
     }
-  }, [isQuizOnly, currentStep, goToStep]);
+  }, [lockUniversityFinder, currentStep, goToStep]);
 
   // Save progress whenever answers or step changes
   useEffect(() => {
@@ -183,7 +183,7 @@ const Index = () => {
         onDirectUniversityFinder={handleUniversityFinder}
         onPreviewResults={(import.meta.env.DEV || new URLSearchParams(window.location.search).has('dev')) ? skipToResults : undefined}
         hasExistingSession={hasExistingSession || totalProgress > 0}
-        lockUniversityFinder={isQuizOnly}
+        lockUniversityFinder={lockUniversityFinder}
         onResume={() => {
           if (totalProgress > 0) {
             goToStep("riasec");
@@ -261,7 +261,7 @@ const Index = () => {
           window.location.reload();
         }}
         onUniversityFinder={() => goToStep("university-finder")}
-        lockUniversityFinder={isQuizOnly}
+        lockUniversityFinder={lockUniversityFinder}
       />
     );
   }
