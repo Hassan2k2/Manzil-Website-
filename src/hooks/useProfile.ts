@@ -20,7 +20,7 @@ interface UseProfileReturn {
 }
 
 export function useProfile(): UseProfileReturn {
-  const { user } = useAuth();
+  const { user, refreshUser } = useAuth();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [schoolName, setSchoolName] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -63,6 +63,9 @@ export function useProfile(): UseProfileReturn {
 
         if (result.success) {
           await fetchProfile();
+          // Refresh the auth user so schoolTier updates immediately in the UI
+          // without requiring a full page reload
+          await refreshUser();
           return { success: true, schoolName: result.school_name };
         } else {
           return { success: false, error: result.error || "Failed to join school" };
@@ -71,7 +74,7 @@ export function useProfile(): UseProfileReturn {
         return { success: false, error: err.message || "An unexpected error occurred" };
       }
     },
-    [user, fetchProfile]
+    [user, fetchProfile, refreshUser]
   );
 
   return {
