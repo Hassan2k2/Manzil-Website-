@@ -6,6 +6,7 @@ interface User {
   email: string;
   name?: string;
   role?: string;
+  schoolTier?: "FULL_ACCESS" | "QUIZ_ONLY" | null;
 }
 
 interface AuthContextType {

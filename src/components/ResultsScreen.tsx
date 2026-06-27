@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import { majors } from "@/data/careersData";
 import { motion, AnimatePresence } from "framer-motion";
 import { GlobalPathwaysModule } from "@/components/GlobalPathways";
+import { Lock } from "lucide-react";
 import {
   Check,
   X,
@@ -30,6 +31,7 @@ interface ResultsScreenProps {
   bigFiveScores: BigFiveScores;
   onRestart: () => void;
   onUniversityFinder?: () => void;
+  lockUniversityFinder?: boolean;
 }
 
 export function ResultsScreen({
@@ -40,6 +42,7 @@ export function ResultsScreen({
   bigFiveScores,
   onRestart,
   onUniversityFinder,
+  lockUniversityFinder = false,
 }: ResultsScreenProps) {
   const [expandedMajor, setExpandedMajor] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"results" | "universities">("results");
@@ -104,13 +107,26 @@ export function ResultsScreen({
             >
               Major Results
             </button>
-            <button
-              onClick={onUniversityFinder}
-              className="px-6 py-2.5 rounded-full font-medium transition-all flex items-center gap-2 bg-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/30"
-            >
-              <Building2 className="w-4 h-4" />
-              Find Universities
-            </button>
+            {lockUniversityFinder ? (
+              <button
+                onClick={() =>
+                  toast("University Finder isn't available on your plan yet.")
+                }
+                className="px-6 py-2.5 rounded-full font-medium transition-all flex items-center gap-2 bg-primary-foreground/10 text-primary-foreground/40 cursor-pointer"
+                aria-label="Find Universities — locked"
+              >
+                <Lock className="w-4 h-4" />
+                Find Universities
+              </button>
+            ) : (
+              <button
+                onClick={onUniversityFinder}
+                className="px-6 py-2.5 rounded-full font-medium transition-all flex items-center gap-2 bg-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/30"
+              >
+                <Building2 className="w-4 h-4" />
+                Find Universities
+              </button>
+            )}
           </div>
         </div>
       </section>

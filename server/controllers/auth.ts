@@ -33,7 +33,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
     }
     
     // Create user
-    const user = await prisma.user.create({
+    const createdUser = await prisma.user.create({
       data: {
         email,
         password: hashedPassword,
@@ -41,10 +41,11 @@ export const register = async (req: Request, res: Response): Promise<void> => {
         role: role || 'STUDENT',
         schoolId: userSchoolId,
       },
+      include: { school: true },
     });
 
     const token = jwt.sign(
-      { userId: user.id, email: user.email, role: user.role },
+      { userId: createdUser.id, email: createdUser.email, role: createdUser.role },
       process.env.JWT_SECRET || 'secret',
       { expiresIn: '7d' }
     );
@@ -52,7 +53,13 @@ export const register = async (req: Request, res: Response): Promise<void> => {
     res.status(201).json({
       message: 'User created successfully',
       token,
-      user: { id: user.id, email: user.email, name: user.name, role: user.role }
+      user: {
+        id: createdUser.id,
+        email: createdUser.email,
+        name: createdUser.name,
+        role: createdUser.role,
+        schoolTier: createdUser.school?.tier ?? null,
+      }
     });
   } catch (error: any) {
     console.error('[REGISTER ERROR]', error);
@@ -70,7 +77,10 @@ export const login = async (req: Request, res: Response): Promise<void> => {
   try {
     const { email, password } = req.body;
     
-    const user = await prisma.user.findUnique({ where: { email } });
+    const user = await prisma.user.findUnique({
+      where: { email },
+      include: { school: true },
+    });
     if (!user || (!user.password && user.googleId)) {
       res.status(401).json({ message: 'Invalid credentials. Please use Google Login.' });
       return; // If they only have Google login and no password
@@ -91,7 +101,13 @@ export const login = async (req: Request, res: Response): Promise<void> => {
     res.status(200).json({
       message: 'Login successful',
       token,
-      user: { id: user.id, email: user.email, name: user.name, role: user.role }
+      user: {
+        id: user.id,
+        email: user.email,
+        name: user.name,
+        role: user.role,
+        schoolTier: user.school?.tier ?? null,
+      }
     });
   } catch (error) {
     console.error(error);
@@ -113,7 +129,10 @@ export const googleLogin = async (req: Request, res: Response): Promise<void> =>
     const payload = await response.json();
     const { email, name, sub } = payload; // sub is the googleId
 
-    let user = await prisma.user.findUnique({ where: { email } });
+    let user = await prisma.user.findUnique({
+      where: { email },
+      include: { school: true },
+    });
 
     if (!user) {
       // Auto-register via Google
@@ -124,12 +143,14 @@ export const googleLogin = async (req: Request, res: Response): Promise<void> =>
           googleId: sub,
           role: 'STUDENT',
         },
+        include: { school: true },
       });
     } else if (!user.googleId) {
       // Link Google ID if email exists
       user = await prisma.user.update({
         where: { id: user.id },
-        data: { googleId: sub, name: user.name || name }
+        data: { googleId: sub, name: user.name || name },
+        include: { school: true },
       });
     }
 
@@ -142,7 +163,13 @@ export const googleLogin = async (req: Request, res: Response): Promise<void> =>
     res.status(200).json({
       message: 'Google Login successful',
       token,
-      user: { id: user.id, email: user.email, name: user.name, role: user.role }
+      user: {
+        id: user.id,
+        email: user.email,
+        name: user.name,
+        role: user.role,
+        schoolTier: user.school?.tier ?? null,
+      }
     });
 
   } catch (error) {
@@ -156,7 +183,7 @@ export const getMe = async (req: Request, res: Response): Promise<void> => {
     const userId = (req as any).user.userId;
     const user = await prisma.user.findUnique({ 
       where: { id: userId },
-      select: { id: true, email: true, name: true, role: true }
+      include: { school: true },
     });
     
     if (!user) {
@@ -164,7 +191,15 @@ export const getMe = async (req: Request, res: Response): Promise<void> => {
       return;
     }
 
-    res.json({ user });
+    res.json({
+      user: {
+        id: user.id,
+        email: user.email,
+        name: user.name,
+        role: user.role,
+        schoolTier: user.school?.tier ?? null,
+      }
+    });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server error' });

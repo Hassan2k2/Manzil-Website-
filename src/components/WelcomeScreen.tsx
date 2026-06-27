@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { GraduationCap, Sparkles, Brain, Clock, ArrowRight, LogIn, LogOut, User, LayoutDashboard, School, CheckCircle2 } from "lucide-react";
+import { GraduationCap, Sparkles, Brain, Clock, ArrowRight, LogIn, LogOut, User, LayoutDashboard, School, CheckCircle2, Lock } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useUserRole } from "@/hooks/useUserRole";
 import { useProfile } from "@/hooks/useProfile";
 import { useNavigate } from "react-router-dom";
 import { SchoolCodeInput } from "@/components/SchoolCodeInput";
 import manzilLogo from "@/assets/manzil-logo.jpg";
+import { toast } from "sonner";
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -14,6 +15,7 @@ interface WelcomeScreenProps {
   hasExistingSession?: boolean;
   onResume?: () => void;
   resumeProgress?: number;
+  lockUniversityFinder?: boolean;
 }
 
 export function WelcomeScreen({ 
@@ -23,6 +25,7 @@ export function WelcomeScreen({
   hasExistingSession,
   onResume,
   resumeProgress = 0,
+  lockUniversityFinder = false,
 }: WelcomeScreenProps) {
   const { user, signOut } = useAuth();
   const { isSchoolAdmin } = useUserRole();
@@ -146,7 +149,7 @@ export function WelcomeScreen({
 
           {/* Two Path Options */}
           <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-12 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            {/* Option 1 - Career Discovery */}
+            {/* Option 1 - Career Discovery (always unlocked) */}
             <PathCard
               icon={<Sparkles className="w-8 h-8 sm:w-10 sm:h-10" />}
               title="Find your ideal majors & careers"
@@ -154,20 +157,35 @@ export function WelcomeScreen({
               ctaText="Start Your Journey"
               ctaIcon={<Brain className="w-5 h-5" />}
               color="coral"
-              timeNote="Takes ~10–15 minutes"
+              timeNote="Takes ~10-15 minutes"
               onClick={onStart}
             />
 
-            {/* Option 2 - Direct University Finder */}
-            <PathCard
-              icon={<GraduationCap className="w-8 h-8 sm:w-10 sm:h-10" />}
-              title="I know my major & career"
-              description="Skip the quizzes and jump straight to finding universities and scholarships that match your profile."
-              ctaText="Find universities and scholarships"
-              ctaIcon={<ArrowRight className="w-5 h-5" />}
-              color="teal"
-              onClick={onDirectUniversityFinder}
-            />
+            {/* Option 2 - Direct University Finder (locked for QUIZ_ONLY) */}
+            {lockUniversityFinder ? (
+              <PathCard
+                icon={<GraduationCap className="w-8 h-8 sm:w-10 sm:h-10" />}
+                title="I know my major & career"
+                description="Skip the quizzes and jump straight to finding universities and scholarships that match your profile."
+                ctaText="Find universities and scholarships"
+                ctaIcon={<ArrowRight className="w-5 h-5" />}
+                color="teal"
+                locked
+                onClick={() =>
+                  toast("This feature will be available soon — for now, enjoy your assessment!")
+                }
+              />
+            ) : (
+              <PathCard
+                icon={<GraduationCap className="w-8 h-8 sm:w-10 sm:h-10" />}
+                title="I know my major & career"
+                description="Skip the quizzes and jump straight to finding universities and scholarships that match your profile."
+                ctaText="Find universities and scholarships"
+                ctaIcon={<ArrowRight className="w-5 h-5" />}
+                color="teal"
+                onClick={onDirectUniversityFinder}
+              />
+            )}
           </div>
         </div>
       </section>
@@ -190,6 +208,7 @@ function PathCard({
   timeNote,
   onClick,
   disabled = false,
+  locked = false,
 }: {
   icon: React.ReactNode;
   title: string;
@@ -200,6 +219,7 @@ function PathCard({
   timeNote?: string;
   onClick?: () => void;
   disabled?: boolean;
+  locked?: boolean;
 }) {
   const colorStyles = {
     coral: {
@@ -219,6 +239,50 @@ function PathCard({
   };
 
   const styles = colorStyles[color];
+
+  if (locked) {
+    return (
+      <div
+        className="group relative p-5 sm:p-8 rounded-2xl sm:rounded-3xl bg-card border-2 border-border shadow-card transition-all duration-300 flex flex-col opacity-60 cursor-pointer select-none"
+        onClick={onClick}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && onClick?.()}
+        aria-label={`${title} — locked, coming soon`}
+      >
+        {/* Lock badge */}
+        <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded-full bg-muted border border-border text-xs font-semibold text-muted-foreground z-10">
+          <Lock className="w-3 h-3" />
+          Coming Soon
+        </div>
+
+        <div className="flex flex-col items-center text-center space-y-4 sm:space-y-5 flex-1">
+          {/* Icon */}
+          <div className={`p-3 sm:p-4 rounded-xl sm:rounded-2xl ${styles.iconBg}`}>
+            <div className={styles.iconText}>{icon}</div>
+          </div>
+
+          {/* Content */}
+          <div className="space-y-2 sm:space-y-3">
+            <h3 className="font-display font-bold text-lg sm:text-xl md:text-2xl">{title}</h3>
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{description}</p>
+          </div>
+
+          {/* Spacer */}
+          <div className="flex-1" />
+
+          {/* Locked CTA — static, non-interactive */}
+          <div className="w-full flex items-center justify-center gap-2 py-4 sm:py-6 rounded-xl bg-muted text-muted-foreground text-sm sm:text-base font-semibold">
+            <Lock className="w-4 h-4" />
+            {ctaText}
+          </div>
+
+          {/* Fixed-height spacer to match normal card layout */}
+          <div className="h-5 sm:h-6" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

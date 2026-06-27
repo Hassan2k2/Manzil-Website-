@@ -25,11 +25,12 @@ model User {
 }
 
 model School {
-  id        String   @id @default(uuid())
+  id        String      @id @default(uuid())
   name      String
-  code      String   @unique
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  code      String      @unique
+  tier      SchoolTier  @default(FULL_ACCESS)
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
 
   users              User[]
   assessments        Assessment[]
@@ -134,4 +135,9 @@ enum Role {
   STUDENT
   SCHOOL_ADMIN
   SUPER_ADMIN
+}
+
+enum SchoolTier {
+  FULL_ACCESS
+  QUIZ_ONLY
 }

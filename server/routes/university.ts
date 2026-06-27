@@ -4,10 +4,11 @@ import { requireAuth } from '../middleware/auth.js';
 
 const router = Router();
 
-router.get('/', getAllUniversities);
-router.get('/pakistan-programs', getPakistanPrograms);
-router.get('/uk-programs', getUkPrograms);
-router.get('/:id', getUniversityById);
+// All university data endpoints require auth so the tier check can run
+router.get('/', requireAuth, getAllUniversities);
+router.get('/pakistan-programs', requireAuth, getPakistanPrograms);
+router.get('/uk-programs', requireAuth, getUkPrograms);
+router.get('/:id', requireAuth, getUniversityById);
 router.post('/', requireAuth, createUniversity);
 router.post('/save-matches', requireAuth, saveUniversityMatches);
 
