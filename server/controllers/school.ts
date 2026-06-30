@@ -46,7 +46,7 @@ export const getDashboardStats = async (req: Request, res: Response): Promise<vo
     const recentActivity: any[] = [];
 
     const studentsList = students.map(s => {
-      const isCompleted = s.assessments.some(a => a.completedAt !== null);
+      const isCompleted = s.assessments.some(a => a.completedAt !== null || a.currentStep === 'results');
       if (isCompleted) completedCount++;
       else if (s.assessments.length > 0) inProgressCount++;
 
@@ -62,10 +62,11 @@ export const getDashboardStats = async (req: Request, res: Response): Promise<vo
         }
         
         // Add to recent activity
+        const isThisAssessmentCompleted = a.completedAt !== null || a.currentStep === 'results';
         recentActivity.push({
           id: a.id,
           studentEmail: s.email || s.name || 'Unknown',
-          action: isCompleted ? 'Completed an assessment' : 'Started an assessment',
+          action: isThisAssessmentCompleted ? 'Completed an assessment' : 'Started an assessment',
           timestamp: a.updatedAt || a.createdAt
         });
       });

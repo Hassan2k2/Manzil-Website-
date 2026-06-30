@@ -481,8 +481,8 @@ export default function SchoolDashboard() {
                     {studentDetails.sessions.map((session: any, i: number) => (
                       <Card key={i} className="p-4">
                         <div className="flex items-center justify-between mb-2">
-                          <Badge variant={session.completed_at ? "default" : "outline"}>
-                            {session.completed_at ? "Completed" : `In Progress (${session.current_step})`}
+                          <Badge variant={session.completed_at || session.current_step === 'results' ? "default" : "outline"}>
+                            {session.completed_at || session.current_step === 'results' ? "Completed" : `In Progress (${session.current_step})`}
                           </Badge>
                           <span className="text-xs text-muted-foreground">
                             {new Date(session.created_at).toLocaleDateString()}
