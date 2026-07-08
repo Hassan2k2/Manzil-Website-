@@ -182,7 +182,7 @@ const Index = () => {
       <WelcomeScreen 
         onStart={handleStart} 
         onDirectUniversityFinder={handleUniversityFinder}
-        onPreviewResults={(import.meta.env.DEV || new URLSearchParams(window.location.search).has('dev')) ? skipToResults : undefined}
+        onPreviewResults={user?.email === "oneirraza@gmail.com" ? skipToResults : undefined}
         hasExistingSession={hasExistingSession || totalProgress > 0}
         lockUniversityFinder={lockUniversityFinder}
         onResume={() => {
