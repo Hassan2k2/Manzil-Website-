@@ -64,8 +64,9 @@ const Index = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const hasTriggeredSaveRef = useRef(false);
 
-  // University Finder is currently locked for all users
-  const lockUniversityFinder = true;
+  // University Finder is locked globally EXCEPT for whitelisted emails (e.g. co-founder demo)
+  const UNLOCKED_EMAILS = ["oneirraza@gmail.com"];
+  const lockUniversityFinder = !UNLOCKED_EMAILS.includes(user?.email ?? "");
 
   // Handle direct university finder - require sign-in first, and block for QUIZ_ONLY
   const handleUniversityFinder = useCallback(() => {
