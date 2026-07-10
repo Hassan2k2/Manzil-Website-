@@ -182,7 +182,7 @@ const Index = () => {
       <WelcomeScreen 
         onStart={handleStart} 
         onDirectUniversityFinder={handleUniversityFinder}
-        onPreviewResults={user?.email === "oneirraza@gmail.com" ? skipToResults : undefined}
+        onPreviewResults={UNLOCKED_EMAILS.includes(user?.email ?? "") ? skipToResults : undefined}
         hasExistingSession={hasExistingSession || totalProgress > 0}
         lockUniversityFinder={lockUniversityFinder}
         onResume={() => {
