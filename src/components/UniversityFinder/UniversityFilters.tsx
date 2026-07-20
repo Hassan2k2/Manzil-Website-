@@ -30,7 +30,7 @@ const countryOptions = [
   { value: "Pakistan", label: "Pakistan", available: true },
   { value: "US", label: "United States", available: true },
   { value: "UK", label: "United Kingdom", available: true },
-  { value: "Canada", label: "Canada", available: false },
+  { value: "Canada", label: "Canada", available: true },
   { value: "Australia", label: "Australia", available: false },
   { value: "Europe", label: "Europe", available: false },
   { value: "Anywhere with good funding", label: "Anywhere", available: false },
@@ -208,8 +208,8 @@ export function UniversityFilters({
     filters.institutes.length +
     (filters.budgetRange !== "any" ? 1 : 0);
 
-  // Show institute filter when Pakistan, UK, or US is selected (or no country filter)
-  const showInstituteFilter = filters.countries.length === 0 || filters.countries.includes("Pakistan") || filters.countries.includes("UK") || filters.countries.includes("US");
+  // Show institute filter when Pakistan, UK, US, or Canada is selected (or no country filter)
+  const showInstituteFilter = filters.countries.length === 0 || filters.countries.includes("Pakistan") || filters.countries.includes("UK") || filters.countries.includes("US") || filters.countries.includes("Canada");
 
   return (
     <div className="space-y-5">

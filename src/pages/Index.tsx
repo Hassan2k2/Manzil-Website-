@@ -66,20 +66,16 @@ const Index = () => {
 
   // University Finder is locked globally EXCEPT for whitelisted emails (e.g. co-founder demo)
   const UNLOCKED_EMAILS = ["oneirraza@gmail.com", "rkonnections@mock.com", "hassanmehmod2002@gmail.com"];
-  const lockUniversityFinder = !UNLOCKED_EMAILS.includes(user?.email ?? "");
+  const lockUniversityFinder = false; // UNLOCKED FOR PREVIEW: !UNLOCKED_EMAILS.includes(user?.email ?? "");
 
-  // Handle direct university finder - require sign-in first, and block for QUIZ_ONLY
+  // Handle direct university finder
   const handleUniversityFinder = useCallback(() => {
-    if (!user) {
-      navigate("/auth");
-      return;
-    }
     if (lockUniversityFinder) {
       // Silently no-op — the UI should never call this when locked, but be defensive
       return;
     }
     goToUniversityFinder();
-  }, [user, navigate, goToUniversityFinder, lockUniversityFinder]);
+  }, [goToUniversityFinder, lockUniversityFinder]);
 
   // Read view parameter to restore university finder state when navigating back
   useEffect(() => {

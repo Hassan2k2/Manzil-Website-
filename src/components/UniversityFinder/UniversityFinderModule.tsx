@@ -9,6 +9,7 @@ import { UniversityPreferencesForm, UniversityPreferences } from "@/components/U
 import { usePakistanProgramsData } from "./usePakistanProgramsData";
 import { useUkProgramsData } from "./useUkProgramsData";
 import { useUsProgramsData } from "./useUsProgramsData";
+import { useCanadaProgramsData } from "./useCanadaProgramsData";
 
 interface UniversityFinderModuleProps {
   onBack?: () => void;
@@ -123,6 +124,49 @@ const PAK_LOGO_MAP: Record<string, string> = {
   "UET": "https://logo.clearbit.com/uet.edu.pk",
 };
 
+// Canada logo static map — all 36 universities with local logos
+const CANADA_LOGO_MAP: Record<string, string> = {
+  "Brock University": "/Canada_unis_logos/Brock University.png",
+  "Carleton University": "/Canada_unis_logos/Carleton University.png",
+  "Concordia University": "/Canada_unis_logos/Concordia University.png",
+  "Dalhousie University": "/Canada_unis_logos/Dalhousie University.png",
+  "HEC Montréal": "/Canada_unis_logos/HEC Montréal.png",
+  "McGill University": "/Canada_unis_logos/McGill University.png",
+  "McMaster University": "/Canada_unis_logos/McMaster University.png",
+  "Memorial University of Newfoundland": "/Canada_unis_logos/Memorial University of Newfoundland.png",
+  "Polytechnique Montréal": "/Canada_unis_logos/Polytechnique Montréal.png",
+  "Queen's University": "/Canada_unis_logos/Queen's University.png",
+  "Simon Fraser University": "/Canada_unis_logos/Simon Fraser University.png",
+  "Thompson Rivers University": "/Canada_unis_logos/Thompson Rivers University.png",
+  "Toronto Metropolitan University": "/Canada_unis_logos/Toronto Metropolitan University.png",
+  "Trent University": "/Canada_unis_logos/Trent University.png",
+  "University of Alberta": "/Canada_unis_logos/University of Alberta.png",
+  "University of British Columbia": "/Canada_unis_logos/University of British Columbia.png",
+  "University of Calgary": "/Canada_unis_logos/University of Calgary.png",
+  "University of Guelph": "/Canada_unis_logos/University of Guelph.png",
+  "University of Lethbridge": "/Canada_unis_logos/University of Lethbridge.png",
+  "University of Manitoba": "/Canada_unis_logos/University of Manitoba.png",
+  "University of New Brunswick": "/Canada_unis_logos/University of New Brunswick.png",
+  "University of Ottawa": "/Canada_unis_logos/University of Ottawa.png",
+  "University of Regina": "/Canada_unis_logos/University of Regina.png",
+  "University of Saskatchewan": "/Canada_unis_logos/University of Saskatchewan.png",
+  "University of Toronto": "/Canada_unis_logos/University of Toronto.png",
+  "University of Victoria": "/Canada_unis_logos/University of Victoria.png",
+  "University of Waterloo": "/Canada_unis_logos/University of Waterloo.png",
+  "University of Windsor": "/Canada_unis_logos/University of Windsor.png",
+  "Université Laval": "/Canada_unis_logos/Université Laval.png",
+  "Université de Montréal": "/Canada_unis_logos/Université de Montréal.png",
+  "Université de Sherbrooke": "/Canada_unis_logos/Université de Sherbrooke.png",
+  "Université du Québec à Chicoutimi (UQAC)": "/Canada_unis_logos/Université du Québec à Chicoutimi (UQAC).png",
+  "Université du Québec à Montréal (UQAM)": "/Canada_unis_logos/Université du Québec à Montréal (UQAM).png",
+  "Université du Québec": "/Canada_unis_logos/Université du Québec.png",
+  "Western University": "/Canada_unis_logos/Western University.png",
+  "York University": "/Canada_unis_logos/York University.png",
+  // ÉTS — the logo file has no (ÉTS) suffix
+  "École de Technologie Supérieure (ÉTS)": "/Canada_unis_logos/École de Technologie Supérieure.png",
+  "École de Technologie Supérieure": "/Canada_unis_logos/École de Technologie Supérieure.png",
+};
+
 function getUniversityLogoUrl(universityName: string, country?: string): string | null {
   // 1. Check Pakistan static map first
   if (PAK_LOGO_MAP[universityName]) return PAK_LOGO_MAP[universityName];
@@ -134,17 +178,29 @@ function getUniversityLogoUrl(universityName: string, country?: string): string 
   );
   if (pakMatch) return PAK_LOGO_MAP[pakMatch];
 
-  // 3. UK: use local logos folder
+  // 3. Canada: use local Canada_unis_logos folder (exact match first, then partial)
+  if (country === "Canada") {
+    if (CANADA_LOGO_MAP[universityName]) return CANADA_LOGO_MAP[universityName];
+    const canadaMatch = Object.keys(CANADA_LOGO_MAP).find(k =>
+      universityName.toLowerCase().includes(k.toLowerCase()) ||
+      k.toLowerCase().includes(universityName.toLowerCase())
+    );
+    if (canadaMatch) return CANADA_LOGO_MAP[canadaMatch];
+    // Fallback: try directly by encoded name
+    return `/Canada_unis_logos/${encodeURIComponent(universityName)}.png`;
+  }
+
+  // 4. UK: use local logos folder
   if (country === "United Kingdom" || country === "UK") {
     return `/UK_unis_logo/${encodeURIComponent(universityName)}.png`;
   }
 
-  // 4. US: use local US_unis_logo folder
+  // 5. US: use local US_unis_logo folder
   if (country === "US" || country === "United States") {
     return `/US_unis_logo/${encodeURIComponent(universityName)}.png`;
   }
 
-  // 5. Pakistan fallback folder
+  // 6. Pakistan fallback folder
   return `/logos/${encodeURIComponent(universityName)}.png`;
 }
 
@@ -187,14 +243,16 @@ function createVirtualUniversity(
       ? ["American High School", "IB"]
       : country === "United Kingdom" || country === "UK"
       ? ["A Levels", "IB", "O Levels"]
+      : country === "Canada"
+      ? ["A Levels", "IB", "O Levels", "American High School"]
       : ["Matric", "FSC", "O Levels", "A Levels"];
 
   return {
     id: `db-${normalizeForMatch(universityName).replace(/\s+/g, "-")}`,
     name: universityName,
-    location: `${city}, ${country === "United Kingdom" ? "UK" : country === "US" ? "USA" : country}`,
+    location: `${city}, ${country === "United Kingdom" ? "UK" : country === "US" ? "USA" : country === "Canada" ? "Canada" : country}`,
     country: country as any,
-    type: "Private" as const,
+    type: (country === "Canada" || country === "United Kingdom" || country === "UK") ? "Public" : "Private" as const,
     selectivity: "Moderately Selective" as const,
     acceptanceRate: "N/A",
     applicationDeadline: deadlineText || "Check website",
@@ -211,7 +269,7 @@ function createVirtualUniversity(
     applyLink: options?.programUrl || website || `https://www.google.com/search?q=${encodeURIComponent(universityName + " admission")}`,
     logo: options?.logoUrl || undefined,
     tuitionFees: tuitionFees.length > 0 ? tuitionFees : undefined,
-    internationalFriendly: country === "US" || country === "United States" || country === "United Kingdom" || country === "UK",
+    internationalFriendly: country === "US" || country === "United States" || country === "United Kingdom" || country === "UK" || country === "Canada",
     financialAidForInternational: false,
     ...(allCities && allCities.size > 1 ? { additionalCities: Array.from(allCities) } : {}),
   };
@@ -224,20 +282,22 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
   const pakData = usePakistanProgramsData({ enabled: step === "results", pageSize: 1000 });
   const ukData = useUkProgramsData({ enabled: step === "results", pageSize: 1000 });
   const usData = useUsProgramsData({ enabled: step === "results", pageSize: 1000 });
+  const canadaData = useCanadaProgramsData({ enabled: step === "results", pageSize: 1000 });
 
-  const allPrograms = useMemo(() => [...pakData.allPrograms, ...ukData.allPrograms, ...usData.allPrograms], [pakData.allPrograms, ukData.allPrograms, usData.allPrograms]);
-  const combinedInstitutes = useMemo(() => Array.from(new Set([...pakData.pakistanInstitutes, ...ukData.ukInstitutes, ...usData.usInstitutes])), [pakData.pakistanInstitutes, ukData.ukInstitutes, usData.usInstitutes]);
-  const combinedMajors = useMemo(() => Array.from(new Set([...pakData.pakistanMajors, ...ukData.ukMajors, ...usData.usMajors])), [pakData.pakistanMajors, ukData.ukMajors, usData.usMajors]);
-  const combinedCities = useMemo(() => Array.from(new Set([...pakData.pakistanCities, ...ukData.ukCities, ...usData.usCities])), [pakData.pakistanCities, ukData.ukCities, usData.usCities]);
-  const loadingProgramsData = pakData.loadingProgramsData || ukData.loadingProgramsData || usData.loadingProgramsData;
+  const allPrograms = useMemo(() => [...pakData.allPrograms, ...ukData.allPrograms, ...usData.allPrograms, ...canadaData.allPrograms], [pakData.allPrograms, ukData.allPrograms, usData.allPrograms, canadaData.allPrograms]);
+  const combinedInstitutes = useMemo(() => Array.from(new Set([...pakData.pakistanInstitutes, ...ukData.ukInstitutes, ...usData.usInstitutes, ...canadaData.canadaInstitutes])), [pakData.pakistanInstitutes, ukData.ukInstitutes, usData.usInstitutes, canadaData.canadaInstitutes]);
+  const combinedMajors = useMemo(() => Array.from(new Set([...pakData.pakistanMajors, ...ukData.ukMajors, ...usData.usMajors, ...canadaData.canadaMajors])), [pakData.pakistanMajors, ukData.ukMajors, usData.usMajors, canadaData.canadaMajors]);
+  const combinedCities = useMemo(() => Array.from(new Set([...pakData.pakistanCities, ...ukData.ukCities, ...usData.usCities, ...canadaData.canadaCities])), [pakData.pakistanCities, ukData.ukCities, usData.usCities, canadaData.canadaCities]);
+  const loadingProgramsData = pakData.loadingProgramsData || ukData.loadingProgramsData || usData.loadingProgramsData || canadaData.loadingProgramsData;
 
   const instituteDataMap = useMemo(() => {
     const map = new Map();
     pakData.instituteDataMap.forEach((val, key) => map.set(key, { ...val, _country: "Pakistan" }));
     ukData.instituteDataMap.forEach((val, key) => map.set(key, { ...val, _country: "United Kingdom" }));
     usData.instituteDataMap.forEach((val, key) => map.set(key, { ...val, _country: "US" }));
+    canadaData.instituteDataMap.forEach((val, key) => map.set(key, { ...val, _country: "Canada" }));
     return map;
-  }, [pakData.instituteDataMap, ukData.instituteDataMap, usData.instituteDataMap]);
+  }, [pakData.instituteDataMap, ukData.instituteDataMap, usData.instituteDataMap, canadaData.instituteDataMap]);
 
   const pakistaniUniversities = useMemo(() => {
     return universities.filter((u) => u.country === "Pakistan");
@@ -349,6 +409,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     const showPak = filters.countries.length === 0 || filters.countries.includes("Pakistan");
     const showUk = filters.countries.length === 0 || filters.countries.includes("UK");
     const showUs = filters.countries.length === 0 || filters.countries.includes("US");
+    const showCanada = filters.countries.length === 0 || filters.countries.includes("Canada");
 
     pakistaniUniversities.forEach((uni) => {
       if (showPak) {
@@ -377,13 +438,18 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
       usData.usCities.forEach(c => currentCities.add(c));
       usData.usInstitutes.forEach(i => currentInstitutes.add(i));
     }
+    if (showCanada) {
+      canadaData.canadaMajors.forEach(m => currentMajors.add(m));
+      canadaData.canadaCities.forEach(c => currentCities.add(c));
+      canadaData.canadaInstitutes.forEach(i => currentInstitutes.add(i));
+    }
 
     const majors = currentMajors.size > 0 ? Array.from(currentMajors).sort() : Array.from(staticMajorsSet).sort();
     const cities = currentCities.size > 0 ? Array.from(currentCities).sort() : Array.from(staticCitiesSet).sort();
     const institutes = Array.from(currentInstitutes);
 
     return { majors, cities, rankings: Array.from(rankingsSet), institutes };
-  }, [pakistaniUniversities, filters.countries, pakData, ukData, usData]);
+  }, [pakistaniUniversities, filters.countries, pakData, ukData, usData, canadaData]);
 
   const dbInstitutesToShow = useMemo(() => {
     const hasMajor = filters.majors.length > 0;
@@ -406,7 +472,7 @@ export function UniversityFinderModule({ onBack }: UniversityFinderModuleProps) 
     const passesCommonFilters = (uni: University): boolean => {
       if (filters.countries.length > 0) {
         const mappedCountries = filters.countries.map(c =>
-          c === "UK" ? "United Kingdom" : c === "US" ? "US" : c
+          c === "UK" ? "United Kingdom" : c === "US" ? "US" : c === "Canada" ? "Canada" : c
         );
         if (!mappedCountries.includes(uni.country)) return false;
       }

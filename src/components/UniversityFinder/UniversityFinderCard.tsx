@@ -75,9 +75,11 @@ export function UniversityFinderCard({ university, rank }: UniversityFinderCardP
                 <h3 className="font-display font-bold text-foreground text-lg leading-tight">
                   {university.shortName || university.name}
                 </h3>
-                <p className="text-sm text-muted-foreground truncate">
-                  {university.name !== university.shortName && university.name}
-                </p>
+                {university.shortName && university.name !== university.shortName && (
+                  <p className="text-sm text-muted-foreground truncate">
+                    {university.name}
+                  </p>
+                )}
               </div>
               {rank && (
                 <span className="shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary text-sm font-bold flex items-center justify-center">

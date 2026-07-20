@@ -32,7 +32,7 @@ const countryOptions = [
   { value: "Pakistan", flag: "🇵🇰", available: true },
   { value: "US", flag: "🇺🇸", available: true },
   { value: "UK", flag: "🇬🇧", available: true },
-  { value: "Canada", flag: "🇨🇦", available: false },
+  { value: "Canada", flag: "🇨🇦", available: true },
   { value: "Australia", flag: "🇦🇺", available: false },
   { value: "Europe", flag: "🇪🇺", available: false },
   { value: "Anywhere with good funding", flag: "🌍", available: false },
